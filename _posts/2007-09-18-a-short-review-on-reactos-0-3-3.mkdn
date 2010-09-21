@@ -3,7 +3,7 @@ layout: post
 title: A short Review on ReactOS 0.3.3 
 --- 
 
-[FreeWin95][1] has come a long way since it has been renamed in 1998 
+FreeWin95 has come a long way since it has been renamed in 1998 
 and is now called ReactOS.
 
 The new version 0.3.3 of the Windows 2000 clone already has a lot to offer and
@@ -18,7 +18,7 @@ Due to the fact that I've tested ReactOS using the pre-configured
 VMWare Virtual Appliance (VMWare Fusion Version 1.0 (51348) on a
 MacBook 1.83 GHz to be precise) I can't say much about the installation
 process of the new version using "real" hardware. However I've tried to
-install it with the [Install CD][2] that can be downloaded on the [project
+install it with the Install CD that can be downloaded on the [project
 homepage][3]. Unfortunately I wasn't very successful. Somehow ReactOS was not
 able to allocate the free space on my virtual hard disk...The last time I used
 the Install-CD on an old 300 MHz Computer I simply wiped my old partition out,
@@ -44,8 +44,8 @@ The developers have changed the bootup screen a bit by adapting the XP look and 
 Generally said the bootup process is very
 streamlined and offers a whole variety of options for the advanced user.
 But even the normal [PEBCAC ][6] can easily reach the desktop interface.
-Presently the ReactOS kernel (which aims to be compatible with [WinNT
-5.2][7]) offers about 25 to 30 percent of the [functionality it will finally
+Presently the ReactOS kernel (which aims to be compatible with WinNT
+5.2) offers about 25 to 30 percent of the [functionality it will finally
 have in 1.0][8]. As a result of the broad kernel redesign in 0.2 to 0.3 the
 current release faces a lot of regressions in some applications that were
 already useable in 0.2.
@@ -136,11 +136,13 @@ starting:
 
 * [Unreal Tournament on Reactos 0.3.3 with real Hardware][20]
 
-
-
+   [3]: http://www.reactos.org
+   
    [4]: http://www.reactos.org/wiki/index.php/Installing_ReactOS
 
    [5]: http://www.youtube.com/watch?v=qItugh-fFgg
+   
+   [6]: http://en.wikipedia.org/wiki/Pebcac#Acronyms_and_other_names_for_a_user_error
 
    [8]: http://en.wikipedia.org/wiki/ReactOS#Functionality
 
