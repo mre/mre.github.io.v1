@@ -1,0 +1,39 @@
+---
+# -*- html -*- mode
+layout: default
+sidebar: true
+---
+<div class="content">
+  <h2>{{page.title}}</h2>
+  <small class="meta">
+    <span class="grey">Posted 
+    <abbr class="timeago" title="{{ page.date | date:"%Y-%m-%d" }}T00:00:00Z"></abbr>
+    </span> on {{ page.date | date:"%A, %B %d - %Y" }} ({{ page.content | number_of_words }} words)
+  </small>
+  <hr /><br />
+  {% capture date_curr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_post %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_diff %}{{ date_curr | minus: date_post | minus:10600 }}{% endcapture %}
+  {% if date_diff contains '-' %}{% else %}
+	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
+  {% endif %}
+  
+  <div class="sweet-justice space_bottom">
+ 	 {{ content }}
+  </div>
+  <small class="meta">
+  If you enjoyed this, please spread the word.<br /><br />
+ <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="matthiasendler">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+ </small>
+ <hr />
+ <script>
+ var idcomments_acct = 'a82f3fba842da37042bd1be376926290';
+ var idcomments_post_id;
+ var idcomments_post_url;
+ </script>
+ <span id="IDCommentsPostTitle" style="display:none"></span>
+ <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</div>
+
+
+

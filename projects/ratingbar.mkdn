@@ -1,0 +1,203 @@
+---
+layout: post
+title: jQuery Ratingbar
+date: 2010-09-15
+categories: projects
+---
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$('.movie_example').ratingbar();
+	$('.star').ratingbar({
+		maxRating: 		5,
+		wrapperWidth:	125,
+		showText: 		false,
+		wrapperClass:	"star_box",
+		innerClass:		"star"
+	});
+	
+	
+	$('.button').click(function(){
+		$('.fancy_rating').ratingbar({
+			animate:		true,
+			duration:		1000,
+			ease:			"easeOutBounce",
+			maxRating: 		10,
+			wrapperWidth:	400,
+			showText: 		false,
+			wrapperClass:	"wrapper_fancy",
+			innerClass:		"inner_fancy"
+		});
+		$(this).hide();
+	});
+});	
+</script>
+
+This plugin is replacing a textual rating by a graphical rating using <code>CSS</code>.
+It's easy to use, fully customizable and degrades gracefully. It also supports animations.
+
+Consider the following markup:
+
+{% highlight html linenos=table %}
+<table>
+  <tr> 
+    <td>The Rum Diary</td>
+    <td class="movie_rating">95</td> 
+  </tr>
+  <tr>
+    <td>Gozilla ate my pants</td>
+    <td class="movie_rating">25</td> 
+  </tr>
+</table>
+{% endhighlight %}
+
+By default you get two rating bars where "95" and "25" stood before:
+
+<table>
+  <tr> 
+    <td>The Rum Diary</td>
+    <td class="movie_example">95</td> 
+  </tr>
+  <tr>
+	<td>Gozilla ate my pants</td>
+	<td class="movie_example">25</td> 
+  </tr>
+</table>
+
+### Advanced settings
+
+Alright let's get a little more fancy. Let's add some easing effect.
+Use the following button to make the magic happen: <span class="button">Click</span>
+
+<table>
+  <tr> 
+    <td>Awesome rating</td>
+    <td class="fancy_rating">8</td> 
+  </tr>
+  <tr>
+	<td>Mediocre rating</td>
+	<td class="fancy_rating">3</td> 
+  </tr>
+</table>
+
+Star ratings are no problem, too:
+<div class="star">5</div>
+<div class="star">1</div>
+<div class="star">3</div>
+
+For more examples take a look at my <a href="/movies">movies</a> and <a href="/about">about</a> pages.
+
+### Installation
+
+
+* Put the included <code>js</code> and <code>css</code> folder into your websites root directory.
+
+* Include the following code somewhere between <head> and </head> of your website:
+
+{% highlight html linenos=table %}
+<link rel="stylesheet" type="text/css" href="css/ratingbar.css" /> 
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.ratingbar.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$('.rating').ratingbar();
+	});
+</script>
+{% endhighlight %}		
+
+
+* Put a rating-element into the body of the website. For instance:
+
+{% highlight html linenos=table %}
+<div class="rating">80</div>
+{% endhighlight %}
+		
+That's it. Have fun!
+
+### Options
+
+jQuery.ratingbar is flexible. For instance the pink ratingbar above was created with the following code:
+
+{% highlight javascript linenos=table %}
+$('.fancy_rating').ratingbar({
+	animate:        true,
+	duration:       1000,
+	ease:           "easeOutBounce",
+	maxRating:      10,
+	wrapperWidth:   400,
+	showText:       false,
+	wrapperClass:   "wrapper_fancy",
+	innerClass:     "inner_fancy"
+});
+{% endhighlight %}
+
+Options are specified as <code>name</code>: <code>value</code> pairs.
+Here is a list of customizable *options*:
+
+<table class="medium">
+	<tr>
+		<td><code>animate</code></td>
+		<td><code>[true|false]</code></td>
+		<td>Expand bar on page load</td>	
+	</tr>
+	<tr>
+		<td><code>duration</code></td>
+		<td><code>standard: 1000</code></td>
+		<td>Animation length in millisecods</td>		
+	</tr>
+	<tr>
+		<td><code>ease</code></td>
+		<td><code>["swing"|...]</code></td>
+		<td>Animation <a href="http://www.gsgd.co.uk/sandbox/jquery/easing/">easing effect</a></td>		
+	</tr>
+	<tr>
+		<td><code>maxRating</code></td>
+		<td><code>standard: 100</code></td>
+		<td>Highest achieveable rating</td>		
+	</tr>
+	<tr>
+		<td><code>wrapperWidth</code></td>
+		<td><code>standard: 100</code></td>
+		<td>Width of container for rating</td>		
+	</tr>
+	<tr>
+		<td><code>showText</code></td>
+		<td><code>[true|false]</code></td>
+		<td>Show original rating text</td>		
+	</tr>
+	<tr>
+		<td><code>wrapperClass</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Custom class for rating container</td>		
+	</tr>
+	<tr>
+		<td><code>innerClass</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Custom class for actual rating</td>		
+	</tr>
+	<tr>
+		<td><code>textClass</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Custom class for rating text</td>		
+	</tr>
+	<tr>
+		<td><code>wrapperMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for bar</td>		
+	</tr>
+	<tr>
+		<td><code>innerMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for rating</td>		
+	</tr>
+	<tr>
+		<td><code>textMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for text</td>		
+	</tr>
+</table>
+ 
+### License
+
+&copy; Matthias Endler. Dual licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> and <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> licenses.
+

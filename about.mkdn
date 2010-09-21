@@ -1,0 +1,150 @@
+---
+layout: default
+title:  About
+---
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.skills').ratingbar({
+		maxRating: 		5,
+		wrapperWidth:	115,
+		showText: 		false,
+		wrapperClass:	"plus_empty",
+		innerClass:		"plus_filled"
+	});
+});
+</script>
+
+### About me ###
+
+I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page you find a list of my current *projects* and *howtos*. I live in Bavaria, Germany. Drop me a line if you want.
+{: .sweet-justice}
+
+### My skillset ###
+
+#### Web development ####
+
+<table class="set">
+	<tr>
+		<td class="descriptions">HTML</td>
+		<td class="skills">5</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">CSS</td>
+		<td class="skills">5</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">jQuery</td>
+		<td class="skills">4</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">PHP</td>
+		<td class="skills">4</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">MySQL</td>
+		<td class="skills">3</td>		
+	</tr>
+</table>
+
+
+#### Desktop and server ####
+
+<table class="set">
+	<tr>
+		<td class="descriptions">C</td>
+		<td class="skills">4</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">C++</td>
+		<td class="skills">3</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">Java</td>
+		<td class="skills">4</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">Shell</td>
+		<td class="skills">4</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">Unix</td>
+		<td class="skills">4</td>		
+	</tr>
+</table>
+
+### About this site ###
+
+This site is basically a fork of a jekyll page by <a href="http://olesenm.github.com">Mark Olensen</a>. It consists of static, plain html pages. All dynamic elements are integrated with JavaScript.
+{: .sweet-justice}
+
+#### Software used (in no particular order) ####
+
+<table class="medium set">
+	<tr>
+		<td><a href="http://jekyllrb.com">jekyll</a></td>
+		<td>Static site generator <span class="author">by Tom Preston-Werner</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://www.jquery.com">jQuery</a></td>
+		<td>JavaScript framework <span class="author">by John Resig</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://www.datatables.net/">jQuery datatables</a></td>
+		<td>Table enhancements <span class="author">by Allan Jardine</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://plugins.jquery.com/project/fortune">jQuery fortune</a></td>
+		<td>Fortune cookies <span class="author">by Mohammed Badran</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery easing</a></td>
+		<td>Bouncing menu effect <span class="author">by George McGinley Smith</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://timeago.yarp.com/">jQuery timeago</a></td>
+		<td>Relative time for posts <span class="author">by Ryan McGeary</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://plugins.jquery.com/project/2d-transform">jQuery transform</a></td>
+		<td>Animate CSS3 rotation <span class="author">by Grady Kuhnline</span></td>		
+	</tr>
+	<tr>
+		<td><a href="/projects/ratingbar">jQuery ratingbar</a></td>
+		<td>CSS rating system <span class="author">by me</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://tweet.seaofclouds.com">jQuery tweet</a></td>
+		<td>Twitter status updates <span class="author">by seaofclouds</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://carlos.bueno.org/2010/04/sweet-justice.html">Sweet Justice</a></td>
+		<td>Justified text for the web <span class="author">by Carlos Bueno</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://cubicle17.com/post/521485300/give-me-stuff-i-starred">Stuff I starred</a></td>
+		<td>Instapaper jQuery integraton <span class="author">by Bill Israel</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://www.instapaper.com/">Instapaper</a></td>
+		<td>Bookmarking tool <span class="author">by Marco Arment</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://intensedebate.com/">Intense debate</a></td>
+		<td>Awesome comment system <span class="author">by Automattic Inc.</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://code.google.com/apis/ajaxsearch/">Google AJAX Search</a></td>
+		<td>Fully customizable site search <span class="author">by Google Inc.</span></td>
+	</tr>
+</table>
+
+I strongly believe in sharing and that's why the site layout can be reused with (cc)
+<a href="http://creativecommons.org/licenses/by-sa/2.0/">some rights reserved</a>.
+<a href="mre.github.com">Fork it on github</a>.
+
+### Disclaimers ###
+
+No responsibility is taken for the contents of external links.<br />
+Some layout elements are borrowed from <a href="http://www.yaml.de/en/">YAML</a>.
+{: .sweet-justice}
+

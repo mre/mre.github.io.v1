@@ -1,0 +1,14 @@
+destination: ./_site
+auto: false
+lsi: false
+server: false
+server_port: 4000
+pygments: true
+markdown: maruku
+permalink: /:year/:title
+paginate: 5
+maruku:
+  use_tex: false
+  use_divs: false
+  png_dir: /images/latex/
+  png_url: /images/latex/

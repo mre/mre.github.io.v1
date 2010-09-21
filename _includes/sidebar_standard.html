@@ -1,0 +1,78 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "http://www.instapaper.com/rss/841724/A6mJ0nrHlRm5H25YMtEwBQoMrg"
+	$("#snippets_small").gmsis(url, {count: 2, desc: false});
+});
+</script>
+
+
+<div id="sidebar">
+	<ul>
+		{% if page.title != "About" %}
+		<li>
+			<h4>Colophon</h4>
+			<ul>
+				<li class="mini sweet-justice">
+    			This is my personal playground where I write mostly about <strong>coding</strong>, <strong>Linux</strong>, <strong>Apple</strong> and <strong>purple unicorns</strong>. <a href="/about">[more...]</a></li>
+			</ul>
+		</li>
+		{% endif %}
+		<li>
+			<h4>Elsewhere</h4>
+			<ul id="elsewhere">
+				<li>
+					<a href="http://www.github.com/mre">Github</a>
+				</li>
+				<li>
+					<a href="http://www.twitter.com/matthiasendler">Twitter</a>
+				</li>
+				<li>
+					<a href="http://stackoverflow.com/users/270334/mre">Stack Overflow</a>
+				</li>
+				<li>
+					<a href="http://matthiasendler.posterous.com/">Posterous</a>
+				</li>
+				<li>
+					<a href="http://kde-look.org/usermanager/search.php?username=debian1993">KDE Look</a>
+				</li>
+				<li>
+					<a href="/feed.xml">RSS Feed</a>
+				</li>
+				<li>
+					<a href="/atom.xml">Atom Feed</a>
+				</li>
+			</ul>
+		</li>
+		<li id="linklist_mini">
+			<h4>Snippets</h4>
+			<span id="snippets_small" />
+			<ul>
+				<li>
+					<a href="/snippets">[Full list...]</a>
+				</li>
+			</ul>
+		</li>
+		<li id="linklist_mini">
+			<h4>Twitter</h4>
+			<div class="mini sweet-justice tweet"></div>
+		</li>
+		
+	</ul>
+</div> <!-- end: #sidebar -->
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {	
+	$(".tweet").tweet({
+	    username: "matthiasendler",
+	    join_text: "auto",
+	    avatar_size: null,
+	    count: 2,
+	    auto_join_text_default: "",
+	    auto_join_text_ed: "",
+	    auto_join_text_ing: "",
+	    auto_join_text_reply: "",
+	    auto_join_text_url: "",
+	    loading_text: ""
+	});
+});
+</script>

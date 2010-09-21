@@ -1,0 +1,463 @@
+/*
+	Theme Name: Green and clean
+	Theme URI: http://www.matthias-endler.de
+	Version: 1.0
+	Author: mre
+	Author URI: http://www.matthias-endler.de
+	Copyright: Public Domain 
+*/
+
+@charset "UTF-8";
+
+
+/* -------------- PAGE LAYOUT -------------- */
+
+body {
+	font:Arial, Helvetica, sans-serif;
+	font-size:13pt;
+	color: #505050;
+	background-image: url("../img/lines.gif");
+	background-repeat: repeat-x;
+	background-position: 0px 179px;
+}
+
+/* Header colors */
+.grey 		{color: #999999}
+.grey_light {color: #cccccc}			
+.grey_dark 	{color: #666666}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+/* Site title */
+h1 {
+	font-size:24pt;
+	font-weight:bold;
+}
+
+/* Post and page titles */
+h2 {
+	font-size:17pt;
+	color: #009BFF;
+}
+
+h2 a:hover {
+	background-color: #efefef;
+	text-decoration: none;
+}
+
+/* Post sub-headers */
+h3 {
+	border-bottom: 2px solid #eee;
+	margin-top: 40px;
+	font-size: 14pt;
+}
+
+/* Sidebar */
+h4 {
+	color: #a2aab0;
+	font-size:11pt;
+	font-weight:bold;
+	padding: 3px 10px 10px 40px;
+	margin-top: 30px;
+	background-image: url("../img/arrow.gif");
+	background-repeat: no-repeat;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+h4 a:hover  {
+	background-color: #efefef;
+}
+
+/* Date, timeago... */
+h5 {
+	padding: 5px 0px 15px 0px;
+	font-size:11pt;
+	color: #cccccc
+}
+
+/* Quotes */		
+h6 {
+	font-size:11pt;
+	color: #cccccc
+}
+
+a, a:link, a:hover, a:visited, a:active { 
+	text-decoration: none;
+	color: #009BFF;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 15px 0px;
+	line-height: 1.3em;
+}
+
+em {
+	font-style: normal;
+	color: #ff5ea3;
+	background-color: #f6f6f6;
+}
+
+/* -------------- PAGE HEADER -------------- */
+
+#header {
+	text-align: right;
+	height: 145px;
+	padding: 75px 0px 0px 0px;
+	background-image: url("../img/tux.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px 32px;
+}
+
+#menu {
+	float: right;
+}
+
+#menu li {
+	display: inline;   
+	float: right;   
+	list-style: none;   
+	list-style-type: none;
+}
+
+#menu li a {
+	color: white;
+}
+
+#main {
+	font-size: 1.1em;	
+}
+
+/* main column */
+#content {
+    float: left;
+    width: 60%;
+    margin-top: 50px;
+}
+
+#sidebar {
+    font-size: 0.7em;
+    float:  right;
+    width:  253px;
+    min-height: 800px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    background: #daf0ff; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#fff'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#daf0ff), to(#fff)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #daf0ff,  #fff); /* for firefox 3.6+ */
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+/* Indent subtopics */
+#sidebar ul ul {
+	padding: 0px 40px 0px 40px;
+}
+
+#linklist_mini li {
+	padding-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+hr {
+	border:1px solid #ccc;
+}
+
+.onLeft {
+	text-align: left;
+	float: left;
+}
+
+.onRight {
+	text-align: right;
+	float: right;
+}
+
+.page_margins {
+    text-align: left;
+    margin: 0 auto;
+    min-width: 700px;
+    max-width: 1000px;
+}
+
+blockquote {
+	background-color: #daf0ff;
+	background-image: url("../img/quote.png");
+	background-repeat: no-repeat;
+	background-position: 0px -20px;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+}
+
+blockquote p {
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Menubar */
+
+/* Standard behaviour */
+.box {
+	display: block;
+	margin: 12px 4px 0px 0px;
+	padding: 10px 5px 11px 5px;
+	background-color: #70f217;
+	color: white;
+}
+
+.box:hover {
+	margin-top: 0px;
+	padding-bottom: 23px;
+	text-decoration: none;
+}
+
+/* Active menu box */
+.active {
+	background-color: #327004;
+	padding-bottom: 36px;
+}
+
+.active:hover {
+	padding-bottom: 47px;
+}
+
+/* Nice _shiny_ buttons, please... */
+.box .glossy {
+	padding: 6px 5px 0px 5px;
+	background-color: #94ff4a; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94ff4a', endColorstr='#70f217'); /* for IE   */
+	background: -webkit-gradient(linear, left top, left bottom, from(#94ff4a), to(#70f217)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #94ff4a,  #70f217); /* for firefox 3.6+ */
+}
+
+.active .glossy {
+	background-color: #468e11; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#468e11', endColorstr='#327004'); /* for IE   */
+	background: -webkit-gradient(linear, left top, left bottom, from(#468e11), to(#327004)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #468e11,  #327004); /* for firefox 3.6+ */
+}
+
+/* Topic on homepage */
+.snippet {
+	margin-bottom: 30px;
+}
+
+.snippet_text {
+	margin-top: 20px;
+}
+
+/* Meta information for posts */
+.meta {
+	padding: 5px 0px 15px 0px;
+	font-size:11pt;
+	color: #cccccc;
+	text-transform: uppercase;
+}
+
+/* Excerpt from blog entry */
+.excerpt {
+	margin-bottom: 30px;
+}
+
+/* -------------- MESSAGES BOXES -------------- */
+
+.intro {
+	font-size: 85%;
+	background-color: #fdfbc4;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+	background-image: url("../img/quote.png");
+	background-repeat: no-repeat;
+	background-position: 0px -20px;
+}
+
+.intro:hover {
+	background-image: url("../img/cross.png");
+	background-position: -20px -30px;
+	background-color: #e5e5e5;
+}
+
+/* Warning is used for old posts */
+.warning {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0px 0px;
+	background-position: 0px -20px;
+}
+
+/* Bubbles, Syntax highlighting */
+.highlight {
+	overflow: auto;
+	overflow-y: hidden;
+	background-color: #f0f0f0;
+	padding: 4px;
+	font-size: 67%;
+}
+
+/* -------------- BUTTONS -------------- */
+
+.button {
+	cursor: pointer;
+	color: #ff5ea3;
+	background-color: #f0f0f0;
+	padding: 4px;
+}
+
+.greybg {
+	display: block;
+	margin-top: 20px;
+	background-color: #efefef;
+	padding: 4px;
+}
+
+.greybg:hover {
+	text-decoration: none;
+	background-color: #e6e6e6;
+}
+
+.bottom_greybg {
+	background-color: #efefef;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.bottom_greybg a:hover {
+	text-decoration: none;
+}
+
+.bottom_greybg:hover {
+	text-decoration: none;
+	background-color: #e6e6e6;
+}
+
+/* -------------- MENU STYLING -------------- */
+
+.hlist {
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.hlist ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.hlist ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* -------------- SPECIAL CLASSES -------------- */
+
+/* Timeago styling */
+acronym, abbr {
+	border-bottom:none;
+	cursor: text;
+}
+
+.mini {
+	font-size: 90%;
+	color: #999999;
+}
+
+#footer {
+	margin-top: 140px;
+	padding-top: 80px;
+	background-image: url("../img/lines2.gif");
+	background-repeat: repeat-x;
+}
+
+#legal {
+	margin: 30px;
+	text-align: center;
+	font-size: 75%;
+	color: #aaa;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+input  {
+	font-size: 14pt;
+	color: #666;
+	padding: 5px 40px 5px 10px;
+	border: none;
+	background-color: #f3f3f3;
+	width: 205px;
+}
+
+.set {
+	font-size: 80%;
+	margin-left: 40px;
+}
+
+.set td {
+	padding-left: 20px;
+}
+
+/* Used for some tables */
+.medium {
+	font-size: 80%;
+}
+
+.space_bottom {
+	margin-bottom: 50px;
+}
+
+/* Software used on about page */
+.author {
+	color:  #aaa;
+}
+
+/* Snippets page */
+
+#instapaper  ul {
+	list-style: none;
+}
+
+#instapaper li {
+	margin: 20px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+#instapaper li div {
+	color: #aaa;
+	margin: 10px 0px 20px 0px;
+}
+
+.instapaper-link {
+}
+
+.instapaper-desc {
+	
+}
+
+/* Projects page */
+
+.projects {
+	list-style: none;
+}
+
+.projects li {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin: 20px 0px;
+}

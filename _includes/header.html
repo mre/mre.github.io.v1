@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{{ page.title }} | Matthias Endler</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+
+{% include standard_includes.html %}
+
+{% if true %}
+	{% include google_ajax_search.html %}
+{% endif %}
+
+</head>
+
+{% assign navTitle = 'Blog' %}
+{% for t in page.topnav %}
+	{% if t.text == page.title %}{% assign navTitle = page.title %}{% endif %}
+{% endfor %}
+
+<body>
+<a name="top"></a>
+<div class="page_margins">
+  <div id="header">
+    <h1><a href="/" title="German programmer and designer - Matthias Endler"><span id="matthias" class="grey_light">Matthias</span><span class="grey_dark">Endler</span></a></h1>
+    <h6 id="cookie">Like popcorn or something?</h6>
+    <!-- begin: main navigation -->
+    <div id="menu">
+      <ul>
+        <li id="search"></li>
+        {% for t in page.topnav %}
+	        <li>
+	        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
+	        	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
+	        </li>
+        {% endfor %}
+      </ul>
+    </div><!-- end: menu -->
+  </div><!-- end: header -->

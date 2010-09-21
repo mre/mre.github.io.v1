@@ -1,0 +1,124 @@
+--- 
+layout: post 
+title: Linux needs to evolve - now! 
+--- 
+
+It was a brilliant idea to create an operating system that is free for everyone to use and to
+edit. Thousands of hackers around the globe share the dream of open source
+information technology without monopolism. Everybody who is into computing has
+heard of Linux and lots of them are using it for daily work. Even
+inexperienced users try out Linux by testing distributions like [Ubuntu][1],
+[openSuse][2] or [Knoppix][3] because they are easy to use and to install. But
+that's not the complete truth. 
+
+### Hardware woes
+
+This so called "out-of-the-box" experience can
+instead be very tricky and much to complicated for a normal user. When you
+insert the Ubuntu LiveCD you will be welcomed by a smart boot menu that lets you
+try out all the functionalities of a full-fledged Distribution without
+installing. 
+
+The window manager has a fresh, clean-looking [aqua][4]-style
+interface. You click on install and almost everything is pre-configured and
+runs automatically. In most cases a distribution like Ubuntu auto-detects your hardware and
+installs the right modules. Hopefully. Sometimes it happens though that your
+printer is not working or your wireless connection was not recognized. This is mostly
+the case when you have shiny new hardware that linux hackers were not able to test
+yet. This can be a brand new inkjet printer ([cups][5] and gimp-print have a
+long way to go) or the high-end graphics card. 
+
+### Hacker perception
+
+Not a problem you might think.
+Look for a new development driver on Google, do a quick [apt-get][6], set-up
+your network connection and off you go! BUT explain that to [Aunt Tillie][7]
+sitting in front of her PC thinking that a Wlan card is a trading card her six
+year old nephew Gregory wants for Christmas. I don't have to add that she
+never opened a PC because she simply doesn't bother what's in there. You might
+say that it's also hard to configure your network a Windows PC. Well maybe it
+is - but it's already configured when you buy the PC - and that makes a big
+difference. Installing new software packages can be painful for normal users.
+Have you ever tried to explain to a non-geek why it's handy to use a terminal
+for daily work? At best you get an answer like "I've used DOS and that was a
+piece of crap" or maybe he just says "You are still sitting in front of a
+black text-mode only window entering cryptical commands to configure your
+system? This is not 1969!". Many people don't understand why typing chmod is
+smarter than clicking through ten windows opening the "properties" submenu with
+a right mouse click on a file and finally adjusting the access rights. Why
+should somebody use 'dmesg | tail' to get some system information. The problem
+is: When somebody refuses to learn those shell-commands they won't understand
+90 percent of the system. They can't see what went wrong when there is some
+internal dependency error. Linux will only be easy when you understand what
+you are doing. 
+
+### Software woes
+
+Even if you know how to work with a command line you
+can't be safe from so-called "[dependency hell][9]". You want to install a new
+office suite called "OfficeSuite" and download the packages directly from the
+developers site. But sadly it won't run because you don't have those three
+other packages installed which are all needed by "OfficeSuite". OK. So you
+install those packages as well but they depend on three other libraries that
+you don't have as well. As a result you end up downloading and installing six
+packages in order to run "OfficeSuite" - now that's what I call productivity
+from the very beginning. The big problem behind this mess is the fact that
+there are no real standards in the Linux world. There are thousands of
+different flavors and to some extent this is great and it's exactly what free
+software has to look like but to get more traction we urgently need better standards to focus
+developing power. Don't get me wrong: There must be different package formats
+(like [rpm][10], [deb][11], [tgz][12]...) or various window managers
+([KDE][13], [Gnome][14], [fluxbox][15], [icewm][16]...) but they all must have
+a mutual basis to build up on. As we have seen the biggest problem is usability.
+Other Unix-like systems such as [Mac OS X][17] show how it can be done.
+Common guys! We can do better than that!
+
+### Why it matters
+
+Some of the brightest Linux advocates don't realize that non-
+techies want a system where they don't need to know anything about bash, emacs
+or vi to successfully configure hardware drivers and network sharing
+([samba][8]...urgh). 
+Those who say "Screw it. If Linux is too hard for you, just don't use it" are
+misguided. It is vital for open technologies to reach a critical mass
+and receive widespread adoption. Otherwise big companies like AMD and 
+NVidia and EA have little interest to invest development time into open source
+projects.
+
+
+   [1]: http://www.ubuntu.com/ (Linux for human beeings - Canonical)
+
+   [2]: http://en.opensuse.org/Welcome_to_openSUSE.org (German distribution by
+Novel)
+
+   [3]: http://www.knopper.net/knoppix/index-en.html (Live Distri. Klaus
+Knopper)
+
+   [4]: http://ubuntuforums.org/showthread.php?t=234297
+
+   [5]: http://catb.org/~esr/writings/luxury-part-deux.html
+
+   [6]: http://www.debian.org/doc/manuals/apt-howto/index.en.html
+
+   [7]: http://lwn.net/2002/0117/a/aunt-tillie.php3
+
+   [8]: http://forums.fedoraforum.org/showthread.php?p=681613
+
+   [9]: http://en.wikipedia.org/wiki/Dependency_hell
+
+   [10]: http://www.rpm.org/
+
+   [11]: http://en.wikipedia.org/wiki/Deb_(file_format)
+
+   [12]: http://www.gzip.org/
+
+   [13]: http://www.kde.org/
+
+   [14]: http://www.gnome.org/
+
+   [15]: http://fluxbox.sourceforge.net/
+
+   [16]: http://www.icewm.org/
+
+   [17]: http://www.apple.com/macosx/leopard/index.html
+
