@@ -1,0 +1,8 @@
+This README mostly exists because I was scared by the yellow warning message that recommended to add a README.
+
+This is my homepage. A labour of love.
+Created with [jekyll][1] by some awesome crazy unicorns dressed in jogging-suits (thanks!).
+
+
+
+[1]: http://www.github.com/mojombo/jekyll

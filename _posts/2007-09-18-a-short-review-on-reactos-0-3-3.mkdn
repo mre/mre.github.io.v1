@@ -60,18 +60,18 @@ a scientific Calculator as well as the not-so-well-known Windows classics like
 shutdown.exe, regsvr32.exe or telnet. Most of these basic programs were
 borrowed from the wine project. Together with the relatively stable kernel
 ReactOS already has a stable basis for further software development. Such
-Bluescreens are (really!) an exception: [260 ][7] If you need a package that
+Bluescreens are (really!) an exception: If you need a package that
 is not installed by default you can upgrade your system by installing software
 just as you would on Windows. There are many packages that run out of the box
 without further tweaking. Just look at the [list of supported software][10] on
 the interwebs! The newly integrated Downloading-Tool - simply called
-__Download!__¬ù - can help you to install compatible software with just one
+__Download!__¬ - can help you to install compatible software with just one
 click. Because it's work in progress there are not so many programs available.
-You can select between the categories __Internet & Network__¬ù, __Development__¬ù,
-__Games & Fun__¬ù or __Tools__¬ù. Some cool open source apps like Firefox,
-Thunderbird, [Samba][11], OpenTTD, 7zip and √é¬ºTorrent are already ready to
+You can select between the categories __Internet & Network__¬, __Development__¬,
+__Games & Fun__¬ or __Tools__¬. Some cool open source apps like Firefox,
+Thunderbird, [Samba][11], OpenTTD, 7zip and &mu;Torrent are already ready to
 use. In later versions it will be possible to update the list of preconfigured
-packages. That's why I see the __Download!__¬ù feature as a promising invention.
+packages. That's why I see the __Download!__ feature as a promising invention.
 
 
 
@@ -82,14 +82,14 @@ almost every machine without any need for configuration it may be quite
 interesting to see ReactOS on full speed using original hardware drivers. In
 my case I just needed to install the VMWare toolset that offers a major speed
 burst when installed. I've added a CD-Rom Drive to my virtual machine and
-clicked on __Virtual Machine__¬ù > __Install VMWare Tools__¬ù while ReactOS was
+clicked on __Virtual Machine__ > __Install VMWare Tools__ while ReactOS was
 powered on. To my surprise almost everything worked like a charm and
 I could install the VGA and the audio drivers to tune my system. After a
 reboot - my system was messed up. The VGA resolution was down to 320-something
 pixels which made using the OS an impossible task. I had no chance to adjust
-the resolution with the common __Display Properties__¬ù window nor did it work
+the resolution with the common __Display Properties__¬ window nor did it work
 to use Regedit and adjust the screen values manually. My second thought was
-__No problem. In case of an emergency we have the __ÀúDebug Mode' on boar__.
+__No problem. In case of an emergency we have the __À Debug Mode' on boar__.
 Well, what can I say: It didn't work. It has the same screen resolution as the
 normal mode. Maybe there is a [workaround to fix it][12] but I was too lazy to
 figure it out and so I simply reset my virtual machine (There you have it,
@@ -138,7 +138,7 @@ source alternative for proprietary M$ desktop products. Maybe Certainly you'll
 find a bug and want to help the developers. In this case just go to their site
 and fill out a bug report and you can say to yourself that you've just
 supported free software. The thing a good developer (and good engineer in
-general) likes most is when somebody says __Thanks for all the great work!__¬ù.
+general) likes most is when somebody says __Thanks for all the great work!__¬.
 That's what I also like to say to the ROS team. Keep up the good work!
 According to Wikipedia the next major release (i.e. 0.4) will offer basic USB
 support, a complete SMB interface (making it fully compatible with the Windows
