@@ -384,7 +384,7 @@ acronym, abbr {
 	background-repeat: repeat-x;
 }
 
-#legal {
+.legal {
 	margin: 30px;
 	text-align: center;
 	font-size: 75%;
