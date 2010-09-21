@@ -34,8 +34,8 @@ the virtualized OS.
 
 ### Bootup
 
-When I fire up the machine a nice boot loader appears and
-you may select between the normal and the debugging mode. Pushing F8 gives you
+When I fire up the machine a nice bootloader appears and
+you may select between the normal and the debugging mode. Pushing <code>F8</code> gives you
 another menu where you can select more booting options - like a command
 prompt-only version or the infamous <code>last good</code> option. 
 For the moment I simply waited eight seconds until the normal boot process started. 
@@ -52,23 +52,24 @@ already useable in 0.2.
 
 ### Software
 
-ReactOS actually comes with a small amount of pre-
-installed software packages. Taking a closer look the team is working hard to
+ReactOS actually comes with a small amount of pre-installed software packages. 
+Taking a closer look the team is working hard to
 offer a free replacement of commonly used Win Software. Naturally it has the
 [Command Prompt][9] as well as Regedit, Notepad and WordPad. It also features
-a scientific Calculator as well as the not-so-well-known Windows classics like
-shutdown.exe, regsvr32.exe or telnet. Most of these basic programs were
-borrowed from the wine project. Together with the relatively stable kernel
-ReactOS already has a stable basis for further software development. Such
+a scientific Calculator as well as the not-so-well-known Windows commandline classics like
+<code>shutdown.exe</code>, <code>regsvr32.exe</code> or <code>telnet</code>. 
+Most of these basic programs were borrowed from the wine project. 
+Together with the relatively stable kernel
+ReactOS already has a solid basis for further software development. Such
 Bluescreens are (really!) an exception: If you need a package that
 is not installed by default you can upgrade your system by installing software
 just as you would on Windows. There are many packages that run out of the box
 without further tweaking. Just look at the [list of supported software][10] on
 the interwebs! The newly integrated Downloading-Tool - simply called
-__Download!__Â - can help you to install compatible software with just one
+__Download!__ - can help you to install compatible software with just one
 click. Because it's work in progress there are not so many programs available.
-You can select between the categories __Internet & Network__Â, __Development__Â,
-__Games & Fun__Â or __Tools__Â. Some cool open source apps like Firefox,
+You can select between the categories __Internet &amp; Network__, __Development__,
+__Games &amp; Fun__ and __Tools__. Some cool open source apps like Firefox,
 Thunderbird, [Samba][11], OpenTTD, 7zip and &mu;Torrent are already ready to
 use. In later versions it will be possible to update the list of preconfigured
 packages. That's why I see the __Download!__ feature as a promising invention.
@@ -87,9 +88,9 @@ powered on. To my surprise almost everything worked like a charm and
 I could install the VGA and the audio drivers to tune my system. After a
 reboot - my system was messed up. The VGA resolution was down to 320-something
 pixels which made using the OS an impossible task. I had no chance to adjust
-the resolution with the common __Display Properties__Â window nor did it work
+the resolution with the common __Display Properties__ window nor did it work
 to use Regedit and adjust the screen values manually. My second thought was
-__No problem. In case of an emergency we have the __Ë Debug Mode' on boar__.
+"No problem". In case of an emergency we have the Debug Mode on board.
 Well, what can I say: It didn't work. It has the same screen resolution as the
 normal mode. Maybe there is a [workaround to fix it][12] but I was too lazy to
 figure it out and so I simply reset my virtual machine (There you have it,
@@ -100,26 +101,6 @@ The latest release offers only rudimentary network support. That said the team
 has worked hard to offer accessibility features as well as localization
 adjustments. At the moment one can select between 90 (!) supported languages
 
-### Tests
-
-I didn't come around to try out some win-exe programs on ROS. My plan
-is to test the following packages on the new release:
-
-  * Winamp [13]
-
-  * Foobar2000 [14] or MediaCube
-
-  * VLC [15]
-
-  * MPlayer
-
-  * AbiWord [16]
-
-  * Wormux
-
-As soon as I find some time I will fire them up and post a review _in here_!
-
-
 ### Stability
 
 ReactOS still is (and will be for a long time)
@@ -127,53 +108,39 @@ an experimental System. It's normal for an unstable pre-release of an alpha
 software to randomly freeze or hang or kill your machine or whatsoever. Don't
 panic when you have to restart - it's (presently) normal. Don't expect ReactOS
 to run all your .exe files it is a long and painful procedure to reach this
-aim. That said Reactos 0.3.3 is surprisingly stable compared to older
-versions. Yes it occassionaly hangs and it takes a nap from time to time when
+aim. That said ReactOS 0.3.3 is surprisingly stable compared to older
+versions. Yes it occasionally hangs and it takes a nap from time to time when
 all of your ram gets pwned. But don't be afraid: Just feel free to hang around
-a bit dazzling with the software - actually having FUN using your computer.
-0.3.3 is the first version that doesn't almost certainly crash after two
+a bit dazzling with the software - actually having FUN using your computer. 0.3.3 is 
+the first version that doesn't almost certainly crash after two
 minutes of use or a wrong click in the system configuration menu (o_O).
 ReactOS has grown up from a pure hacker playground to a mature, promising open
-source alternative for proprietary M$ desktop products. Maybe Certainly you'll
-find a bug and want to help the developers. In this case just go to their site
+source alternative for proprietary M$ desktop products. Certainly you'll
+find a bug and maybe want to help the developers. In this case just go to their site
 and fill out a bug report and you can say to yourself that you've just
 supported free software. The thing a good developer (and good engineer in
-general) likes most is when somebody says __Thanks for all the great work!__Â.
+general) likes most is when somebody says __Thanks for all the great work!__
 That's what I also like to say to the ROS team. Keep up the good work!
 According to Wikipedia the next major release (i.e. 0.4) will offer basic USB
-support, a complete SMB interface (making it fully compatible with the Windows
-network subsystem). After that Reactos will enter beta status and we will see
-all the fancy __userworld__ stuff like NTFS support or DirectX 7-9 support. So
+support and a complete SMB interface (making it fully compatible with the Windows
+network subsystem). After that ReactOS will enter beta status and we will see
+all the fancy __user-world__ stuff like NTFS support or DirectX 7-9 support. So
 there is a long way to go and a lot to explore! Some links to get you
 starting:
 
-  * [Project Homepage][17]
+* [Project Homepage][17]
 
-  * [ReactOS on Wikipedia (en)][18]
+* [ReactOS on Wikipedia (en)][18]
 
-  * [Firefox 2 Installing on Reactos 0.3.3 rc2][19]
+* [Firefox 2 Installing on Reactos 0.3.3 rc2][19]
 
-  * [Unreal Tournament on Reactos 0.3.3 with real Hardware][20]
+* [Unreal Tournament on Reactos 0.3.3 with real Hardware][20]
 
-Hope you enjoyed. Please post a comment to improve this review!
 
-   [1]: http://www.reactos.org/wiki/index.php/FreeWin95 (FreeWin95 description
-on Reactos.com)
-
-   [2]: http://prdownloads.sourceforge.net/reactos/ReactOS-0.3.3-REL-iso.zip
-(Download the Reactos Install CD)
-
-   [3]: http://www.reactos.org (Project Homepage)
 
    [4]: http://www.reactos.org/wiki/index.php/Installing_ReactOS
 
    [5]: http://www.youtube.com/watch?v=qItugh-fFgg
-
-   [6]: http://www.auditmypc.com/acronym/PEBCAC.asp (Problem Exists Between
-Chair And Computer)
-
-   [7]: http://en.wikipedia.org/wiki/Windows_NT (Wikipedia Windows NT 5.2
-analysis)
 
    [8]: http://en.wikipedia.org/wiki/ReactOS#Functionality
 
@@ -184,18 +151,6 @@ analysis)
    [11]: http://svn.reactos.org/videos/ros_030_smb.html
 
    [12]: http://www.reactos.org/forum/viewtopic.php?p=23479
-
-   [13]: http://www.reactos.org/support/index.php?page=db&view=comp&sec=catego
-ry&group=5tegory&group=5
-
-   [14]: http://www.reactos.org/support/index.php?page=db&view=comp&sec=catego
-ry&group=7
-
-   [15]: http://www.reactos.org/support/index.php?page=db&view=comp&sec=catego
-ry&group=79
-
-   [16]: http://www.reactos.org/support/index.php?page=db&view=comp&sec=catego
-ry&group=25
 
    [17]: http://www.reactos.org
 

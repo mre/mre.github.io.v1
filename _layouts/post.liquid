@@ -3,6 +3,8 @@
 layout: default
 sidebar: true
 ---
+
+
 <div class="content">
   <h2>{{page.title}}</h2>
   <small class="meta">
@@ -11,7 +13,7 @@ sidebar: true
     </span> on {{ page.date | date:"%A, %B %d - %Y" }} ({{ page.content | number_of_words }} words)
   </small>
   <hr /><br />
-  {% capture date_curr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_curr %}{{ now | date: "%Y%m%d" }}{% endcapture %}
   {% capture date_post %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture date_diff %}{{ date_curr | minus: date_post | minus:10600 }}{% endcapture %}
   {% if date_diff contains '-' %}{% else %}
@@ -24,6 +26,10 @@ sidebar: true
   <small class="meta">
   If you enjoyed this, please spread the word.<br /><br />
  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="matthiasendler">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+ 
+ <div id="fb-root"></div>
+ <fb:like href="http://www.matthias-endler.de/" layout="standard" show_faces="false" width="400" action="like" colorscheme="light" />
+ 
  </small>
  <hr />
  <script>
@@ -35,5 +41,15 @@ sidebar: true
  <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
 </div>
 
-
-
+<script>
+	window.fbAsyncInit = function() {
+	FB.init({appId: '127569457295491', status: true, cookie: true, xfbml: true});
+	};
+	(function() {
+	var e = document.createElement('script');
+	e.type = 'text/javascript';
+	e.src = document.location.protocol + '//connect.facebook.net/de_DE/all.js';
+	e.async = true;
+	document.getElementById('fb-root').appendChild(e);
+	}());
+</script>

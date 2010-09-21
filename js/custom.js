@@ -10,7 +10,7 @@ $(document).ready(function() {
 			
 	// Rotate menu items
 	$(".box").each(function() {
-		$(this).transform({rotate: randRotation()});
+		$(this).animate({rotate: randRotation()},{ duration:1000, easing: 'easeOutElastic'});
 	});
 	
 	 //Animate menu items
