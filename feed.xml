@@ -5,7 +5,7 @@ title: Matthias Endler
 	{% for item in site.posts %}
 	<item>
 		<title>{{ item.title }}</title>
-		<link>{{ site.root }}{{ item.url }}</link>
+		<link>http://matthias-endler.de{{ item.url }}</link>
 		<pubDate>{{ item.date | date_to_xmlschema }}</pubDate>
 		<dc:creator>{{ site.author }}</dc:creator>
 		{% for cat in item.categories %}
