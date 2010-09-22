@@ -1,8 +1,18 @@
-// Returns a random integer between [-10, -3] and [3, 10]
+// Returns a random integer between +-RANGE without values in GAP
 function randRotation() {
+	var RANGE = 20; // Number of values
+	var GAP   = 6;  // Minimal rotation
+	
+	// Clean solution
+	//	var rand = Math.floor(Math.random()*(RANGE-GAP/2)+GAP/2);
+	//	var invert = Math.random();
+	//	if (invert < 0.5) rand = -rand;
+	//	return rand;
+
+	// Faster solution
 	do {
-		var rand = Math.floor(Math.random()*21)-10;
-	} while (Math.abs(rand) < 3);
+		var rand = Math.floor(Math.random()*(RANGE+1)-RANGE/2);
+	} while (Math.abs(rand) < GAP/2);
 	return rand;
 };
 

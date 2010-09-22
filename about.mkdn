@@ -113,6 +113,10 @@ This site is basically a fork of a jekyll page by <a href="http://olesenm.github
 		<td>CSS rating system <span class="author">by me</span></td>		
 	</tr>
 	<tr>
+		<td><a href="http://michaelmonteleone.net/">jQuery rainbow plugin</a></td>
+		<td>jQuery color text effect <span class="author">by Michael Monteleone</span></td>		
+	</tr>
+	<tr>
 		<td><a href="http://tweet.seaofclouds.com">jQuery tweet</a></td>
 		<td>Twitter status updates <span class="author">by seaofclouds</span></td>		
 	</tr>
