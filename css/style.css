@@ -461,3 +461,31 @@ input  {
 	padding-bottom: 20px;
 	margin: 20px 0px;
 }
+
+#fb-root {
+	float: left;
+}
+
+#twitter-root {
+	font-size: 10px;
+	color: #3b5998;
+	margin-right: 10px;
+	font-family: 'Lucida Grande', sans-serif;
+	float: left;
+	padding: 3px 4px 3px 20px;
+	background-color: #ECEEF5;
+	background-image: url("../img/twitter.gif");
+	background-position: 4px 3px;
+	background-repeat: no-repeat;
+	border: 1px solid #CAD4E7;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	cursor: pointer;
+}
+
+#twitter-root {
+	border-color: #9dacce;
+}
+
+

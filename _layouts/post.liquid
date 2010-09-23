@@ -26,11 +26,20 @@ sidebar: true
   </div>
   <small class="meta">
   If you enjoyed this, please spread the word.<br /><br />
- <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="matthiasendler">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+   </small>
+  
  <div id="fb-root"></div>
- <fb:like href="http://www.matthias-endler.de/" layout="standard" show_faces="false" width="400" action="like" colorscheme="light" />
+ <div id="twitter-root">Tweet</div>
  
- </small>
+ <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$("#twitter-root").tweetIt();
+ 	})
+ </script>
+  
+ <script language="javascript"  type="text/javascript" src="/js/facebook.js">
+ 
  <hr />
  <script>
  var idcomments_acct = 'a82f3fba842da37042bd1be376926290';
@@ -40,16 +49,3 @@ sidebar: true
  <span id="IDCommentsPostTitle" style="display:none"></span>
  <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
 </div>
-
-<script>
-	window.fbAsyncInit = function() {
-	FB.init({appId: '127569457295491', status: true, cookie: true, xfbml: true});
-	};
-	(function() {
-	var e = document.createElement('script');
-	e.type = 'text/javascript';
-	e.src = document.location.protocol + '//connect.facebook.net/de_DE/all.js';
-	e.async = true;
-	document.getElementById('fb-root').appendChild(e);
-	}());
-</script>
