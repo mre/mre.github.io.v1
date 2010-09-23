@@ -17,7 +17,7 @@ sidebar: true
   {% capture dpost %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture ddiff %}{{ dcurr | minus:dpost | minus:10600 }}{% endcapture %}
   
-  {{ dcurr | minus:10600 }}
+  {{ 20000 | minus:10600 }}
   
   {% if ddiff contains '-' %}{% else %}
 	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
