@@ -144,7 +144,7 @@ This site is basically a fork of a jekyll page by <a href="http://olesenm.github
 
 I strongly believe in sharing and that's why the site layout can be reused with (cc)
 <a href="http://creativecommons.org/licenses/by-sa/2.0/">some rights reserved</a>.
-<a href="mre.github.com">Fork it on github</a>.
+<a href="http://mre.github.com">Fork it on github</a>.
 
 ### Disclaimers ###
 

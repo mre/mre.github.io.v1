@@ -72,10 +72,10 @@ $.fn.gmsis = function(url, options) {
                 base_link = base_link.replace("www." , "");
                 
                 var desc = opts.desc && item.selection ? item.selection : '';
-                li = li_html.replaceAll("{base_url}", base_link)
-                			.replaceAll("{title}", title)
-                            .replaceAll("{url}", link)
-                            .replaceAll("{desc}", desc);
+                li = li_html.replace("{base_url}", base_link)
+                			.replace("{title}", title)
+                            .replace(/{url}/g, link)
+                            .replace("{desc}", desc);
                 
                 items.push(li);
             });
