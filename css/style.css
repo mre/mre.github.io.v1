@@ -484,7 +484,7 @@ input  {
 	cursor: pointer;
 }
 
-#twitter-root {
+#twitter-root:hover {
 	border-color: #9dacce;
 }
 

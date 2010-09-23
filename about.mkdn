@@ -79,6 +79,8 @@ This site is basically a fork of a jekyll page by <a href="http://olesenm.github
 
 #### Software used (in no particular order) ####
 
+This software is based on the works of countless authors. In order to give credits to the open-source projects this site is directly based on, they are mentioned here.
+
 <table class="medium set">
 	<tr>
 		<td><a href="http://jekyllrb.com">jekyll</a></td>
@@ -119,6 +121,10 @@ This site is basically a fork of a jekyll page by <a href="http://olesenm.github
 	<tr>
 		<td><a href="http://tweet.seaofclouds.com">jQuery tweet</a></td>
 		<td>Twitter status updates <span class="author">by seaofclouds</span></td>		
+	</tr>
+	<tr>
+		<td><a href="http://pongsocket.com/tweet-it/">Like it? Tweet it!</a></td>
+		<td>Tweet-Button  <span class="author">by Andy Graulund</span></td>
 	</tr>
 	<tr>
 		<td><a href="http://carlos.bueno.org/2010/04/sweet-justice.html">Sweet Justice</a></td>
