@@ -17,10 +17,6 @@ sidebar: true
   {% capture dpost %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture ddiff %}{{ dcurr | minus:dpost | minus:10600 }}{% endcapture %}
   
-  CURR:{{ dcurr }}<br />
-  POST:{{ dpost }}<br />
-  DIFF:{{ ddiff }}<br />
-  
   {% if ddiff contains '-' %}{% else %}
 	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
   {% endif %}
@@ -31,7 +27,9 @@ sidebar: true
   <small class="meta">
   If you enjoyed this, please spread the word.<br /><br />
  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="matthiasendler">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
- 
+ C:{{ dcurr }}<br />
+ P:{{ dpost }}<br />
+ D:{{ ddiff }}<br />
  <div id="fb-root"></div>
  <fb:like href="http://www.matthias-endler.de/" layout="standard" show_faces="false" width="400" action="like" colorscheme="light" />
  
