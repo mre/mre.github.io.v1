@@ -13,7 +13,7 @@ sidebar: true
     </span> on {{ page.date | date:"%A, %B %d - %Y" }} ({{ page.content | number_of_words }} words)
   </small>
   <hr /><br />
-  {{ 1000| minus:9999}
+  {{ 1000| minus:999}}
   
   {% capture dcurr %}{{ 'now' | date: "%Y%m%d" | size}}{% endcapture %}
   {% capture dpost %}{{ page.date | date: "%Y%m%d" | size }}{% endcapture %}
