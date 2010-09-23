@@ -13,11 +13,11 @@ sidebar: true
     </span> on {{ page.date | date:"%A, %B %d - %Y" }} ({{ page.content | number_of_words }} words)
   </small>
   <hr /><br />
-  {% capture dcurr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
-  {% capture dpost %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
-  {% capture ddiff %}{{ dcurr | minus:dpost | minus:10600 }}{% endcapture %}
+  {{ 1000| minus:9999}
   
-  {{ 'dcurr'| minus:'10600' }}
+  {% capture dcurr %}{{ 'now' | date: "%Y%m%d" | size}}{% endcapture %}
+  {% capture dpost %}{{ page.date | date: "%Y%m%d" | size }}{% endcapture %}
+  {% capture ddiff %}{{ dcurr | minus:dpost | minus:10600 }}{% endcapture %}
   
   {% if ddiff contains '-' %}{% else %}
 	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
