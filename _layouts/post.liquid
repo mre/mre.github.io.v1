@@ -13,9 +13,18 @@ sidebar: true
     </span> on {{ page.date | date:"%A, %B %d - %Y" }} ({{ page.content | number_of_words }} words)
   </small>
   <hr /><br />
-  {% capture date_curr %}{{ now | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_curr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
+    {% capture date_currno %}{{ now | date: "%Y%m%d" }}{% endcapture %}
+  
   {% capture date_post %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture date_diff %}{{ date_curr | minus: date_post | minus:10600 }}{% endcapture %}
+  
+  BR:{{ date_curr }}<br />
+  NO:   {{ date_currno }}<br />
+  
+    {{ date_post }}<br />
+      {{ date_diff }}<br />
+  
   {% if date_diff contains '-' %}{% else %}
 	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
   {% endif %}
