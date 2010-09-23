@@ -14,14 +14,12 @@ sidebar: true
   </small>
   <hr /><br />
   {% capture date_curr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
-  
-  {% capture date_post %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
-  {% capture date_diff %}{{ date_curr | minus: date_post | minus:10600 }}{% endcapture %}
+  {% capture date_post %}{{ 'page.date' | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_diff %}{{ 'date_curr' | minus: 'date_post' | minus:10600 }}{% endcapture %}
   
   CURR:{{ date_curr }}<br />
-  
   POST:{{ date_post }}<br />
-      {{ date_diff }}<br />
+  DIFF:{{ date_diff }}<br />
   
   {% if date_diff contains '-' %}{% else %}
 	<p class="intro warning">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
