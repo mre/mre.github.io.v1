@@ -14,7 +14,7 @@ sidebar: true
   </small>
   <hr /><br />
   {% capture date_curr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
-  {% capture date_post %}{{ 'page.date' | date: "%Y%m%d" }}{% endcapture %}
+  {% capture date_post %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture date_diff %}{{ 'date_curr' | minus: 'date_post' | minus:10600 }}{% endcapture %}
   
   CURR:{{ date_curr }}<br />
