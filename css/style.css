@@ -1,11 +1,10 @@
 /*
-	Theme Name: Green and clean
-	Theme URI: http://www.matthias-endler.de
-	Version: 1.0
-	Author: mre
-	Author URI: http://www.matthias-endler.de
-	Copyright: Public Domain 
-*/
+ *	Theme Name: Green and clean
+ *	Theme URI:  http://www.matthias-endler.de
+ *	Author:     mre
+ *	Author URI: http://www.matthias-endler.de
+ *	Copyright:  Public Domain 
+ */
 
 @charset "UTF-8";
 
@@ -118,6 +117,24 @@ em {
 	background-position: 0px 32px;
 }
 
+/* -------------- MENU STYLING -------------- */
+
+.hlist {
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.hlist ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.hlist ul li {
+    list-style-type: none;
+    display: inline;
+}
+
 #menu {
 	float: right;
 }
@@ -132,85 +149,6 @@ em {
 #menu li a {
 	color: white;
 }
-
-#main {
-	font-size: 1.1em;	
-}
-
-/* main column */
-#content {
-    float: left;
-    width: 60%;
-    margin-top: 50px;
-}
-
-#sidebar {
-    font-size: 0.7em;
-    float:  right;
-    width:  253px;
-    min-height: 800px;
-    text-shadow: 0 1px 0 #FFFFFF;
-    background: #daf0ff; /* for non-css3 browsers */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#fff'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#daf0ff), to(#fff)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #daf0ff,  #fff); /* for firefox 3.6+ */
-}
-
-#sidebar ul {
-	list-style: none;
-}
-
-/* Indent subtopics */
-#sidebar ul ul {
-	padding: 0px 40px 0px 40px;
-}
-
-.linklist_mini li {
-	padding-bottom: 10px;
-}
-
-.clear {
-    clear: both;
-    height: 0px;
-    line-height: 0px;
-}
-
-hr {
-	border:1px solid #ccc;
-}
-
-.onLeft {
-	text-align: left;
-	float: left;
-}
-
-.onRight {
-	text-align: right;
-	float: right;
-}
-
-.page_margins {
-    text-align: left;
-    margin: 0 auto;
-    min-width: 700px;
-    max-width: 1000px;
-}
-
-blockquote {
-	background-color: #daf0ff;
-	background-image: url("../img/quote.png");
-	background-repeat: no-repeat;
-	background-position: 0px -20px;
-	padding: 20px 50px 20px 100px;
-	margin: 30px 0px 30px 0px;
-}
-
-blockquote p {
-	font-style: italic;
-	font-size: 90%;
-}
-
-/* Menubar */
 
 /* Standard behaviour */
 .box {
@@ -253,26 +191,70 @@ blockquote p {
 	background: -moz-linear-gradient(top,  #468e11,  #327004); /* for firefox 3.6+ */
 }
 
-/* Topic on homepage */
-.snippet {
-	margin-bottom: 30px;
+/* -------------- PAGE CONTENT -------------- */
+
+#main {
+	font-size: 1.1em;	
 }
 
-.snippet_text {
-	margin-top: 20px;
+/* main column */
+#content {
+    float: left;
+    width: 60%;
+    margin-top: 50px;
 }
 
-/* Meta information for posts */
-.meta {
-	padding: 5px 0px 15px 0px;
-	font-size:11pt;
-	color: #cccccc;
-	text-transform: uppercase;
+/* -------------- SIDEBAR -------------- */
+
+#sidebar {
+    font-size: 0.7em;
+    float:  right;
+    width:  253px;
+    min-height: 800px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    background: #daf0ff; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#fff'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#daf0ff), to(#fff)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #daf0ff,  #fff); /* for firefox 3.6+ */
 }
 
-/* Excerpt from blog entry */
-.excerpt {
-	margin-bottom: 30px;
+#sidebar ul {
+	list-style: none;
+}
+
+/* Indent subtopics */
+#sidebar ul ul {
+	padding: 0px 40px 0px 40px;
+}
+
+.linklist_mini li {
+	padding-bottom: 10px;
+}
+
+/* Sidebar links */
+#elsewhere li:hover {
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+}
+
+#elsewhere .github:hover {
+	background-image: url("../img/sidebar_github.gif");
+}
+
+#elsewhere .twitter:hover {
+	background-image: url("../img/sidebar_twitter.gif");
+}
+
+#elsewhere .stackoverflow:hover {
+	background-image: url("../img/sidebar_stackoverflow.gif");
+}
+
+#elsewhere .kdelook:hover {
+	background-image: url("../img/sidebar_kdelook.gif");
+}
+
+#elsewhere .rss:hover, #elsewhere .atom:hover {
+	background-image: url("../img/sidebar_rss.gif");
 }
 
 /* -------------- MESSAGES BOXES -------------- */
@@ -291,6 +273,19 @@ blockquote p {
 	background-image: url("../img/cross.png");
 	background-position: -20px -30px;
 	background-color: #e5e5e5;
+}
+
+.download {
+	background-color: #d0ffaf;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+	background-image: url("../img/download.png");
+	background-repeat: no-repeat;
+	background-position: 0px -30px;
+}
+
+.download:hover {
+	background-color: #b4fc81;
 }
 
 /* Warning is used for old posts */
@@ -346,25 +341,97 @@ blockquote p {
 	background-color: #e6e6e6;
 }
 
-/* -------------- MENU STYLING -------------- */
-
-.hlist {
-    margin: 0px auto;
-    list-style-type: none;
-    text-align: center;
+/* Social bookmarking */
+#fb-root {
+	float: left;
 }
 
-.hlist ul {
-    list-style-type: none;
-    display: inline;
+#twitter-root {
+	font-size: 10px;
+	color: #3b5998;
+	margin-right: 10px;
+	font-family: 'Lucida Grande', sans-serif;
+	float: left;
+	padding: 3px 4px 3px 20px;
+	background-color: #ECEEF5;
+	background-image: url("../img/twitter.gif");
+	background-position: 4px 3px;
+	background-repeat: no-repeat;
+	border: 1px solid #CAD4E7;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	cursor: pointer;
 }
 
-.hlist ul li {
-    list-style-type: none;
-    display: inline;
+#twitter-root:hover {
+	border-color: #9dacce;
 }
 
 /* -------------- SPECIAL CLASSES -------------- */
+
+.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+hr {
+	border:1px solid #ccc;
+}
+
+.onLeft {
+	text-align: left;
+	float: left;
+}
+
+.onRight {
+	text-align: right;
+	float: right;
+}
+
+.page_margins {
+    text-align: left;
+    margin: 0 auto;
+    min-width: 700px;
+    max-width: 1000px;
+}
+
+blockquote {
+	background-color: #daf0ff;
+	background-image: url("../img/quote.png");
+	background-repeat: no-repeat;
+	background-position: 0px -20px;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+}
+
+blockquote p {
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Topic on homepage */
+.snippet {
+	margin-bottom: 30px;
+}
+
+.snippet_text {
+	margin-top: 20px;
+}
+
+/* Meta information for posts */
+.meta {
+	padding: 5px 0px 15px 0px;
+	font-size:11pt;
+	color: #cccccc;
+	text-transform: uppercase;
+}
+
+/* Excerpt from blog entry */
+.excerpt {
+	margin-bottom: 30px;
+}
 
 /* Timeago styling */
 acronym, abbr {
@@ -461,31 +528,3 @@ input  {
 	padding-bottom: 20px;
 	margin: 20px 0px;
 }
-
-#fb-root {
-	float: left;
-}
-
-#twitter-root {
-	font-size: 10px;
-	color: #3b5998;
-	margin-right: 10px;
-	font-family: 'Lucida Grande', sans-serif;
-	float: left;
-	padding: 3px 4px 3px 20px;
-	background-color: #ECEEF5;
-	background-image: url("../img/twitter.gif");
-	background-position: 4px 3px;
-	background-repeat: no-repeat;
-	border: 1px solid #CAD4E7;
-	border-radius:3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	cursor: pointer;
-}
-
-#twitter-root:hover {
-	border-color: #9dacce;
-}
-
-

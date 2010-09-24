@@ -1,15 +1,15 @@
-// Returns a random integer between +-RANGE without values in GAP
+// Returns a random integer between +-RANGE without values in +-GAP
 function randRotation() {
 	var RANGE = 20; // Number of values
 	var GAP   = 6;  // Minimal rotation
 	
-	// Clean solution
+	// Clean solution (but 66% slower in average)
 	//	var rand = Math.floor(Math.random()*(RANGE-GAP/2)+GAP/2);
 	//	var invert = Math.random();
 	//	if (invert < 0.5) rand = -rand;
 	//	return rand;
 
-	// Faster solution
+	// Quick and dirty solution
 	do {
 		var rand = Math.floor(Math.random()*(RANGE+1)-RANGE/2);
 	} while (Math.abs(rand) < GAP/2);
@@ -46,24 +46,29 @@ $(document).ready(function() {
 	// Show relative time (e.g. "two years ago")
 	jQuery("abbr.timeago").timeago();
 	
+	// Remove info-boxes on click.
 	$('.intro').click(function() {
 	  $('.intro').hide();
 	});
 	
 	// Sidebar link effect
-	$('#elsewhere li').mouseover(function(){
-		$(this).stop().animate({paddingLeft:"10px", marginRight:"0px"}, { queue:false, duration:250});
-	});
-	$('#elsewhere li').mouseout(function(){
-		$(this).stop().animate({paddingLeft:"0px", marginRight:"0px"}, {queue:true, duration:250})
-	});
+	$('#elsewhere li').hover(
+		function(){
+			$(this).stop(true, false).animate({paddingLeft:"15px", marginRight:"0px"}, { queue:false, duration:250});
+		},
+		function(){
+			$(this).stop(true, false).animate({paddingLeft:"0px", marginRight:"0px"}, {queue:true, duration:250})
+		}
+	);
 	
 	// Header rainbow effect
 	$("#matthias").rainbow();	
 });
 
 
-// rainbow text
+/* Third-party plugins below */
+
+// rainbow text by Michael Monteleone (http://michaelmonteleone.net/)
 (function($){
     $.fn.rainbow = function(options) {
         var settings = $.extend({}, $.fn.rainbow.defaults, options || {});
@@ -99,10 +104,6 @@ $(document).ready(function() {
         }        
     });
 })(jQuery);
-
-
-/* third-party plugins below */
-
 
 /*
  * jQuery Color Animations
