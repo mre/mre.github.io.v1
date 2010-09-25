@@ -273,6 +273,7 @@ em {
 	background-image: url("../img/cross.png");
 	background-position: -20px -30px;
 	background-color: #e5e5e5;
+	cursor: pointer;
 }
 
 .download {

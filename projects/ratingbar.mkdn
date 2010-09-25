@@ -89,8 +89,8 @@ For more examples take a look at my <a href="/movies">movies</a> and <a href="/a
 
 ### Installation
 
-
-<div class="download"><a href="http://github.com/mre/jquery.ratingbar/archives/master">Download the package.</a></div>
+<a href="http://github.com/mre/jquery.ratingbar/archives/master">
+<div class="download">Download the package.</div></a>
 
 * Put the included <code>js</code> and <code>css</code> folder into your websites root directory.
 
