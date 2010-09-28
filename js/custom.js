@@ -52,6 +52,9 @@ $(document).ready(function() {
 	});
 	
 	// Sidebar link effect
+	$('#elsewhere li').removeClass("hoverpad"); // Prevent css padding on hover
+	
+	// Animate padding on hover 
 	$('#elsewhere li').hover(
 		function(){
 			$(this).stop(true, false).animate({paddingLeft:"15px", marginRight:"0px"}, { queue:false, duration:250});

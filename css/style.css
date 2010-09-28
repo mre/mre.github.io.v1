@@ -232,6 +232,10 @@ em {
 }
 
 /* Sidebar links */
+.hoverpad:hover {
+	padding-left: 15px;
+}
+
 #elsewhere li:hover {
 	background-repeat: no-repeat;
 	background-position: 0px 2px;

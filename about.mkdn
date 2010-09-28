@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 ### About me ###
 
-I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page you find a list of my current *projects* and *howtos*. I live in Bavaria, Germany. Drop me a line if you want.
+I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page you find a list of my current *projects* and *howtos*. I live in Bavaria, Germany. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
 {: .sweet-justice}
 
 ### My skillset ###
@@ -74,12 +74,14 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 
 ### About this site ###
 
-This site is basically a fork of a jekyll page by <a href="http://olesenm.github.com">Mark Olensen</a>. It consists of static, plain html pages. All dynamic elements are integrated with JavaScript.
+This site is basically a fork of a jekyll page by <a href="http://olesenm.github.com">Mark Olensen</a>. It consists of static, plain html pages. All dynamic elements are integrated with JavaScript. 
+I strongly believe in sharing and that's why the site layout can be reused with (cc)
+<a href="http://creativecommons.org/licenses/by-sa/2.0/">some rights reserved</a>.
+<a href="http://mre.github.com">Fork it on github</a>. 
 {: .sweet-justice}
 
-#### Software used (in no particular order) ####
-
-This software is based on the works of countless authors. In order to give credits to the open-source projects this site is directly based on, they are mentioned here.
+In order to give credits to the open-source projects this site is directly based on, they are mentioned here. Thanks guys!
+{: .sweet-justice}
 
 <table class="medium set">
 	<tr>
@@ -148,13 +150,9 @@ This software is based on the works of countless authors. In order to give credi
 	</tr>
 </table>
 
-I strongly believe in sharing and that's why the site layout can be reused with (cc)
-<a href="http://creativecommons.org/licenses/by-sa/2.0/">some rights reserved</a>.
-<a href="http://mre.github.com">Fork it on github</a>.
-
 ### Disclaimers ###
 
-No responsibility is taken for the contents of external links.<br />
-Some layout elements are borrowed from <a href="http://www.yaml.de/en/">YAML</a>.
+No responsibility is taken for the contents of external links. Some layout elements are borrowed from 
+<a href="http://www.yaml.de/en/">YAML</a>.
 {: .sweet-justice}
 
