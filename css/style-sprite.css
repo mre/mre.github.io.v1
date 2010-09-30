@@ -16,7 +16,6 @@
 /* -------------- PAGE LAYOUT -------------- */
 
 
-/** sprite: mainsprite; sprite-image: url('../img/mainsprite.png'); sprite-layout: vertical */
 
 
 body {
@@ -71,7 +70,8 @@ h4 {
 	font-weight:bold;
 	padding: 3px 10px 10px 40px;
 	margin-top: 30px;
-	background-image: url("../img/arrow.gif"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -0px;
 	background-repeat: no-repeat;
 	text-shadow: 0 1px 0 #FFFFFF;
 }
@@ -120,7 +120,8 @@ em {
 	height: 145px;
 	padding: 75px 0px 0px 0px;
 	background-position: 0px 32px;
-	background-image: url("../img/tux.jpg"); /** sprite-ref: mainsprite; sprite-margin-top: 32px; sprite-alignment: bottom */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -22px;
 	background-repeat: no-repeat;
 }
 
@@ -248,23 +249,28 @@ em {
 }
 
 #elsewhere .github:hover {
-	background-image: url("../img/sidebar_github.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -242px;
 }
 
 #elsewhere .twitter:hover {
-	background-image: url("../img/sidebar_twitter.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -257px;
 }
 
 #elsewhere .stackoverflow:hover {
-	background-image: url("../img/sidebar_stackoverflow.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -272px;
 }
 
 #elsewhere .kdelook:hover {
-	background-image: url("../img/sidebar_kdelook.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -282px;
 }
 
 #elsewhere .rss:hover, #elsewhere .atom:hover {
-	background-image: url("../img/sidebar_rss.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -292px;
 }
 
 /* -------------- MESSAGES BOXES -------------- */
@@ -275,13 +281,15 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -20px;
-	background-image: url("../img/quote.png"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -302px;
 	background-repeat: no-repeat;
 }
 
 .intro:hover {	
 	background-position: -20px -30px;
-	background-image: url("../img/cross.png"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -402px;
 	background-color: #e5e5e5;
 	cursor: pointer;
 }
@@ -291,7 +299,8 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
-	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -542px;
 	background-repeat: no-repeat;
 }
 
@@ -366,7 +375,8 @@ em {
 	padding: 3px 4px 3px 20px;
 	background-color: #ECEEF5;
 	background-position: 4px 3px;
-	background-image: url("../img/twitter.gif"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -632px;
 	background-repeat: no-repeat;
 	border: 1px solid #CAD4E7;
 	border-radius:3px;
@@ -411,7 +421,8 @@ hr {
 blockquote {
 	background-color: #daf0ff;
 	background-position: 0px -20px;
-	background-image: url("../img/quote.png"); /** sprite-ref: mainsprite; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -302px;
 	background-repeat: no-repeat;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
@@ -458,7 +469,8 @@ acronym, abbr {
 #footer {
 	margin-top: 140px;
 	padding-top: 80px;
-	background-image: url("../img/lines2.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; */ 
+  background-image: url('../img/mainsprite.png');
+  background-position: left -644px;
 	background-repeat: repeat-x;
 }
 
@@ -541,5 +553,6 @@ input  {
 }
 
 body {
-	background-image: url("../img/lines.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; sprite-margin-top: 179px*/
+  background-image: url('../img/mainsprite.png');
+  background-position: left -685px;
 }

@@ -133,6 +133,10 @@ In order to give credits to the open-source projects this site is directly based
 		<td>Justified text for the web <span class="author">by Carlos Bueno</span></td>		
 	</tr>
 	<tr>
+		<td><a href="http://csssprites.org/">smartsprite</a><td>
+		<td>A Java sprite generator <span class="author">by Stanislaw Osinski</span></td>
+	</tr>
+	<tr>
 		<td><a href="http://cubicle17.com/post/521485300/give-me-stuff-i-starred">Stuff I starred</a></td>
 		<td>Instapaper jQuery integraton <span class="author">by Bill Israel</span></td>		
 	</tr>
