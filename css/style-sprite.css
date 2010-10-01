@@ -255,22 +255,22 @@ em {
 
 #elsewhere .twitter:hover {
   background-image: url('../img/mainsprite.png');
-  background-position: left -257px;
+  background-position: left -255px;
 }
 
 #elsewhere .stackoverflow:hover {
   background-image: url('../img/mainsprite.png');
-  background-position: left -272px;
+  background-position: left -268px;
 }
 
 #elsewhere .kdelook:hover {
   background-image: url('../img/mainsprite.png');
-  background-position: left -282px;
+  background-position: left -281px;
 }
 
 #elsewhere .rss:hover, #elsewhere .atom:hover {
   background-image: url('../img/mainsprite.png');
-  background-position: left -292px;
+  background-position: left -294px;
 }
 
 /* -------------- MESSAGES BOXES -------------- */
@@ -280,16 +280,15 @@ em {
 	background-color: #fdfbc4;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
-	background-position: 0px -20px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -302px;
+  background-position: left -307px;
 	background-repeat: no-repeat;
 }
 
 .intro:hover {	
 	background-position: -20px -30px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -402px;
+  background-position: left -423px;
 	background-color: #e5e5e5;
 	cursor: pointer;
 }
@@ -300,7 +299,7 @@ em {
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -542px;
+  background-position: left -523px;
 	background-repeat: no-repeat;
 }
 
@@ -308,13 +307,6 @@ em {
 	background-color: #b4fc81;
 }
 
-/* Warning is used for old posts */
-.warning {
-	padding-left: 40px;
-	padding-right: 40px;
-	margin: 0px 0px;
-	background-position: 0px -20px;
-}
 
 /* Bubbles, Syntax highlighting */
 .highlight {
@@ -376,7 +368,7 @@ em {
 	background-color: #ECEEF5;
 	background-position: 4px 3px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -632px;
+  background-position: left -593px;
 	background-repeat: no-repeat;
 	border: 1px solid #CAD4E7;
 	border-radius:3px;
@@ -422,7 +414,7 @@ blockquote {
 	background-color: #daf0ff;
 	background-position: 0px -20px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -302px;
+  background-position: left -605px;
 	background-repeat: no-repeat;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
@@ -470,7 +462,7 @@ acronym, abbr {
 	margin-top: 140px;
 	padding-top: 80px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -644px;
+  background-position: left -691px;
 	background-repeat: repeat-x;
 }
 
@@ -554,5 +546,5 @@ input  {
 
 body {
   background-image: url('../img/mainsprite.png');
-  background-position: left -685px;
+  background-position: left -732px;
 }

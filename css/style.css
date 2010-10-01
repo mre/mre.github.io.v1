@@ -120,7 +120,7 @@ em {
 	height: 145px;
 	padding: 75px 0px 0px 0px;
 	background-position: 0px 32px;
-	background-image: url("../img/tux.jpg"); /** sprite-ref: mainsprite; sprite-margin-top: 32px; sprite-alignment: bottom */ 
+	background-image: url("../img/tux.jpg"); /** sprite-ref: mainsprite; sprite-margin-top: 32px; */ 
 	background-repeat: no-repeat;
 }
 
@@ -274,8 +274,7 @@ em {
 	background-color: #fdfbc4;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
-	background-position: 0px -20px;
-	background-image: url("../img/quote.png"); /** sprite-ref: mainsprite; */ 
+	background-image: url("../img/quote.png"); /** sprite-ref: mainsprite; sprite-margin-bottom:30px */ 
 	background-repeat: no-repeat;
 }
 
@@ -291,7 +290,7 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
-	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; */ 
+	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; sprite-margin-bottom: 10px; */ 
 	background-repeat: no-repeat;
 }
 
@@ -299,13 +298,6 @@ em {
 	background-color: #b4fc81;
 }
 
-/* Warning is used for old posts */
-.warning {
-	padding-left: 40px;
-	padding-right: 40px;
-	margin: 0px 0px;
-	background-position: 0px -20px;
-}
 
 /* Bubbles, Syntax highlighting */
 .highlight {
