@@ -17,23 +17,23 @@ tr.even {
 }
 
 .sorting_asc {
-	background: url('/img/datatables/sort_asc.png') no-repeat center right;
+	background: url('../img/datatables/sort_asc.png') no-repeat center right;
 }
 
 .sorting_desc {
-	background: url('/img/datatables/sort_desc.png') no-repeat center right;
+	background: url('../img/datatables/sort_desc.png') no-repeat center right;
 }
 
 .sorting {
-	background: url('/img/datatables/sort_both.png') no-repeat center right;
+	background: url('../img/datatables/sort_both.png') no-repeat center right;
 }
 
 .sorting_asc_disabled {
-	background: url('/img/datatables/sort_asc_disabled.png') no-repeat center right;
+	background: url('../img/datatables/sort_asc_disabled.png') no-repeat center right;
 }
 
 .sorting_desc_disabled {
-	background: url('/img/datatables/sort_desc_disabled.png') no-repeat center right;
+	background: url('../img/datatables/sort_desc_disabled.png') no-repeat center right;
 }
 
 
