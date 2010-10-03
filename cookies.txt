@@ -34,6 +34,12 @@ learn from my mistakes
 %
 powdered by jekyll
 %
+scratching my itch.
+%
+doh!
+%
+Alright, screw it.
+%
 gettin' dumber every day &reg;
 %
 now with lots of ajax

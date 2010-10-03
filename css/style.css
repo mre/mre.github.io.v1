@@ -96,6 +96,7 @@ h6 {
 a, a:link, a:hover, a:visited, a:active { 
 	text-decoration: none;
 	color: #009BFF;
+	border-bottom: 1px dotted #CCC;
 }
 
 a:hover {
