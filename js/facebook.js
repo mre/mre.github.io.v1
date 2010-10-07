@@ -9,4 +9,4 @@
     document.getElementById('fb-root').appendChild(e);
   }());
   
-document.write('<fb:like href="http://www.matthias-endler.de/' + location.pathname + '" layout="button_count" show_faces="false" width="160" action="like" font="lucida grande" colorscheme="light"></fb:like>');
+document.write('<fb:like href="http://www.matthias-endler.de/' + location.pathname + '" layout="button_count" show_faces="false" width="160" action="recommend" font="lucida grande" colorscheme="light"></fb:like>');

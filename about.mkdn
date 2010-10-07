@@ -77,7 +77,7 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 This site is basically a fork of a jekyll page by <a href="http://olesenm.github.com">Mark Olensen</a>. It consists of static, plain html pages. All dynamic elements are integrated with JavaScript. 
 I strongly believe in sharing and that's why the site layout can be reused with (cc)
 <a href="http://creativecommons.org/licenses/by-sa/2.0/">some rights reserved</a>.
-<a href="http://www.github.com/mre/mre.github.com">Fork it on github</a>. 
+<a href="http://www.github.com/mre/mre.github.com">Fork it on github</a>.
 {: .sweet-justice}
 
 In order to give credits to the open-source projects this site is directly based on, they are mentioned here. Thanks guys!
@@ -157,6 +157,6 @@ In order to give credits to the open-source projects this site is directly based
 ### Disclaimers ###
 
 No responsibility is taken for the contents of external links. Some layout elements are borrowed from 
-<a href="http://www.yaml.de/en/">YAML</a>.
+<a href="http://www.yaml.de/en/">YAML</a>. I know that this site looks horrible in Internet Explorer 6 but that's a feature, not a bug ;)
 {: .sweet-justice}
 

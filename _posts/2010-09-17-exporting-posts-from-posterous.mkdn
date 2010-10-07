@@ -3,7 +3,7 @@ layout: post
 title: Exporting posts from posterous
 ---
 
-Posterous is awesome for great looking blogs without the hassle.
+[Posterous][3] is awesome for great looking blogs without the hassle.
 It was great to have it for posting my thoughts when my old blog was
 all messed up. Now that I've redesigned it I want to host all my old
 posts on my new blog, too. Therefore I needed to export them somehow.
@@ -130,4 +130,5 @@ and a python script named [html2text][2].
 
 [1]: http://sourceforge.net/projects/markdownify/
 [2]: http://www.aaronsw.com/2002/html2text/
+[3]: http://matthiasendler.posterous.com
 
