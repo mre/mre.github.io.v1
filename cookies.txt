@@ -44,6 +44,10 @@ Alright, screw it.
 %
 Black Banana
 %
+My life. jQueryfied
+%
+Knowledge is peace.
+%
 gettin' dumber every day &reg;
 %
 now with lots of ajax
