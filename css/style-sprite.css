@@ -228,7 +228,8 @@ code {
     min-height: 800px;
     text-shadow: 0 1px 0 #FFFFFF;
     background: #daf0ff; /* for non-css3 browsers */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#fff'); /* for IE */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#FFFFFFFF'); /* for IE6 & IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#daf0ff', endColorstr='#fff')"; /* IE8 */
     background: -webkit-gradient(linear, left top, left bottom, from(#daf0ff), to(#fff)); /* for webkit browsers */
     background: -moz-linear-gradient(top,  #daf0ff,  #fff); /* for firefox 3.6+ */
 }

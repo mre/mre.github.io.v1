@@ -2,36 +2,53 @@
 layout: post
 title:  Linux games
 ---
-Here are some linux <a href="http://de.wikipedia.org/wiki/FLOSS">floss</a> games I've tried (roughly ordered by longtime motivation):
 
-###Mania Drive
-(9/10): I'm totally fascinated. It is almost too simple but it makes so much fun (especially when you play with a friend) that you can't stop until you've played all levels. Mania Drive can be understood as a tribute to <a href="http://www.trackmania-the-game.de">TrackMania</a> - a freeware game (well partly). I actually did a level myself than can soon be played via internet. It is called "Super Clio Brothers 3 !" and it beats SCB 1 and 2 in its craziness. Try it! <a href="http://maniadrive.raydium.org/">Here is the official Mania Drive homepage</a> and <a href="http://www.matthias-endler.de/download/SuperClioBros3.mni">here is the "Super Clio Brothers 3 !" track</a>. Feel free to share this link.
+Here are some linux <a href="http://de.wikipedia.org/wiki/FLOSS">floss</a> games I've tried (ordered by personal rating):
 
-###Pingus
-(9/10): You know Lemmings. This game is a clone but with much better graphics, sound and level design. It uses the <a href="http://www.libsdl.org/">SDL library</a> and is therefore highly portable. It runs on Windoze and Linux (and maybe OS X) but I haven't tried it yet. Give it a try - you won't be disappointed. <a href="http://pingus.seul.org/">Here is the offical homepage</a>
+###Mania Drive  <div class="game onRight">(9/10)</div>
 
-###Super Tux
-(9/10): Can't help but I have to give another nine out of ten points. This time Tux follows Super Marios footsteps and jumps through (partly very tough) levels. Here is the <a href="http://supertux.berlios.de/">project page</a>.
+I'm totally fascinated. It is almost too simple but it makes so much fun (especially when you play with a friend) that you can't stop until you've played all levels. Mania Drive can be understood as a tribute to <a href="http://www.trackmania-the-game.de">TrackMania</a> - a freeware game (well partly). I actually did a level myself than can soon be played via internet. It is called "Super Clio Brothers 3 !" and it beats SCB 1 and 2 in its craziness. Try it! <a href="http://maniadrive.raydium.org/">Here is the official Mania Drive homepage</a> and <a href="http://www.matthias-endler.de/download/SuperClioBros3.mni">here is the "Super Clio Brothers 3 !" track</a>. Feel free to share this link.
 
-###Klotski
-(8/10): O how I love and hate it. The only thing to do is to move some bricks  to finally get one out of a box. Sounds easy? <a href="http://phil.freehackers.org/klotski/">Try! </a>
+###Pingus <div class="game onRight">(9/10)</div>
 
-###Nexuiz
-(7/10): This is a shooter with nice graphics and balanced gameplay. I often play shooters and there are a lot of them out there available for free. It's a pity that there are no bots in the game so it can only be played on lan parties or via internet. <a href="http://www.alientrap.org/nexuiz/">Look here to download</a>.
+You know Lemmings. This game is a clone but with much better graphics, sound and level design. It uses the <a href="http://www.libsdl.org/">SDL library</a> and is therefore highly portable. It runs on Windoze and Linux (and maybe OS X) but I haven't tried it yet. Give it a try - you won't be disappointed. <a href="http://pingus.seul.org/">Here is the offical homepage</a>
+
+###Super Tux <div class="game onRight">(9/10)</div>
+
+Can't help but I have to give another nine out of ten points. This time Tux follows Super Marios footsteps and jumps through (partly very tough) levels. Here is the <a href="http://supertux.berlios.de/">project page</a>.
+
+###Klotski <div class="game onRight">(9/10)</div>
+
+how I love and hate it. The only thing to do is to move some bricks  to finally get one out of a box. Sounds easy? <a href="http://phil.freehackers.org/klotski/">Try! </a>
+
+###Neverball <div class="game onRight">(8/10)</div>
+
+Neverball is a  game where you have to control a little ball over various platforms and mechanisms without letting it fall down. This can be harder than you think! Neverball has comic-like graphics and nice shadows and reflections. There is another game that can run on older PCs and doesn't have bombastic graphic effects but makes the same fun: <a href="http://trackballs.sourceforge.net/">Trackballs</a>. <a href="http://www.icculus.org/neverball">Download Neverball here</a>.
+
+###Nexuiz <div class="game onRight">(7/10)</div>
+
+This is a shooter with nice graphics and balanced gameplay. I often play shooters and there are a lot of them out there available for free. It's a pity that there are no bots in the game so it can only be played on lan parties or via internet. <a href="http://www.alientrap.org/nexuiz/">Look here to download</a>.
+
+###Cube <div class="game onRight">(7/10)</div>: And again we have a shooter here. This time it is a fast and dynamic shooter that has its focus on lan gamers and simple gameplay. It has the highest framerate of those three mentioned and it is optimized for speed. One may like it or not. <a href="http://www.cubeengine.com/">Download here</a>! There is also a new engine still in developement: <a href="http://sauerbraten.org/">Sauerbraten/Cube2</a>.
+
+###Warzone 2100 <div class="game onRight">(7/10)</div>
+
+Strategy game like Starcraft or Command and Conquer. It is in 3d and runs fast on my machine. The battles can really make fun and the AI is sometimes very clever. It has previously been developed by Pumpkin Studios and published by Eidos before it was GPLed. <a href="http://warzone2100.strategyplanet.gamespy.com/">Look here</a>.
+
+###Tremolous <div class="game onRight">(6/10)</div>
+
+Another shooter that wants to bring in some new ideas into the genre. Don't expect to much because it is in an early stage. You can already play via network but there should be single player mode. It is based on <a href="http://www.icculus.org/quake3/">Quake3</a> and it was the first game using its source code since it now is published under GnuGPL. <a href="http://www.tremulous.net/">Here is the offical page</a>.
 
 
-###Tremolous
-(6/10): Another shooter that wants to bring in some new ideas into the genre. Don't expect to much because it is in an early stage. You can already play via network but there should be single player mode. It is based on <a href="http://www.icculus.org/quake3/">Quake3</a> and it was the first game using its source code since it now is published under GnuGPL. <a href="http://www.tremulous.net/">Here is the offical page</a>.
 
-
-###Cube
-(7/10): And again we have a shooter here. This time it is a fast and dynamic shooter that has its focus on lan gamers and simple gameplay. It has the highest framerate of those three mentioned and it is optimized for speed. One may like it or not. <a href="http://www.cubeengine.com/">Download here</a>! There is also a new engine still in developement: <a href="http://sauerbraten.org/">Sauerbraten/Cube2</a>.
-
-
-###Neverball
-(8/10): Neverball is a  game where you have to control a little ball over various platforms and mechanisms without letting it fall down. This can be harder than you think! Neverball has comic-like graphics and nice shadows and reflections. There is another game that can run on older PCs and doesn't have bombastic graphic effects but makes the same fun: <a href="http://trackballs.sourceforge.net/">Trackballs</a>. <a href="http://www.icculus.org/neverball">Download Neverball here</a>.
-
-###Warzone 2100
-(7/10): Strategy game like Starcraft or Command and Conquer. It is in 3d and runs fast on my machine. The battles can really make fun and the AI is sometimes very clever. It has previously been developed by Pumpkin Studios and published by Eidos before it was GPLed. <a href="http://warzone2100.strategyplanet.gamespy.com/">Look here</a>.
-
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.game').ratingbar({		
+		textMarkup: "<div class='ratingbar_text onLeft' />",
+		animate:	true,
+		duration:	1000,
+		ease:		"easeOutBounce"
+	});
+});
+</script>
 

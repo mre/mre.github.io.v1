@@ -26,23 +26,23 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 <table class="set">
 	<tr>
 		<td class="descriptions">HTML</td>
-		<td class="skills">5</td>		
+		<td class="skills">5/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">CSS</td>
-		<td class="skills">5</td>		
+		<td class="skills">5/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">jQuery</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">PHP</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">MySQL</td>
-		<td class="skills">3</td>		
+		<td class="skills">3/5</td>		
 	</tr>
 </table>
 
@@ -52,23 +52,23 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 <table class="set">
 	<tr>
 		<td class="descriptions">C</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">C++</td>
-		<td class="skills">3</td>		
+		<td class="skills">3/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">Java</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">Shell</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">Unix</td>
-		<td class="skills">4</td>		
+		<td class="skills">4/5</td>		
 	</tr>
 </table>
 
@@ -157,6 +157,6 @@ In order to give credits to the open-source projects this site is directly based
 ### Disclaimers ###
 
 No responsibility is taken for the contents of external links. Some layout elements are borrowed from 
-<a href="http://www.yaml.de/en/">YAML</a>. I know that this site looks horrible in Internet Explorer 6 but that's a feature, not a bug ;)
+<a href="http://www.yaml.de/en/">YAML</a>. While I keep an eye on cross-browser compatibility on commercial projects,  I know that my private blog looks horrible in non-standard compliant browsers (Internet Explorer 6). I won't *fix* that. Look at it as a statement.
 {: .sweet-justice}
 
