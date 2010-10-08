@@ -2,19 +2,17 @@
 layout: feed
 title: Matthias Endler
 ---
-	{% for item in site.posts %}
+
+	{% for post in site.posts %}
 	<item>
-		<title>{{ item.title }}</title>
-		<link>http://matthias-endler.de{{ item.url }}</link>
-		<pubDate>{{ item.date | date_to_xmlschema }}</pubDate>
-		<dc:creator>{{ site.author }}</dc:creator>
-		{% for cat in item.categories %}
-		<category><![CDATA[{{ cat }}]]></category>
-		{% endfor %}
-		<guid isPermaLink="false">{{ item.id }}</guid>
-		<description><![CDATA[ {{ item.content | truncatewords 50 }} [...]]]>
+		<title>{{ post.title }}</title>
+		<link>{{ page.name }}{{ post.url }}</link>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+		<dc:creator>Matthias Endler</dc:creator>
+		<guid isPermaLink="false">{{ post.id }}</guid>
+		<description><![CDATA[ {{ post.content | truncatewords 50 }} [...]]]>
 		</description>
-			<content:encoded><![CDATA[{{ item.content }}
+			<content:encoded><![CDATA[{{ post.content }}
 ]]></content:encoded>
 		</item>
 	{% endfor %}
