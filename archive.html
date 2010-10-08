@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Archives
+title:  Archive
 ---
 
 <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
@@ -15,7 +15,6 @@ $(document).ready(function() {
 });	
 </script>
 
-<h2>Archive</h2>
 <table id="archive">
 <thead>
 <tr> 
@@ -26,7 +25,7 @@ $(document).ready(function() {
 <tbody>
   {% for post in site.posts %}
     <tr>
-      <td><span class="mini">{{ post.date | date:"%Y %b %d" }}</span></td>
+      <td><span class="mini">{{ post.date | date:"%Y %b %d" | upcase }}</span></td>
       <td><a href="{{ post.url }}">{{ post.title }}</a></td>
     </tr>
   {% endfor %}

@@ -57,3 +57,18 @@ td.details {
 #movies #title {
 	width: 150px;
 }
+
+#archive tr.odd {
+	background-color: #fff;
+}
+
+#archive tr.even {
+	background-color: #fafafa;
+}
+
+#archive .mini {
+	font-size: 75%;
+	color: #dedede;
+}
+
+
