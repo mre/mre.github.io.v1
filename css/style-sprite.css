@@ -84,6 +84,7 @@ h4 a:hover  {
 h5 {
 	margin: 3px 0px;
 	color:#84cfff;
+	background-color: #f8f8f8;
 }
 
 /* Quotes */		
@@ -468,7 +469,7 @@ acronym, abbr {
 	margin-top: 140px;
 	padding-top: 80px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -605px;
+  background-position: left -611px;
 	background-repeat: repeat-x;
 }
 
@@ -552,10 +553,10 @@ input  {
 
 blockquote {
   background-image: url('../img/mainsprite.png');
-  background-position: left -646px;
+  background-position: left -652px;
 }
 
 body {
   background-image: url('../img/mainsprite.png');
-  background-position: left -732px;
+  background-position: left -738px;
 }
