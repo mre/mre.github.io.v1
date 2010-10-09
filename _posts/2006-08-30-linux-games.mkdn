@@ -29,7 +29,9 @@ Neverball is a  game where you have to control a little ball over various platfo
 
 This is a shooter with nice graphics and balanced gameplay. I often play shooters and there are a lot of them out there available for free. It's a pity that there are no bots in the game so it can only be played on lan parties or via internet. <a href="http://www.alientrap.org/nexuiz/">Look here to download</a>.
 
-###Cube <div class="game onRight">(7/10)</div>: And again we have a shooter here. This time it is a fast and dynamic shooter that has its focus on lan gamers and simple gameplay. It has the highest framerate of those three mentioned and it is optimized for speed. One may like it or not. <a href="http://www.cubeengine.com/">Download here</a>! There is also a new engine still in developement: <a href="http://sauerbraten.org/">Sauerbraten/Cube2</a>.
+###Cube <div class="game onRight">(7/10)</div>
+
+And again we have a shooter here. This time it is a fast and dynamic shooter that has its focus on lan gamers and simple gameplay. It has the highest framerate of those three mentioned and it is optimized for speed. One may like it or not. <a href="http://www.cubeengine.com/">Download here</a>! There is also a new engine still in developement: <a href="http://sauerbraten.org/">Sauerbraten/Cube2</a>.
 
 ###Warzone 2100 <div class="game onRight">(7/10)</div>
 
