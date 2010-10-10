@@ -1,0 +1,82 @@
+--- 
+layout: post 
+title: Web-Development with JQuery
+subtitle: A list of development environments 
+--- 
+
+I've searched for some IDEs to create jQuery code more
+quickly. Hacking the files into a text-editor (like *Textmate*) and doing some "real-
+life" bug testing by simply opening Firefox and running the site is not very
+handy. So here is a list of alternatives I came up with. It's just an overview
+loosely ordered by interest.
+
+### [Aptana][1] 
+
+Standalone and Eclipse plugin. OpenSource with code
+completion, syntax highlighting...
+
+### [Komodo Edit][2] 
+
+OSX, Linux, Windows. Open source.
+
+### [Glimmer][3] 
+
+Microsoft jQuery Dev. Environment. Has wizards for common
+tasks. Free.
+
+### [FireBug][4] 
+
+Firefox plugin for debugging. Actually not an IDE.
+
+### [IxEdit][5] 
+
+Edit within browser. WYSIWYG. Free public beta.
+
+### [Spket IDE][6] 
+
+JavaScript Toolkit. Eclipse Plugin.
+
+### [JsLint][7] 
+
+Online JavaScript parser and debugger.
+
+### [CodeLobster][8] 
+
+For PHP/HTML/CSS/JavaScript development. Trial.
+
+### [Scintilla][9] 
+
+GTK based professional IDE
+
+
+Others include Visual Studio, NetBeans, Dreamweaver and another [JQuery
+Eclipse plugin][10]. [Jaxer][11] looks also interesting.
+
+And finally here is a cool website with tons of material [ajaxian][12].
+
+Did I miss one?
+
+   [1]: http://www.aptana.com/
+
+   [2]: http://www.activestate.com/komodo_edit/
+
+   [3]: http://visitmix.com/lab/glimmer
+
+   [4]: http://getfirebug.com/
+
+   [5]: http://www.ixedit.com/
+
+   [6]: http://spket.com/
+
+   [7]: http://www.jslint.com/
+
+   [8]: http://www.codelobster.com/
+
+   [9]: http://www.scintilla.org/
+
+   [10]: http://eclipse-plugins.2y.net/eclipse/plugin_details.jsp;jsessionid=22BE8F306691F47871593491AAA22C72?id=368
+
+   [11]: http://www.jaxer.org/
+
+   [12]: http://ajaxian.com/
+

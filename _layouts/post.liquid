@@ -21,13 +21,13 @@ sidebar: true
   {% capture dpost %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
   {% capture ddiff %}{{ dcurr | minus:dpost | minus:18600 }}{% endcapture %}
   {% if ddiff contains '-' %}{% else %}
-	<p class="intro">This is a very old post. Some technical details may have changed by now. Please keep that in mind while reading.</p>
+	<p class="intro">This is a very old post. The technical details may have changed by now. Please keep that in mind while reading.</p>
   {% endif %}
   
   <div class="sweet-justice space_bottom">
  	 {{ content }}
   </div>
-  <small class="meta">If you want, <span class="grey">spread the word and comment</span>.<br /><br /></small>
+  <small class="meta">Feel free to <span class="grey">copy</span>, <span class="grey">share</span> and <span class="grey">comment</span>.<br /><br /></small>
   
  <div id="fb-root"></div>
  <div id="twitter-root">Tweet</div>

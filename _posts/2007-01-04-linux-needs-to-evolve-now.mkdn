@@ -88,11 +88,9 @@ projects.
 
    [1]: http://www.ubuntu.com/ (Linux for human beeings - Canonical)
 
-   [2]: http://en.opensuse.org/Welcome_to_openSUSE.org (German distribution by
-Novel)
+   [2]: http://en.opensuse.org/Welcome_to_openSUSE.org (German distribution by Novel)
 
-   [3]: http://www.knopper.net/knoppix/index-en.html (Live Distri. Klaus
-Knopper)
+   [3]: http://www.knopper.net/knoppix/index-en.html (Live Distri. Klaus Knopper)
 
    [4]: http://ubuntuforums.org/showthread.php?t=234297
 
