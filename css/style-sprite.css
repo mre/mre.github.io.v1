@@ -432,6 +432,22 @@ blockquote p {
 	font-size: 90%;
 }
 
+/* Further reading lists... */
+.blocklist {
+	list-style: none;
+}
+
+.blocklist li a {
+	display:block;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.blocklist li a:hover {
+	border-bottom: 1px solid #eee;
+	background-color: #eee
+}
+
 /* Topic on homepage */
 .snippet {
 	margin-bottom: 30px;

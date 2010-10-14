@@ -63,6 +63,10 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
+		<td class="descriptions">Python</td>
+		<td class="skills">1/5</td>		
+	</tr>
+	<tr>
 		<td class="descriptions">Shell</td>
 		<td class="skills">4/5</td>		
 	</tr>

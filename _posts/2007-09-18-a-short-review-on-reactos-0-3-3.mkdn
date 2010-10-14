@@ -125,16 +125,14 @@ According to Wikipedia the next major release (i.e. 0.4) will offer basic USB
 support and a complete SMB interface (making it fully compatible with the Windows
 network subsystem). After that ReactOS will enter beta status and we will see
 all the fancy __user-world__ stuff like NTFS support or DirectX 7-9 support. So
-there is a long way to go and a lot to explore! Some links to get you
-starting:
+there is a long way to go and a lot to explore!
 
 * [Project Homepage][17]
-
 * [ReactOS on Wikipedia (en)][18]
-
 * [Firefox 2 Installing on Reactos 0.3.3 rc2][19]
-
 * [Unreal Tournament on Reactos 0.3.3 with real Hardware][20]
+{: .blocklist}
+
 
    [3]: http://www.reactos.org
    

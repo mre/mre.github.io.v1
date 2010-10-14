@@ -1,0 +1,133 @@
+---
+layout: post
+title: "Importing old Wordpress backups into Intense Debate"
+---
+
+My new blog is pretty much up and running now. The only thing I was missing were my old comments I had lying around in
+a `MySQL` dump from my old Wordpress blog I made quite a few years ago.
+
+An entry of the dump looks like this (in fact there's one database entry per line which makes parsing easier):
+
+{% highlight sql linenos=table %}
+INSERT INTO `wp_comments` VALUES (6, 41, 'mre', 
+'matthias-endler@gmx.net', 'http://www.matthias-endler.de', 
+'89.51.251.189', '2006-09-20 17:09:38', '2006-09-20 15:09:38', 
+'Thx. Took me about three hours to get everything together. 
+Good to see that it was worthwhile.', 0, '1', 'Mozilla/5.0 
+(X11; U; Linux i686; de; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7', 
+'', 0, 1) ; 
+{% endhighlight %}
+
+(Can't believe how long ago it is. I was using Firefox 1.5 at that time...)
+
+At present Intense Debate only offers a comment import feature for *existing* Wordpress blogs.
+But luckily Jay Graves over at [Socialist Software][1] offers a nice Python script that can [send the comments to 
+their system][2]. I've created a Python 3.1 version of it:
+
+{% highlight python linenos=table %}
+import urllib, urllib.request, urllib.error, urllib.parse
+
+def postComment(blogpostid="", acctid="", anonName="", anonEmail="", 
+                anonURL="", comment=""):
+    # "127889" # id test page blogpostid
+    # "1762" # id test page acctid
+
+    server = "http://www.intensedebate.com/js/commentAction/"
+    data = '{"request_type":"0", "params":{    \
+        "firstCall":true,                      \
+        "src":0,                               \
+        "blogpostid":%s,                       \
+        "acctid":%s,                           \
+        "parentid":0,                          \
+        "depth":0,                             \
+        "type":0,                              \
+        "token":"",                            \
+        "anonName":"%s",                       \
+        "anonEmail":"%s",                      \
+        "anonURL":"%s",                        \
+        "userid":undefined,                    \
+        "token":"undefined",                   \
+        "mblid":"",                            \
+        "tweetThis":"F",                       \
+        "comment":"%s"}}'                      \
+        % (blogpostid, acctid, anonName, anonEmail, anonURL, comment)
+    params = urllib.parse.urlencode({'data': data})
+    try:
+        f = urllib.request.urlopen("%s?%s" % (server, params))
+    except IOError as error:
+        print("%s\n%s" % (error.code, error.read()))
+{% endhighlight %}
+
+Finally I wrote a parser for the `SQL` dump of my old blog and used the code above to send the
+extracted comments to Intense Debate:
+
+{% highlight python linenos=table %}
+import intensedebate
+
+def main():
+    file = open( "dump.sql", encoding="utf-8") 
+    
+    id_old  = 123       # Post id from old Wordpress blog
+    id_new  = 12345678  # Intense Debate post id found in firebug DOM
+    id_acct = 123456    # Intense Debate account id. Get it with firebug
+    
+    for comment in comments(file, id_old):
+    	intensedebate.postComment(blogpostid=id_new, acctid=id_acct,  \
+            anonName=comment["author"], anonEmail=comment["email"],   \
+            anonURL=comment["url"], comment=comment["content"])
+       	print("Posted ", comment)
+        
+def comments(file, id):
+    ''' 
+    Returns next (non-spam) comment 
+    from a wordpress database sql dump 
+    '''
+    
+    # Field names of the wp_comments table inside the SQL dump file
+    marker, post_id, author, email, url, ip, \
+    date, date_gmt, content, karma, spam = range(11)
+   
+    
+    for line in file:
+        # Split the line into its field values
+        field = line.split(",", 8)
+        
+        # The comment needs some extra treatment
+        # because it can contain commas inside the text:
+        # Extract comment from last field in line dump
+        last_field = field.pop().split("',", 1)
+        comment = last_field.pop(0)
+        # Filter spam comments
+        if "spam" in ''.join(last_field):
+            continue 
+        # Put the valid comment into our field list
+        field.append(comment)
+        
+        # Remove whitespace and unwanted characters
+        field = [value.strip(" '") for value in field]
+        
+        try:
+            # Check if line is entry of wp_comments table
+            if "wp_comments" in field[marker]:
+                # Check if comment is for the right blog post
+                current_id = int(field[post_id])
+                if  current_id == id:
+                    # Return the useful field values
+                    # as a dictionary
+                    yield {
+                        "author":   field[author],
+                        "email":    field[email],
+                        "url":      field[url],
+                        "content":  field[content]
+                    }
+        except IndexError:
+            pass # Just ignore invalid comments
+
+if __name__ == "__main__":
+    main()
+{% endhighlight %}
+
+That did the trick.
+
+[1]: http://www.socialistsoftware.com
+[2]: http://www.socialistsoftware.com/post/intense-debate-import-hack/

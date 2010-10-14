@@ -76,7 +76,7 @@ for($i = 0; $i < $post_count; $i++) {
 
 ### Put it into jekyll
 I wanted to import the posts into jekyll so I used a function to do so. Shove
-a call to it below <code>line 71</code>:
+a call to it below <code>line 28</code>:
 
 {% highlight php linenos=table %}
 

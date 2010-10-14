@@ -312,7 +312,7 @@ code {
 .highlight {
 	overflow: auto;
 	overflow-y: hidden;
-	background-color: #f0f0f0;
+	background-color: #f4f4f4;
 	padding: 4px;
 	font-size: 67%;
 }
@@ -420,6 +420,22 @@ blockquote {
 blockquote p {
 	font-style: italic;
 	font-size: 90%;
+}
+
+/* Further reading lists... */
+.blocklist {
+	list-style: none;
+}
+
+.blocklist li a {
+	display:block;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.blocklist li a:hover {
+	border-bottom: 1px solid #eee;
+	background-color: #eee
 }
 
 /* Topic on homepage */
