@@ -36,7 +36,7 @@ powdered by jekyll
 %
 scratching my itch.
 %
-doh!
+d'oh!
 %
 Delicious geeky awesomeness.
 %
@@ -62,11 +62,15 @@ Enjoy yourself.
 %
 that's my place.
 %
-Superhero at night!
+Superhero at night! &mdash; Yes, another one...
 %
 ...cause nobody takes care of the simple stuff
 %
 Optimized for Internet Explorer 6. Not.
+%
+Show me your code.
+%
+Show me your numbers.
 %
 Out of curiousity
 %

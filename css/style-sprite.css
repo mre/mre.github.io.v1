@@ -321,7 +321,7 @@ code {
 .highlight {
 	overflow: auto;
 	overflow-y: hidden;
-	background-color: #f0f0f0;
+	background-color: #f4f4f4;
 	padding: 4px;
 	font-size: 67%;
 }
@@ -435,17 +435,19 @@ blockquote p {
 /* Further reading lists... */
 .blocklist {
 	list-style: none;
+	margin-top: 40px;
 }
 
 .blocklist li a {
 	display:block;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
+	background-color: #f7f7f7;
 }
 
 .blocklist li a:hover {
 	border-bottom: 1px solid #eee;
-	background-color: #eee
+	background-color: #eee;
 }
 
 /* Topic on homepage */

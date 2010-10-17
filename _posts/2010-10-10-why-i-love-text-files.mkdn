@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Why I love text files"
-published: true
 ---
 
 Text files are the single most important way we can communicate with computers. It's no coincidence that they are also the most important way to communicate with other human beings. What we can achieve with text files is invaluable: Write it once and refer to it whenever you want to get the message across in the future. Write a program (it's just text), save it and let the machine execute it whenever you like. Write another text file which contains the rules for the execution of your program and the computer runs your program exactly as you specified (`cron` files do that on Unix).

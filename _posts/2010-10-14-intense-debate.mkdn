@@ -18,9 +18,9 @@ Good to see that it was worthwhile.', 0, '1', 'Mozilla/5.0
 '', 0, 1) ; 
 {% endhighlight %}
 
-(Can't believe how long ago it is. I was using Firefox 1.5 at that time...)
+(I can't believe how long ago it is. I was using Firefox 1.5 at that time...at least it was faster back than ^^)
 
-At present Intense Debate only offers a comment import feature for *existing* Wordpress blogs.
+At present [Intense Debate][3] only offers a comment import feature for *existing* Wordpress blogs.
 But luckily Jay Graves over at [Socialist Software][1] offers a nice Python script that can [send the comments to 
 their system][2]. I've created a Python 3.1 version of it:
 
@@ -131,3 +131,4 @@ That did the trick.
 
 [1]: http://www.socialistsoftware.com
 [2]: http://www.socialistsoftware.com/post/intense-debate-import-hack/
+[3]: http://www.intensedebate.com

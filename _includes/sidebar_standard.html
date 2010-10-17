@@ -8,6 +8,11 @@ $(document).ready(function() {
 
 <div id="sidebar">
 	<ul>
+		<li>
+			<h4>On this page</h4>
+			<div class="anchors"></div>
+		</li>
+		
 		{% if page.title != "About" %}
 		<li>
 			<h4>Colophon</h4>
@@ -58,7 +63,9 @@ $(document).ready(function() {
 </div> <!-- end: #sidebar -->
 <script type="text/javascript" src="/js/jquery.tweet.js"></script>
 <script type="text/javascript" charset="utf-8">
-$(document).ready(function() {	
+$(document).ready(function() {
+	$("#content").anchorfy({ animate: true});
+	
 	$(".tweet").tweet({
 	    username: "matthiasendler",
 	    join_text: "auto",
