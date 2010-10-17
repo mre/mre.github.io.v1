@@ -1,0 +1,153 @@
+---
+layout: post
+title: jQuery Anchorfy
+date: 2010-10-17
+categories: projects
+---
+
+*jQuery anchorfy* will create a linked list of all headings (`h1`, `h2`,...) within an element.
+It's easy to use, fully customizable and supports scrolling animations.
+
+So if you have a page layout with some headings in it like this:
+
+{% highlight html linenos=table %}
+<div class="example">
+	<h3>A heading</h3>
+	<p>Some very interesting text</p>
+	<h3>Another heading</h3>
+	<p>Boy this text is interesting!</p>
+</div>
+{% endhighlight %}
+
+jQuery anchorfy then creates the following unordered list:
+<ul>
+	<li><a href="#">A heading</a></li>
+	<li><a href="#">Another heading</a></li>
+</ul>
+
+This does not look very sophisticated yet, does it? But naturally you can create a nice style with `CSS`.
+Check out this fancy example.
+
+"Cool, but what's it good for?" I hear you asking.
+Well, I use the plugin in my sidebar. This way one can directly jump to the subheadings of a long blog posts.
+Try it yourself!
+
+### Installation
+
+<a href="http://github.com/mre/jQuery.anchorfy/archives/master">
+<div class="download">Download the package.</div></a>
+
+* Copy the folders <code>js</code> and <code>css</code> of the downloaded package into the root directory of your website.
+
+* Add *jQuery* and the *anchorfy* plugin into the header of the page:
+
+{% highlight html linenos=table %}
+<head>
+...
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.anchorfy.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$('.example').anchorfy();
+});
+</script>
+...
+</head>
+{% endhighlight %}
+
+* Change the name of the selector (here: *example*) in the above code to match an element inside your layout.
+
+* Create an element with class `anchor` between `<body>` and `</body>` where a list with all headings:
+
+{% highlight html linenos=table %}
+<div class="anchors"></div>
+{% endhighlight %}
+
+There are some example pages within the downloaded package.		
+That's it. Have fun!
+
+
+### Advanced settings
+
+If you want you can also have your own markup and classes for your anchor links.
+Maybe you want the links within a table:
+
+{% highlight html linenos=table %}
+<script type="text/javascript" charset="utf-8">
+$('.content').anchorfy({
+	wrapperMarkup:	"<table class='anchorfy_wrapper' />",
+	innerMarkup:	"<tr><td class='anchorfy_inner'></td></tr>"
+});
+</script>
+{% endhighlight %}
+
+### Options
+
+Options are specified as <code>name</code>: <code>value</code> pairs.
+Here is a list of customizable *options*:
+
+<table class="medium">
+	<tr>
+		<td><code>animate</code></td>
+		<td><code>[true|false]</code></td>
+		<td>Animate scrolling to anchor</td>	
+	</tr>
+	<tr>
+		<td><code>duration</code></td>
+		<td><code>standard: 1500</code></td>
+		<td>Animation length in millisecods</td>		
+	</tr>
+	<tr>
+		<td><code>ease</code></td>
+		<td><code>["swing"|...]</code></td>
+		<td>Animation <a href="http://www.gsgd.co.uk/sandbox/jquery/easing/">easing effect</a></td>		
+	</tr>
+	<tr>
+		<td><code>anchorsElement</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Where the anchor list will appear</td>		
+	</tr>
+	<tr>
+		<td><code>anchorsPrefix</code></td>
+		<td><code>'String'</code></td>
+		<td>Custom prefix of anchor name</td>		
+	</tr>
+	<tr>
+		<td><code>anchorsSuffix</code></td>
+		<td><code>'String'</code></td>
+		<td>Custom suffix of anchor name</td>		
+	</tr>
+	<tr>
+		<td><code>wrapperClass</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Name of container for links</td>		
+	</tr>
+	<tr>
+		<td><code>innerClass</code></td>
+		<td><code>CSS class (without dot)</code></td>
+		<td>Name of item inside container</td>		
+	</tr>
+	<tr>
+		<td><code>anchorMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for anchor</td>		
+	</tr>
+	<tr>
+		<td><code>wrapperMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for link container</td>		
+	</tr>
+	<tr>
+		<td><code>innerMarkup</code></td>
+		<td><code>HTML markup</code></td>
+		<td>Custom markup for link item</td>		
+	</tr>
+</table>
+ 
+### License
+
+&copy; Matthias Endler. Dual licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> and <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> licenses. 
+The text that is used for this example is borrowed from the great book "Why's (poignant) Guide to Ruby".
+The book and excerpt used in this example are distributed under the Creative Commons Attribution-ShareAlike license.
+Copyright &copy; by *why*. The original version is offline. A mirror of the text can be found <a href="http://mislav.uniqpath.com/poignant-guide/">here</a>.
+

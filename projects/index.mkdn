@@ -5,6 +5,12 @@ title: Projects
 
 <ul class='projects sweet-justice'>
 	<li>
+		<h2><a href='/projects/anchorfy'>jQuery anchorfy</a></h2>
+		<span class='highlight'>stable</span> This plugin is creating a list of all headers inside a container.
+		Supports scrolling animations and is easy to adjust to any page layout.
+		<a href='/projects/anchorfy' class='greybg'>more...</a>
+	</li>
+	<li>
 		<h2><a href='/projects/ratingbar'>jQuery ratingbar</a></h2>
 		<span class='highlight'>stable</span> This plugin is replacing a textual rating by a graphical rating using <code>CSS</code>.
 		It's easy to use, fully customizable and degrades gracefully. It also supports animations.

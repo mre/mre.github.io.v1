@@ -199,7 +199,15 @@ Here is a list of customizable *options*:
 	</tr>
 </table>
  
+### Links
+
+* [Fork on GitHub][1]
+* [jQuery plugin page][2]
+{: .blocklist }
+
 ### License
 
 &copy; Matthias Endler. Dual licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> and <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> licenses.
 
+[1]: http://github.com/mre/jquery.ratingbar
+[2]: http://plugins.jquery.com/project/ratingbar
