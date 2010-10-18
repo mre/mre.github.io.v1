@@ -9,17 +9,25 @@ gives them exactly the results they want[^foot]. I'm always fascinated by their 
 It's literally a white page with a search box on it. No distractions whatsoever. Even the search button is redundant.
 Just type and Google does the rest.
 
-Sometimes I type some hasty words into that search box and open the result in another tab. When the time comes to close some
+Sometimes I type some hasty words into that search box and open a result in another tab. When the time comes to close some
 tabs I come back to the original search page and look at my query just to find out that I can't tell what it was all about...but Google sure found what I was looking for. More often than not it is in the top three search results. 
 
-- Like most of my fellow programmers I consider myself to be a Google power user. A lot of us have done 10.000 searches on Google. We know what to expect
+The Google search engine may easily be one of the finest pieces of engineering ever created but occasionally there are some features I am missing.
 
-- When I search for ":head" I want ...	
+### Modifying requests
+
+When I search ':head' for instance I prefer to get exact matches for that string. In fact `:head` is a jQuery selector that matches `h1`, `h2`and so on. If I wanted the Wikipedia entry for "head" I would have searched for that. That may sound a bit picky but the point is that there is now way to search for the term including the colon.
+
+### Integrated code search
+
+While I know that there is a specific [Google code search][1] it would be nice to limit the normal web search results to programming-related results. A search like `language:java 
 
 
 - Support Latex: "latex:`kleiner gauss` --> Formel ganz oben
 - Suppoert regular expressions: weather \[new york oR los angeles\] http://www.google.com/intl/en/help/faq_codesearch.html#regexp
-- Better code support: Java
 
+
+[1]: http://www.google.com/codesearch
 
 [^foot]: One could argue that Googles influence is so strong by now that they can even control *what* people want &mdash; but that's probably a topic for another post...
+
