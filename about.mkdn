@@ -121,6 +121,10 @@ In order to give credits to the open-source projects this site is directly based
 		<td>CSS rating system <span class="author">by me</span></td>		
 	</tr>
 	<tr>
+		<td><a href="/projects/anchorfy">jQuery anchorfy</a></td>
+		<td>Table of contents used in sidebar <span class="author">by me</span></td>		
+	</tr>
+	<tr>
 		<td><a href="http://michaelmonteleone.net/">jQuery rainbow plugin</a></td>
 		<td>jQuery color text effect <span class="author">by Michael Monteleone</span></td>		
 	</tr>

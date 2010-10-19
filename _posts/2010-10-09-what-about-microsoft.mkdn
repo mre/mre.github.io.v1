@@ -48,7 +48,11 @@ Keep in mind that success is never guaranteed. Google stopped Wave and Apple had
 
 But maybe Microsoft is already working on a more open policy: With their new Internet Explorer 9, [Microsoft still has a strong focus on proprietary web technologies like Direct2D][8] and [Silverlight][9] but they also pass the Acid3 test for standard compliance and support the new HTML5 <code>canvas</code> and <code>video</code> elements. They have the money and the manpower to shape the next big thing but it will be a hard piece of work and it takes a step back to see that the web is all about open standards and collaboration.
 
+### Links
 
+* [Michael Fern is writing about the same topic][11]
+* [Comments on Hackernews][12]
+{: .blocklist}
 
 
 [1]: http://www.microsoft.com/presspass/ofnote/10-29digitaldecade.mspx
@@ -61,3 +65,6 @@ But maybe Microsoft is already working on a more open policy: With their new Int
 [8]: http://edition.cnn.com/2009/TECH/11/19/cnet.internet.explorer.nine/
 [9]: http://en.wikipedia.org/wiki/Silverlight
 [10]: http://news.cnet.com/8301-10805_3-10292031-75.html
+
+[11]: http://www.fernstrategy.com/2010/10/18/is-microsoft-in-trouble/
+[12]: http://news.ycombinator.com/item?id=1805621

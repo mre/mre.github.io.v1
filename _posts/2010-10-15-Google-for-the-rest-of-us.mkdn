@@ -20,14 +20,22 @@ When I search ':head' for instance I prefer to get exact matches for that string
 
 ### Integrated code search
 
-While I know that there is a specific [Google code search][1] it would be nice to limit the normal web search results to programming-related results. A search like `language:java 
+While I know that there is a specific [Google code search][1] it would be nice to spice up the standard web search results with programming-related topics if we ask for it. Let `fibonacci iterative lang:c` return a few code snippets or at least a link to [the appropriate code search][2]. 
 
 
 - Support Latex: "latex:`kleiner gauss` --> Formel ganz oben
-- Suppoert regular expressions: weather \[new york oR los angeles\] http://www.google.com/intl/en/help/faq_codesearch.html#regexp
+
+
+### Regular Expressions
+
+- Support regular expressions: weather \[new york oR los angeles\] http://www.google.com/intl/en/help/faq_codesearch.html#regexp
+
+( As a side note would it be possible to modify the Google search url syntax to support RESTful searches like www.google.com/programming/java/Buffered+Reader which would narrow down the search results to Java-related pages dealing with Buffered Readers? DuckDuckGo has something similar. 
 
 
 [1]: http://www.google.com/codesearch
+[2]: http://codesearch.google.com/codesearch?as_q=fibonacci+iterative+lang:c&btnG=Search+Code&hl=en&as_package=&as_lang=&as_filename=&as_class=&as_function=&as_license=&as_case=
+
 
 [^foot]: One could argue that Googles influence is so strong by now that they can even control *what* people want &mdash; but that's probably a topic for another post...
 
