@@ -109,7 +109,8 @@ p {
 }
 
 em {
-	background-color: #f0f0f0;
+	/* Grey background makes it look like links */
+	/*background-color: #f0f0f0;*/
 }
 
 /* -------------- PAGE HEADER -------------- */
