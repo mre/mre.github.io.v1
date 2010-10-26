@@ -37,7 +37,7 @@ h1 a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 /* Site title */
@@ -90,13 +90,13 @@ h5 {
 /* Quotes */		
 h6 {
 	font-size:11pt;
-	color: #cccccc
+	color: #cccccc;
+	text-transform: uppercase;
 }
 
 a, a:link, a:hover, a:visited, a:active { 
 	text-decoration: none;
 	color: #009BFF;
-	/*border-bottom: 1px dotted #CCC;*/
 }
 
 a:hover {
@@ -111,15 +111,6 @@ p {
 em {
 	background-color: #f0f0f0;
 }
-
-/* Also used by pygments
-code {
-	background-color: #f0f0f0;
-	font-size: 90%;
-	font-family: "Monaco", "Lucida Console", monospace;
-	
-}
-*/
 
 /* -------------- PAGE HEADER -------------- */
 
@@ -170,7 +161,7 @@ code {
 	display: block;
 	margin: 12px 4px 0px 0px;
 	padding: 10px 5px 11px 5px;
-	background-color: #70f217;
+	background-color: #5dc814;
 	color: white;
 }
 
@@ -190,20 +181,22 @@ code {
 	padding-bottom: 47px;
 }
 
-/* Nice _shiny_ buttons, please... */
 .box .glossy {
+	/* old colorscheme: #94ff4a to 70f217 */
 	padding: 6px 5px 0px 5px;
-	background-color: #94ff4a; /* for non-css3 browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94ff4a', endColorstr='#70f217'); /* for IE   */
-	background: -webkit-gradient(linear, left top, left bottom, from(#94ff4a), to(#70f217)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  #94ff4a,  #70f217); /* for firefox 3.6+ */
+	background-color: #5dc814; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70f217', endColorstr='#5dc814'); /* for IE   */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#70f217', endColorstr='#5dc814')"; /* IE8 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#70f217), to(#5dc814)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #70f217,  #5dc814); 									/* for firefox 3.6+ */
 }
 
 .active .glossy {
 	background-color: #468e11; /* for non-css3 browsers */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#468e11', endColorstr='#327004'); /* for IE   */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#468e11', endColorstr='#327004')"; /* IE8 */
 	background: -webkit-gradient(linear, left top, left bottom, from(#468e11), to(#327004)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  #468e11,  #327004); /* for firefox 3.6+ */
+	background: -moz-linear-gradient(top,  #468e11,  #327004); 									/* for firefox 3.6+ */
 }
 
 /* -------------- PAGE CONTENT -------------- */
@@ -227,11 +220,11 @@ code {
     width:  253px;
     min-height: 800px;
     text-shadow: 0 1px 0 #FFFFFF;
-    background: #daf0ff; /* for non-css3 browsers */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf0ff', endColorstr='#FFFFFFFF'); /* for IE6 & IE7*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#daf0ff', endColorstr='#fff')"; /* IE8 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#daf0ff), to(#fff)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #daf0ff,  #fff); /* for firefox 3.6+ */
+    background: #eaf6ff; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf6ff', endColorstr='#FFFFFFFF'); /* for IE6 & IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eaf6ff', endColorstr='#fff')"; /* IE8 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaf6ff), to(#fff)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #eaf6ff,  #fff); /* for firefox 3.6+ */
 }
 
 #sidebar ul {
@@ -502,7 +495,7 @@ acronym, abbr {
 #footer {
 	margin-top: 140px;
 	padding-top: 80px;
-	background-image: url("../img/lines2.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; */ 
+	background-image: url("../img/lines.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; */ 
 	background-repeat: repeat-x;
 }
 

@@ -102,7 +102,7 @@ $(document).ready(function() {
             defaultColor: '#70f217',
             colorDuration: 100,
             unColorDuration: 500,
-            // lime green, orange, pink, blue, red, yellow, cyan
+            // lime green, orange, pink, blue, red, yellow, cyan, khaki
             colors: ['#AAFF00','#FFAA00','#FF00AA', '#00AAFF', '#DF151A', '#F4F328', '#00CBE7', '#BBBB88' ]
         }        
     });

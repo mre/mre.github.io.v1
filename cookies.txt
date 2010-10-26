@@ -84,6 +84,12 @@ The digital me.
 %
 It's JavaScript time
 %
+Don't make wishes out of bombs.
+%
+What a ride
+%
+If you don't do it...they will.
+%
 Nearly exponential growth.
 %
 of all time!
@@ -91,6 +97,10 @@ of all time!
 beta since 2001
 %
 creating websites with punch cards
+%
+Never forget.
+%
+One bit at a time.
 %
 unix web 2.0ish
 %
@@ -117,6 +127,8 @@ geek stuff a la card
 hence the name
 %
 buy triangles!
+%
+Damn, just give it a shot!
 %
 will code for fun
 %

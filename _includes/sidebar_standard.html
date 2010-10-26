@@ -8,20 +8,19 @@ $(document).ready(function() {
 
 <div id="sidebar">
 	<ul>
-		<li>
-			<h4>On this page</h4>
-			<div class="anchors"></div>
-		</li>
-		
 		{% if page.title != "About" %}
 		<li>
-			<h4>Colophon</h4>
+			<h4>About</h4>
 			<ul>
 				<li class="mini sweet-justice">
-    			This is my personal playground where I write mostly about <strong>coding</strong>, <strong>Linux</strong>, <strong>Apple</strong> and <strong>purple unicorns</strong>. <a href="/about">[more...]</a></li>
+				I’m Matthias Endler. I love <strong>coding</strong>, <strong>writing</strong> and <strong>designing</strong>. On this page you find a list of my current projects and howtos. I live in Bavaria, Germany. <a href="/about">[more...]</a></li>
 			</ul>
 		</li>
 		{% endif %}
+		<li>
+			<h4>On this page</h4>
+			<div class="anchors"></div>
+		</li>		
 		<li>
 			<h4>Elsewhere</h4>
 			<ul id="elsewhere">
@@ -46,6 +45,10 @@ $(document).ready(function() {
 			</ul>
 		</li>
 		<li class="linklist_mini">
+			<h4>Twitter</h4>
+			<div class="mini tweet"></div>
+		</li>
+		<li class="linklist_mini">
 			<h4>Snippets</h4>
 			<span id="snippets_small" />
 			<ul>
@@ -54,11 +57,6 @@ $(document).ready(function() {
 				</li>
 			</ul>
 		</li>
-		<li class="linklist_mini">
-			<h4>Twitter</h4>
-			<div class="mini tweet"></div>
-		</li>
-		
 	</ul>
 </div> <!-- end: #sidebar -->
 <script type="text/javascript" src="/js/jquery.tweet.js"></script>
