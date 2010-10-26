@@ -176,6 +176,7 @@ em {
 .active {
 	background-color: #327004;
 	padding-bottom: 36px;
+	box-shadow: 2px 2px #000;
 }
 
 .active:hover {
@@ -490,7 +491,7 @@ acronym, abbr {
 
 .mini {
 	font-size: 90%;
-	color: #999999;
+	color: #666;
 }
 
 #footer {

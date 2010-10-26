@@ -177,6 +177,7 @@ em {
 .active {
 	background-color: #327004;
 	padding-bottom: 36px;
+	box-shadow: 2px 2px #000;
 }
 
 .active:hover {

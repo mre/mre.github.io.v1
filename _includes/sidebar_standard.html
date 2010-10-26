@@ -13,14 +13,25 @@ $(document).ready(function() {
 			<h4>About</h4>
 			<ul>
 				<li class="mini sweet-justice">
-				I’m Matthias Endler. I love <strong>coding</strong>, <strong>writing</strong> and <strong>designing</strong>. On this page you find a list of my current projects and howtos. I live in Bavaria, Germany. <a href="/about">[more...]</a></li>
+				Welcome! I’m Matthias Endler. I love <strong>coding</strong>, <strong>writing</strong> and <strong>designing</strong>. On this page you find a list of my current projects and howtos. I live in Bavaria, Germany. <a href="/about">[more...]</a></li>
 			</ul>
 		</li>
 		{% endif %}
 		<li>
+			<h4>Featured posts</h4>
+			<ul id="featured" class="linklist_mini">
+				{% for post in site.posts %}
+					{% if post.featured %}
+						<li><a href="{{post.url}}">{{post.title}}</a></li>
+					{% endif %}
+				{% endfor %}
+				<li><a href="/archive">[Post archive]</a></li>
+			</ul>
+		</li>
+		<li>
 			<h4>On this page</h4>
 			<div class="anchors"></div>
-		</li>		
+		</li>
 		<li>
 			<h4>Elsewhere</h4>
 			<ul id="elsewhere">
