@@ -176,7 +176,7 @@ em {
 .active {
 	background-color: #327004;
 	padding-bottom: 36px;
-	box-shadow: 2px 2px #000;
+	/*box-shadow: 2px 2px #000;*/
 }
 
 .active:hover {
@@ -269,6 +269,10 @@ em {
 
 #elsewhere .rss:hover, #elsewhere .atom:hover {
 	background-image: url("../img/sidebar_rss.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+}
+
+#elsewhere .archive:hover{
+	background-image: url("../img/sidebar_archive.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
 }
 
 /* -------------- MESSAGES BOXES -------------- */
