@@ -214,6 +214,11 @@ em {
     margin-top: 50px;
 }
 
+.footnotes {
+	font-size: 80%;
+	color: #888;
+}
+
 /* -------------- SIDEBAR -------------- */
 
 #sidebar {
@@ -390,6 +395,7 @@ em {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	cursor: pointer;
+	text-transform: capitalize;
 }
 
 .reddit_button a {
@@ -444,7 +450,7 @@ blockquote {
 
 blockquote p {
 	font-style: italic;
-	font-size: 90%;
+	font-size: 85%;
 }
 
 /* Further reading lists... */

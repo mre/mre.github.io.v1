@@ -50,7 +50,7 @@ But maybe Microsoft is already working on a more open policy: With their new Int
 
 ### Links
 
-* [Michael Fern is writing about the same topic][11]
+* [Michael Fern is writing on the same topic][11]
 * [Comments on Hackernews][12]
 {: .blocklist}
 
