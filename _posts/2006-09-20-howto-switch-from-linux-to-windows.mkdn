@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Howto switch from Linux to Windows - a users experience
-featured: true
 ---
 
 I've read articles like "Switching from Windows to Linux in five easy steps" or "How changing your operating system can be fun with Linux" or "Why you should give Linux a chance" for five years now but there are always people who say Linux is difficult to learn and Windows has much easier install routines and so on. But what if the first OS you've ever used wasn't MS Dos or Win95 but some kind of Unix-based free system like BSD or Linux?

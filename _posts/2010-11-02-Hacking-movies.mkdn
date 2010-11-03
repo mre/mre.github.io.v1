@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Hacking Movies"
+published: false
+---
+
+Sometimes when I've lost motivation I pull out *Pirates of Silicon Valley*, one of my favorite movies about hacking.
+It feels great to watch Steve Wozniak soldering on a base-unit of what should become the Apple I -- just for the fun of it.
+Whenever I'm going to see a film about Computers I hope that the filmmakers capture that certain feeling involved in creating new things. In other words I hope they just *get it*. The feeling of control over the thing you build. That moment your program is actually doing something useful that you taught it to do. The certainity that your very own ruleset works and you gained insight on a fundamental concept for the first time. The total freedom to create anything out of some cheap microchips and the *drift into the zone* that feels like a rush. Maybe even some of the nerd humor. And Pirates of Silicon Valley has all of that.
+
+So many movies rely on special effects
+
+- The social network
+- Wargames (prof. falken)
+- Goldeneye

@@ -26,11 +26,25 @@ sidebar: true
   
   <div class="sweet-justice space_bottom">
  	 {{ content }}
+ 	 
+ 	 {% if page.next %}
+ 	 	<a href="{{ page.next.url }}" class="greybg">{{ page.next.title }} &#x25BA;</a>
+ 	 {% elsif page.previous %}
+ 	 	<a href="{{ page.previous.url }}" class="greybg">{{ page.previous.title }} &#x25BA;</a>
+ 	 {% endif %} 
+ 	 	
   </div>
+  
+  
   <small class="meta">Feel free to <span class="grey">copy</span>, <span class="grey">share</span> and <span class="grey">comment</span>.<br /><br /></small>
   
  <div id="fb-root"></div>
  <div id="twitter-root">Tweet</div>
+ 
+
+ 
+ 
+ 
  
  <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
  <script type="text/javascript">

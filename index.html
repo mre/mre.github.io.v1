@@ -9,9 +9,9 @@ sidebar: true
   <div class="snippet">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <small class="meta">
-      <span class="grey">Posted 
+      <span class="grey">Posted&nbsp; 
       <abbr class="timeago" title="{{ post.date | date:"%Y-%m-%d" }}T00:00:00Z"></abbr>
-      </span> on {{ post.date | date:"%A, %B %d - %Y" }} ({{ post.content | number_of_words }} words)
+      </span>&nbsp;on&nbsp;{{ post.date | date:"%A, %B %d - %Y" }}&nbsp;({{ post.content | number_of_words }} words)
     </small>
     <div class="snippet_text sweet-justice">
       {{ post.content | strip_html | truncatewords: 50 }}

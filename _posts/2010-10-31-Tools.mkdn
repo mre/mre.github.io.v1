@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Tools"
+featured: true
+published: false
+---
+
+I'm a Mac user and I'm not proud of it. Instead I see my MacBook as a tool that serves my purposes. Solid hardware, great display, not enough USB ports. It's fine but not perfect. Always keep in mind: *that's just my own opinion*. Of course you are free to use something completely different. You think a ThinkPad is better? Go for it! You are using a tablet? Good for you! The point is: Stay away from the religious flamewars that surround our profession.
+
+People constantly ask me why I currently use a mac and I'm always trying to be patient and explain my motivations as best as I can, but when they start to get subjective (and sometimes mean) I won't try to persuade them or even argue because there can't be any *right answer*. In the future I'll simply point people to this article when such a holy war breaks out. So if somebody gave you this link, he wants you to know:
+
+> Any further discussion is pointless. Let's not get subjective. Use whatever you want. I'll do the same.
+
+If you think that an Apple computer is for snobs and that it can be replaced by any ordinary machine half the prize, so be it. I don't care what *you* are using to get things done. Find an environment that suits *your* needs and be happy with it. Maybe you use Emacs on an Asus eeePC or Vim on your workstation. It's basically the same thing: They are both text editors with some nice gimmicks. You're not a worse programmer if you use Nano, ed or TextMate. Notepad works just fine, too. It has basically all you need. If you find something you're happy with, just stick with it but don't start arguing.
+
+For an average user, the next best system is probably good enough. 100 bucks are fine for a modest desktop computer and for 400 Dollars you already get a decent laptop (and the prices are still dropping). Normal people want to do the following tasks: Surf the web, chat, archive photos, write documents listen to music and probably watch movies. That's about it. You can do that with a Pentium IV, 256 MB RAM and any recent Operating System. Computers have been mature and reliable enough to do all that for over a decade. There's really no need to upgrade your system just like there's no reason to buy a new car if the old one works perfectly well. When it comes to software, many of us still use Office 2003 or Photoshop 8 without feeling the urge to get a newer version in the near future.
+
+Professionals find themselves in a similar situation. Well, maybe we invest more money but still our hardware is incredibly cheap and reliable for almost all of your day-to-day tasks. Most of the time *it just works*. We are still using slightly modified descendendants of programming languages of computing stone-age. You can get your work done in any of them and I rather have a solid but imperfect piece of software today than a *perfect* one sometime in the future. 
+
+I am by no means a religious person. If there is no proof or I can't test an assumption -- I won't believe it. There's no need to waste your time with raging discussions about FreeBSD vs. Linux vs. Windows.
+
+I don't care which programming language you are using. Java? Fine. Visual Basic? OK. Cobol, PHP, C++? You name it. Take the right tool for your task. Don't mourn about the fact that language X is missing feature Y. Write a library or use something different. Don't troll around saying JavaScript is a toy language. It just doesn't fit your needs. Instead show me what you can do with a few lines of Lisp. Write an interpreter for Brainfuck. Get your sleeves up and start doing something useful with your time. 
+
