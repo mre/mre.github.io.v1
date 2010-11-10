@@ -388,6 +388,7 @@ em {
 	margin-right: 10px;
 	font-family: 'Lucida Grande', sans-serif;
 	float: left;
+	font-size:  11px;
 	background-color: #ECEEF5;
 	padding: 3px 2px 2px 2px;
 	border: 1px solid #CAD4E7;
@@ -403,7 +404,6 @@ em {
 	color: #3b5998;
 	text-decoration: none;
 	padding: 1px 2px 0px 2px;
-	
 }
 
 .reddit_button:hover {
