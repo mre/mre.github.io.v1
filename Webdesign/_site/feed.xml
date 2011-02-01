@@ -13,7 +13,7 @@
 	<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Liquid error: private method `gsub' called for nil:NilClass</description>
-	<lastBuildDate>2011-02-01T17:26:09+01:00</lastBuildDate>
+	<lastBuildDate>2011-02-01T17:57:21+01:00</lastBuildDate>
 	<generator>http://github.com/mojombo/jekyll</generator>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
