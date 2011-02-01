@@ -1,0 +1,37 @@
+  </div><!-- end: page margins -->
+  <!-- begin: footer -->
+  <div id="footer">
+  	<div class="page_margins">
+	    <div class="hlist">
+	      <ul>
+			<li class="bottom_greybg">
+				<a href="#top">&uarr; Go to top</a>
+			</li>
+			{% for t in page.topnav %}
+				{% if t.text == navTitle %}
+					<li class="active_mini bottom_greybg">{{ t.text }}</li>
+				{% else %}
+					<li class="bottom_greybg">
+					<a href="{% if t.http %}{{ t.http }}{% else %}{{ t.href }}{% endif %}"{% if t.title %} title="{{ t.title }}"{% endif %}>{{ t.text }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+					<li class="bottom_greybg">
+					<a href="/archive">Archive</a>
+					</li>
+					<li class="bottom_greybg">
+					<a href="/snippets">Links</a>
+					</li>
+	      </ul>
+	    </div>
+	    <p class="legal">
+	    &copy; Matthias Endler. This is a personal weblog. All statements and opinions expressed on this website are those of the author. If you see a typo, a spelling mistake, an error, or any other issue, please <a href="/about">tell me about it</a>. All written content is released under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons BY-NC-SA 2.0</a> as long as not otherwise stated.  Other product and company names shown may be trademarks of their respective owners.
+	    <br /><a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>. Last update: {{ site.time | date:"%Y-%m-%d" }}
+	    </p>
+    </div><!-- end: page margins -->
+  </div><!-- end: footer -->
+  
+{% include includes_footer.html %}
+
+</body>
+</html>

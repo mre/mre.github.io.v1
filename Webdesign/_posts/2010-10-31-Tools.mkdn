@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Tools"
+featured: true
+published: false
+---
+
+
+Computer science is infected by religious flamewars that surround our profession.
+
+For instance I'm a Mac user and I'm not proud of it. Instead I see my MacBook as a tool that serves my needs. Solid hardware, great display, not enough USB ports, expensive, pointless display adapters. It's fine but not perfect. Always keep in mind: *that's just my own opinion*. Of course you are free to use something completely different. You argue a ThinkPad is better? Go for it! You are using a tablet? Right on!
+
+People constantly ask me why I currently use a mac and I'm always trying to be patient and explain my motivations as best as I can, but when they start to get subjective (and sometimes mean) I won't try to persuade them or even argue because there can't be any *right answer*.
+
+> Any further discussion is pointless. Use whatever you want. I'll do the same.
+
+If you think that an Apple computer is for snobs and that it can be replaced by any ordinary machine half the prize, so be it. I don't care what *you* are using to get things done. Find an environment that suits *your* needs and be happy with it. Maybe you use Emacs on an Asus eeePC or Vim on your workstation. It's basically the same thing: They are both text editors with some nice gimmicks. You're not a worse programmer if you use Nano, ed or TextMate. Notepad works just fine, too. It has basically all you need. It loads files, saves files and lets you even edit them in between. If you find something you're happy with, just stick with it but don't start arguing. It really isn't worth your time.
+
+For an average user, the next best system is probably good enough. Just a few bucks and you get a modest computer. Normal people want to do the following tasks: Surf the web, chat, archive photos, write documents listen to music and probably watch movies. That's about it. You can do that with a Pentium IV, 256 MB RAM and any recent Operating System (you will almost certainly get that one for free). Heck, you can use your old Commodore for that. Computers have been mature and reliable enough to do all that for ages. There's really no need to upgrade your system for Farmville, just like there's no reason to buy a new car if the old one works perfectly well. When it comes to software, many of us still use Office 2003 or Photoshop 8 without feeling the urge to get a newer version in the near future.
+
+Professionals find themselves in a similar situation. Well, maybe we invest more money but still our hardware is incredibly cheap and reliable for almost all of your day-to-day tasks. Most of the time *it just works*. We are still using slightly modified descendendants of programming languages of computing stone-age. You can get your work done in any of them and I rather have a solid but imperfect piece of software today than a *perfect* one sometime in the future. Even if you're doing numerical computing for NASA, your basic work environment is a box running a text editor or an IDE. The number crunching happens somewhere in the cloud or in a cluster or a supercomputer.
+
+I am by no means a religious person. If there is no proof or I can't test an assumption -- I just don't believe it. There's no need to waste your time with furious discussions about FreeBSD vs. Linux vs. Windows vs. mum. Give me a platform, I'll buckle. Instead show me your code. Let's look at your problem solving skills. Don't be emotional. Be pragmatic.
+
+> "Talk is cheap. Show me the code." - [Linus Torvalds][1]
+
+I don't care which programming language you are using either. Java? Fine. Visual Basic? OK. Cobol, PHP, C++? You name it. Write in assembler or lolcode. Take the right tool for your task. Don't mourn about the fact that language X is missing feature Y. Write a library or use something different. Don't troll around saying JavaScript is a toy language. It just doesn't fit your needs. Instead show me what you can do with a few lines of Lisp. Write an interpreter for Brainfuck. Get your sleeves up and start doing something useful with your time. Let others be be the elitist supernerds and focus on the task at hand and teaching others how to program. 
+
+Zed A. Shaw puts it quite nicely in the afterword to "Learn Python the hard way":
+
+> I have been programming for a very long time. So long that it is incredibly boring to me. At the time that I wrote this book I knew about 20 programming languages and could learn new ones in about a day to a week depending on how weird they were. Eventually though this just became boring and couldn’t hold my interest.What I discovered after this journey of learning was that the languages didn’t matter, it was what you did with them. Actually, I always knew that, but I'd get distracted by the languages and forget it periodically. Now I never forget it, and neither should you.The programming language you learn and use does not matter. Do not get sucked into the religion surrounding programming languages as that will only blind you to their true purpose of being your tool for doing interesting things.
+
+
+My MacBook serves me as a good tool. If something "better" comes around I would switch right away. I've ditched Firefox after five years just because Chrome is faster and I will throw out Chrome with a happy smile when something even faster comes around.
+Vim is *quite good* in my opinion but if there's a faster way to do things I'm happy to dump it. But I'm not sure this will happen any time soon. It's reasonably stable and convenient. 
+In fact, when you write a piece of software, what you should strive for is *quite good* software and what you really need to accomplish is *good enough* software to make your users happy. The point is: don't get sentimental or religious. Instead get your hands dirty and fix the problems or craft something new.
+Don't get emotional for any tool you use. An iPhone - I'm sorry to disappoint you -  is just a phone. No magic. No "think different". "But it's evil!", the ether says, "it's not open source". Well, Android just exists because Google needed to rapidly develop a mobile platform. It's simply part of their business. There is no more moral to that. Google is a company just as Apple or Microsoft.
+
+While I get, that arguments about technical topics can be healthy, flamewars are not. I'm sick of it.
+ 
+[1]: http://lkml.org/lkml/2000/8/25/132

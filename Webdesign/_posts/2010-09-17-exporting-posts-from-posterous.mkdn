@@ -1,0 +1,134 @@
+---
+layout: post
+title: Exporting posts from posterous
+---
+
+[Posterous][3] is awesome for great looking blogs without the hassle.
+It was great to have it for posting my thoughts when my old blog was
+all messed up. Now that I've redesigned it I want to host all my old
+posts on my new blog, too. Therefore I needed to export them somehow.
+It's a bit strange that the guys from posterous don't offer an export button on the configuration
+page but they help you out with a nice *RESTful* API that can be used with 
+just about any language.
+
+Here is how a response to a query looks like:
+
+{% highlight xml linenos=table %}
+
+<post> 
+  <url>http://post.ly/NWNC</url> 
+  <link>http://matthiasendler.posterous.com/.../link> 
+  <title>Overkill: Java as a first programming language</title> 
+  <id>11579710</id> 
+  <body> 
+    <![CDATA[><p>I recently...]]>
+  </body> 
+  <date>Fri, 12 Feb 2010 08:12:00 -0800</date> 
+  <views>505</views> 
+  <private>false</private> 
+  <author>Matthias Endler</author> 
+  <authorpic>http://files.posterous.com/.../unix_thumb.jpg</authorpic> 
+  <commentsenabled>true</commentsenabled> 
+  <commentsCount>0</commentsCount> 
+</post>
+
+{% endhighlight %}
+
+### Grab your posts
+
+So off we go with this little PHP snippet that gives you 
+ten of my latest blog posts:
+
+{% highlight php linenos=table %}
+
+<?php
+// Posterous PHP export. Requires PHP 5.1.0 or newer
+// Documentation on http://posterous.com/api/reading
+
+// Query options
+$site_id = "";     // Either use id of the site...
+$hostname = "matthiasendler"; // ...or a subdomain
+$num_posts = 10;        // Number of posts to read
+$page = 1;                    // Get specific page
+$tag = "";           // Grab posts with these tags
+
+// Create query string
+if ($site_id)   $query = $site_id;
+else            $query = $hostname;
+
+$query .= "&" . $num_posts . "&" . $page;
+if ($tag) $query .= "&" . $tag;
+
+// Start request
+$url = "http://posterous.com/api/readposts" . $query;
+$xml = simplexml_load_file($url);
+$post_count = count($xml->post);
+
+// Cumbersome way to walk post entries. 
+// See php.net/manual/de/function.simplexml-load-file.php#86471
+for($i = 0; $i < $post_count; $i++) { 
+  $post = $xml->post[$i]; 
+  // Now you can use $post->title, $post->date, $post->body...
+}
+?>
+
+{% endhighlight %}
+
+### Put it into jekyll
+I wanted to import the posts into jekyll so I used a function to do so. Shove
+a call to it below <code>line 28</code>:
+
+{% highlight php linenos=table %}
+
+<?php
+/**
+ * Formats a posterous post as markdown to use it with jekyll
+ * array  $post   The post that gets processed
+ * string $layout The liquid template to use 
+ */
+ function write_markdown($post, $layout) {
+	// Extract relevant data from $post
+	$date  = date("Y-m-d", strtotime($post->date));
+	
+	// Create filename
+	$extension = ".mkdn";
+	$filename = $date . "-" . strtolower($post->title);
+	
+	// Remove whitespace and special characters from filename
+	$patterns = array('/\s/', '/:/','/\(/','/\)/', '/]/', 
+	'/\[/', '/!/', '/\?/', '/\+/', '/=/','/\./', '/\"/', '/,/');
+	$filename = preg_replace($patterns, '-', $filename);
+	
+	// Replace multiple dashes with single dash
+	$filename = preg_replace('/--+/', '-', $filename);
+	
+	// Remove possible dash at the end of filename
+	$filename = trim($filename, '-');
+	
+	// We're good to go. Create a new markdown file
+	$jekyll_post = fopen($filename . $extension, 'w');
+	if ($jekyll_post) {
+		// Jekyll requires a yaml front matter
+		$yaml = "---\n" .
+			"layout: " . $layout       . "\n" .
+			"title:  " . $post->title  . "\n" .
+			"---\n";
+				
+		// Write front matter, post data and close file
+		fwrite($jekyll_post, $yaml);
+		fwrite($jekyll_post, $post->body);
+		fclose($jekyll_post);
+	}
+ }
+?>
+{% endhighlight %}
+
+It's generally a good idea to use a HTML to Markdown converter for
+the post body. There is a nice one for PHP called [Markdownify][1]
+and a python script named [html2text][2].
+
+
+[1]: http://sourceforge.net/projects/markdownify/
+[2]: http://www.aaronsw.com/2002/html2text/
+[3]: http://matthiasendler.posterous.com
+

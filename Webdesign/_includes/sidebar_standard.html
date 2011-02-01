@@ -1,0 +1,77 @@
+<div id="sidebar">
+	<ul>
+		{% if page.title != "About" %}
+		<li>
+			<h4>About</h4>
+			<ul>
+				<li class="mini sweet-justice">
+				Welcome! I’m Matthias Endler. I love <strong>coding</strong>, <strong>writing</strong> and <strong>designing</strong>. On this page you find a list of my current projects and howtos. I live in Bavaria, Germany. <a href="/about">[more...]</a></li>
+			</ul>
+		</li>
+		{% endif %}
+		<li>
+			<h4>Featured posts</h4>
+			<ul id="featured" class="linklist_mini">
+				{% for post in site.posts %}
+					{% if post.featured %}
+						<li><a href="{{post.url}}">{{post.title}}</a></li>
+					{% endif %}
+				{% endfor %}
+				<li><a href="/archive">[more...]</a></li>
+			</ul>
+		</li>
+		<li>
+			<h4>On this page</h4>
+			<div class="anchors"></div>
+		</li>
+		<li>
+			<h4>Elsewhere</h4>
+			<ul id="elsewhere">
+				<li class="github hoverpad">
+					<a href="http://www.github.com/mre">Github</a>
+				</li>
+				<li class="twitter hoverpad">
+					<a href="http://www.twitter.com/matthiasendler">Twitter</a>
+				</li>
+				<li class="stackoverflow hoverpad">
+					<a href="http://stackoverflow.com/users/270334/mre">Stack Overflow</a>
+				</li>
+				<li class="kdelook hoverpad">
+					<a href="http://kde-look.org/usermanager/search.php?username=debian1993">KDE Look</a>
+				</li>
+				<li class="rss hoverpad">
+					<a href="/feed.xml">RSS Feed</a>
+				</li>
+				<li class="atom hoverpad">
+					<a href="/atom.xml">Atom Feed</a>
+				</li>
+				<li class="archive hoverpad">
+					<a href="/archive">Post archive</a>
+				</li>
+			</ul>
+		</li>
+		<li class="linklist_mini">
+			<h4>Twitter</h4>
+			<div class="mini tweet"></div>
+		</li>
+	</ul>
+</div> <!-- end: #sidebar -->
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$("#content").anchorfy({ animate: true});
+	
+	$(".tweet").tweet({
+	    username: "matthiasendler",
+	    join_text: "auto",
+	    avatar_size: null,
+	    count: 2,
+	    auto_join_text_default: "",
+	    auto_join_text_ed: "",
+	    auto_join_text_ing: "",
+	    auto_join_text_reply: "",
+	    auto_join_text_url: "",
+	    loading_text: ""
+	});
+});
+</script>

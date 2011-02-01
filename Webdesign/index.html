@@ -1,0 +1,36 @@
+---
+layout: default
+title:  Blog
+sidebar: true
+---
+
+
+{% for post in paginator.posts %}
+  <div class="snippet">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <small class="meta">
+      <span class="grey">Posted&nbsp; 
+      <abbr class="timeago" title="{{ post.date | date:"%Y-%m-%d" }}T00:00:00Z"></abbr>
+      </span>&nbsp;on&nbsp;{{ post.date | date:"%A, %B %d - %Y" }}&nbsp;({{ post.content | number_of_words }} words)
+    </small>
+    <div class="snippet_text sweet-justice">
+      {{ post.content | strip_html | truncatewords: 50 }}
+      <a href="{{ post.url }}" class="greybg">more...</a>
+    </div>
+  </div>
+  
+{% endfor %}
+
+<div class="paging">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="greybg onLeft">&#x25C4; Previous</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="greybg onRight">Next &#x25BA;</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="greybg onRight">Next &#x25BA;</a>
+    {% endif %}
+  {% endif %}
+</div>
+<div class="clear"></div>

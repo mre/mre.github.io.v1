@@ -1,0 +1,18 @@
+---
+layout: feed
+title: Matthias Endler
+---
+
+	{% for post in site.posts %}
+	<item>
+		<title>{{ post.title }}</title>
+		<link>{{ page.name }}{{ post.url }}</link>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+		<dc:creator>Matthias Endler</dc:creator>
+		<guid isPermaLink="false">{{ post.id }}</guid>
+		<description><![CDATA[ {{ post.content | truncatewords 50 }} [...]]]>
+		</description>
+			<content:encoded><![CDATA[{{ post.content }}
+]]></content:encoded>
+		</item>
+	{% endfor %}

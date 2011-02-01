@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{{ page.title }} | Matthias Endler</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Matthias Endler" />
+<meta name="publisher" content="Matthias Endler"/>
+<meta name="copyright" content="Matthias Endler"/>
+<meta name="description" content="Private blog of Matthias Endler, a developer living in Bavaria, Germany. He loves coding, writing and designing. On his page you find a list of his current projects and howtos."/>
+<meta name="keywords" content="linux, hacking, howtos, tech-blog, mindfuck, hacking-projects, karban, jQuery, ratingbar"/>
+<meta name="page-topic" content="Tech blog"/>
+<meta name="page-type" content="Private Homepage"/>
+<meta name="audience" content="Experten, Fans, Fortgeschrittene"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta name="robots" content="index, follow"/>
+
+
+{% include includes_header.html %}
+
+{% if true %}
+	{% include google_ajax_search.html %}
+{% endif %}
+
+</head>
+
+{% assign navTitle = 'Blog' %}
+{% for t in page.topnav %}
+	{% if t.text == page.title %}{% assign navTitle = page.title %}{% endif %}
+{% endfor %}
+
+<body>
+<div class="page_margins">
+
+		<!-- Clickable area for logo -->
+		<a class="homelink" href="/"><div id="logo"></div></a>
+  <div id="header">
+
+    <h1><a href="/" title="German programmer and designer - Matthias Endler"><span id="matthias" class="grey_light">Matthias</span><span class="grey_dark">Endler</span></a></h1>
+    <h6 id="cookie">Like popcorn or something?</h6>
+    <!-- begin: main navigation -->
+    <div id="menu">
+      <ul>	
+        {% for t in page.topnav %}
+	        <li>
+	        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
+	        	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
+	        </li>
+        {% endfor %}
+        <li id="search"></li>
+      </ul>
+    </div><!-- end: menu -->
+  </div><!-- end: header -->

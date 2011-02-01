@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Importing old Wordpress backups into Intense Debate | Matthias Endler</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Matthias Endler" />
+<meta name="publisher" content="Matthias Endler"/>
+<meta name="copyright" content="Matthias Endler"/>
+<meta name="description" content="Private blog of Matthias Endler, a developer living in Bavaria, Germany. He loves coding, writing and designing. On his page you find a list of his current projects and howtos."/>
+<meta name="keywords" content="linux, hacking, howtos, tech-blog, mindfuck, hacking-projects, karban, jQuery, ratingbar"/>
+<meta name="page-topic" content="Tech blog"/>
+<meta name="page-type" content="Private Homepage"/>
+<meta name="audience" content="Experten, Fans, Fortgeschrittene"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta name="robots" content="index, follow"/>
+
+
+<link rel="icon" href="/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/master.css" />
+
+<!-- ORIGINAL CSS FILES - MINIFIED VERSION BELOW
+<link rel="stylesheet" type="text/css" href="/css/datatables.css" />
+<link rel="stylesheet" type="text/css" href="/css/google.css" />
+<link rel="stylesheet" type="text/css" href="/css/ratingbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/light.css" />
+<link rel="stylesheet" type="text/css" href="/css/style-sprite.css" />
+-->
+<link rel="stylesheet" type="text/css" href="/css/min.css" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+
+
+
+	<script src="http://www.google.com/jsapi?key=ABQIAAAA6-cUzy_0fUSotxQaRTrVKxQ5VSISQTSNMhOjjbGyoyWSf3wy5hThCpy0DF2vYTwoN-QZztWGtt9LSA" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+  
+  google.load("search", "1");
+  
+  function OnLoad() {
+  
+  	 // Create a search control
+     var searchControl = new google.search.SearchControl();
+     
+     // Add in a WebSearch
+     var webSearch = new google.search.WebSearch();
+     
+     // Restrict our search to pages from this site
+     webSearch.setSiteRestriction('matthias-endler.de');
+     
+     // Custom place for search results
+     var options = new google.search.SearcherOptions();
+     options.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
+     options.setRoot(document.getElementById("results"));
+     
+     // Add the searcher to the SearchControl
+     searchControl.addSearcher(webSearch, options);
+     
+     // tell the searcher to draw itself and tell it where to attach
+     searchControl.draw(document.getElementById("search"));
+
+  }
+  
+  google.setOnLoadCallback(OnLoad);
+  
+</script>
+<link rel="stylesheet" type="text/css" href="/css/google.css" />
+
+
+</head>
+
+
+
+	
+
+	
+
+	
+
+	
+
+
+<body>
+<div class="page_margins">
+
+		<!-- Clickable area for logo -->
+		<a class="homelink" href="/"><div id="logo"></div></a>
+  <div id="header">
+
+    <h1><a href="/" title="German programmer and designer - Matthias Endler"><span id="matthias" class="grey_light">Matthias</span><span class="grey_dark">Endler</span></a></h1>
+    <h6 id="cookie">Like popcorn or something?</h6>
+    <!-- begin: main navigation -->
+    <div id="menu">
+      <ul>	
+        
+	        <li>
+	        	<a href="/about" 
+	        	class="box"><span class="glossy" />About</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/movies" 
+	        	class="box"><span class="glossy" />Movies</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/projects" 
+	        	class="box"><span class="glossy" />Projects</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/" 
+	        	class="box active"><span class="glossy" />Blog</a>
+	        </li>
+        
+        <li id="search"></li>
+      </ul>
+    </div><!-- end: menu -->
+  </div><!-- end: header -->
+
+  
+    <!-- begin: main content area -->
+  <div id="main">
+  	<div id="results">
+  	</div>
+    <div id="content">
+        <div class="content">
+  <h2>Importing old Wordpress backups into Intense Debate</h2>
+
+  <small class="meta">
+    <span class="grey">Posted&nbsp;
+    <abbr class="timeago" title="2010-10-14T00:00:00Z"></abbr>
+    </span>&nbsp;on&nbsp;Thursday, October 14 - 2010&nbsp;(570 words)
+  </small>
+  <hr /><br />
+  
+  
+  
+  
+  
+  
+  <div class="sweet-justice space_bottom">
+ 	 <p>My new blog is pretty much up and running now. The only thing I was missing were my old comments I had lying around in a <code>MySQL</code> dump from my old Wordpress blog I made quite a few years ago.</p>
+
+<p>An entry of the dump looks like this (in fact there&#8217;s one database entry per line which makes parsing easier):</p>
+<table class='highlighttable'><tr><td class='linenos'><div class='linenodiv'><pre><code class='sql'>1
+2
+3
+4
+5
+6
+7</code></pre></div></td><td class='code'><div class='highlight'><pre><span class='k'>INSERT</span> <span class='k'>INTO</span> <span class='o'>`</span><span class='n'>wp_comments</span><span class='o'>`</span> <span class='k'>VALUES</span> <span class='p'>(</span><span class='mi'>6</span><span class='p'>,</span> <span class='mi'>41</span><span class='p'>,</span> <span class='s1'>&#39;mre&#39;</span><span class='p'>,</span> 
+<span class='s1'>&#39;matthias-endler@gmx.net&#39;</span><span class='p'>,</span> <span class='s1'>&#39;http://www.matthias-endler.de&#39;</span><span class='p'>,</span> 
+<span class='s1'>&#39;89.51.251.189&#39;</span><span class='p'>,</span> <span class='s1'>&#39;2006-09-20 17:09:38&#39;</span><span class='p'>,</span> <span class='s1'>&#39;2006-09-20 15:09:38&#39;</span><span class='p'>,</span> 
+<span class='s1'>&#39;Thx. Took me about three hours to get everything together. </span>
+<span class='s1'>Good to see that it was worthwhile.&#39;</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>,</span> <span class='s1'>&#39;1&#39;</span><span class='p'>,</span> <span class='s1'>&#39;Mozilla/5.0 </span>
+<span class='s1'>(X11; U; Linux i686; de; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7&#39;</span><span class='p'>,</span> 
+<span class='s1'>&#39;&#39;</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>,</span> <span class='mi'>1</span><span class='p'>)</span> <span class='p'>;</span> 
+</pre></div>
+</td></tr></table>
+<p>(I can&#8217;t believe how long ago it is. I was using Firefox 1.5 at that time&#8230;at least it was faster back than ^^)</p>
+
+<p>At present <a href='http://www.intensedebate.com'>Intense Debate</a> only offers a comment import feature for <em>existing</em> Wordpress blogs. But luckily Jay Graves over at <a href='http://www.socialistsoftware.com'>Socialist Software</a> offers a nice Python script that can <a href='http://www.socialistsoftware.com/post/intense-debate-import-hack/'>send the comments to their system</a>. I&#8217;ve created a Python 3.1 version of it:</p>
+<table class='highlighttable'><tr><td class='linenos'><div class='linenodiv'><pre><code class='python'> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</code></pre></div></td><td class='code'><div class='highlight'><pre><span class='kn'>import</span> <span class='nn'>urllib</span><span class='o'>,</span> <span class='nn'>urllib.request</span><span class='o'>,</span> <span class='nn'>urllib.error</span><span class='o'>,</span> <span class='nn'>urllib.parse</span>
+
+<span class='k'>def</span> <span class='nf'>postComment</span><span class='p'>(</span><span class='n'>blogpostid</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>,</span> <span class='n'>acctid</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>,</span> <span class='n'>anonName</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>,</span> <span class='n'>anonEmail</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>,</span> 
+                <span class='n'>anonURL</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>,</span> <span class='n'>comment</span><span class='o'>=</span><span class='s'>&quot;&quot;</span><span class='p'>):</span>
+    <span class='c'># &quot;127889&quot; # id test page blogpostid</span>
+    <span class='c'># &quot;1762&quot; # id test page acctid</span>
+
+    <span class='n'>server</span> <span class='o'>=</span> <span class='s'>&quot;http://www.intensedebate.com/js/commentAction/&quot;</span>
+    <span class='n'>data</span> <span class='o'>=</span> <span class='s'>&#39;{&quot;request_type&quot;:&quot;0&quot;, &quot;params&quot;:{    </span><span class='se'>\</span>
+<span class='s'>        &quot;firstCall&quot;:true,                      </span><span class='se'>\</span>
+<span class='s'>        &quot;src&quot;:0,                               </span><span class='se'>\</span>
+<span class='s'>        &quot;blogpostid&quot;:</span><span class='si'>%s</span><span class='s'>,                       </span><span class='se'>\</span>
+<span class='s'>        &quot;acctid&quot;:</span><span class='si'>%s</span><span class='s'>,                           </span><span class='se'>\</span>
+<span class='s'>        &quot;parentid&quot;:0,                          </span><span class='se'>\</span>
+<span class='s'>        &quot;depth&quot;:0,                             </span><span class='se'>\</span>
+<span class='s'>        &quot;type&quot;:0,                              </span><span class='se'>\</span>
+<span class='s'>        &quot;token&quot;:&quot;&quot;,                            </span><span class='se'>\</span>
+<span class='s'>        &quot;anonName&quot;:&quot;</span><span class='si'>%s</span><span class='s'>&quot;,                       </span><span class='se'>\</span>
+<span class='s'>        &quot;anonEmail&quot;:&quot;</span><span class='si'>%s</span><span class='s'>&quot;,                      </span><span class='se'>\</span>
+<span class='s'>        &quot;anonURL&quot;:&quot;</span><span class='si'>%s</span><span class='s'>&quot;,                        </span><span class='se'>\</span>
+<span class='s'>        &quot;userid&quot;:undefined,                    </span><span class='se'>\</span>
+<span class='s'>        &quot;token&quot;:&quot;undefined&quot;,                   </span><span class='se'>\</span>
+<span class='s'>        &quot;mblid&quot;:&quot;&quot;,                            </span><span class='se'>\</span>
+<span class='s'>        &quot;tweetThis&quot;:&quot;F&quot;,                       </span><span class='se'>\</span>
+<span class='s'>        &quot;comment&quot;:&quot;</span><span class='si'>%s</span><span class='s'>&quot;}}&#39;</span>                      \
+        <span class='o'>%</span> <span class='p'>(</span><span class='n'>blogpostid</span><span class='p'>,</span> <span class='n'>acctid</span><span class='p'>,</span> <span class='n'>anonName</span><span class='p'>,</span> <span class='n'>anonEmail</span><span class='p'>,</span> <span class='n'>anonURL</span><span class='p'>,</span> <span class='n'>comment</span><span class='p'>)</span>
+    <span class='n'>params</span> <span class='o'>=</span> <span class='n'>urllib</span><span class='o'>.</span><span class='n'>parse</span><span class='o'>.</span><span class='n'>urlencode</span><span class='p'>({</span><span class='s'>&#39;data&#39;</span><span class='p'>:</span> <span class='n'>data</span><span class='p'>})</span>
+    <span class='k'>try</span><span class='p'>:</span>
+        <span class='n'>f</span> <span class='o'>=</span> <span class='n'>urllib</span><span class='o'>.</span><span class='n'>request</span><span class='o'>.</span><span class='n'>urlopen</span><span class='p'>(</span><span class='s'>&quot;</span><span class='si'>%s</span><span class='s'>?</span><span class='si'>%s</span><span class='s'>&quot;</span> <span class='o'>%</span> <span class='p'>(</span><span class='n'>server</span><span class='p'>,</span> <span class='n'>params</span><span class='p'>))</span>
+    <span class='k'>except</span> <span class='ne'>IOError</span> <span class='k'>as</span> <span class='n'>error</span><span class='p'>:</span>
+        <span class='k'>print</span><span class='p'>(</span><span class='s'>&quot;</span><span class='si'>%s</span><span class='se'>\n</span><span class='si'>%s</span><span class='s'>&quot;</span> <span class='o'>%</span> <span class='p'>(</span><span class='n'>error</span><span class='o'>.</span><span class='n'>code</span><span class='p'>,</span> <span class='n'>error</span><span class='o'>.</span><span class='n'>read</span><span class='p'>()))</span>
+</pre></div>
+</td></tr></table>
+<p>Finally I wrote a parser for the <code>SQL</code> dump of my old blog and used the code above to send the extracted comments to Intense Debate:</p>
+<table class='highlighttable'><tr><td class='linenos'><div class='linenodiv'><pre><code class='python'> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</code></pre></div></td><td class='code'><div class='highlight'><pre><span class='kn'>import</span> <span class='nn'>intensedebate</span>
+
+<span class='k'>def</span> <span class='nf'>main</span><span class='p'>():</span>
+    <span class='nb'>file</span> <span class='o'>=</span> <span class='nb'>open</span><span class='p'>(</span> <span class='s'>&quot;dump.sql&quot;</span><span class='p'>,</span> <span class='n'>encoding</span><span class='o'>=</span><span class='s'>&quot;utf-8&quot;</span><span class='p'>)</span> 
+    
+    <span class='n'>id_old</span>  <span class='o'>=</span> <span class='mi'>123</span>       <span class='c'># Post id from old Wordpress blog</span>
+    <span class='n'>id_new</span>  <span class='o'>=</span> <span class='mi'>12345678</span>  <span class='c'># Intense Debate post id found in firebug DOM</span>
+    <span class='n'>id_acct</span> <span class='o'>=</span> <span class='mi'>123456</span>    <span class='c'># Intense Debate account id. Get it with firebug</span>
+    
+    <span class='k'>for</span> <span class='n'>comment</span> <span class='ow'>in</span> <span class='n'>comments</span><span class='p'>(</span><span class='nb'>file</span><span class='p'>,</span> <span class='n'>id_old</span><span class='p'>):</span>
+    	<span class='n'>intensedebate</span><span class='o'>.</span><span class='n'>postComment</span><span class='p'>(</span><span class='n'>blogpostid</span><span class='o'>=</span><span class='n'>id_new</span><span class='p'>,</span> <span class='n'>acctid</span><span class='o'>=</span><span class='n'>id_acct</span><span class='p'>,</span>  \
+            <span class='n'>anonName</span><span class='o'>=</span><span class='n'>comment</span><span class='p'>[</span><span class='s'>&quot;author&quot;</span><span class='p'>],</span> <span class='n'>anonEmail</span><span class='o'>=</span><span class='n'>comment</span><span class='p'>[</span><span class='s'>&quot;email&quot;</span><span class='p'>],</span>   \
+            <span class='n'>anonURL</span><span class='o'>=</span><span class='n'>comment</span><span class='p'>[</span><span class='s'>&quot;url&quot;</span><span class='p'>],</span> <span class='n'>comment</span><span class='o'>=</span><span class='n'>comment</span><span class='p'>[</span><span class='s'>&quot;content&quot;</span><span class='p'>])</span>
+       	<span class='k'>print</span><span class='p'>(</span><span class='s'>&quot;Posted &quot;</span><span class='p'>,</span> <span class='n'>comment</span><span class='p'>)</span>
+        
+<span class='k'>def</span> <span class='nf'>comments</span><span class='p'>(</span><span class='nb'>file</span><span class='p'>,</span> <span class='nb'>id</span><span class='p'>):</span>
+    <span class='sd'>&#39;&#39;&#39; </span>
+<span class='sd'>    Returns next (non-spam) comment </span>
+<span class='sd'>    from a wordpress database sql dump </span>
+<span class='sd'>    &#39;&#39;&#39;</span>
+    
+    <span class='c'># Field names of the wp_comments table inside the SQL dump file</span>
+    <span class='n'>marker</span><span class='p'>,</span> <span class='n'>post_id</span><span class='p'>,</span> <span class='n'>author</span><span class='p'>,</span> <span class='n'>email</span><span class='p'>,</span> <span class='n'>url</span><span class='p'>,</span> <span class='n'>ip</span><span class='p'>,</span> \
+    <span class='n'>date</span><span class='p'>,</span> <span class='n'>date_gmt</span><span class='p'>,</span> <span class='n'>content</span><span class='p'>,</span> <span class='n'>karma</span><span class='p'>,</span> <span class='n'>spam</span> <span class='o'>=</span> <span class='nb'>range</span><span class='p'>(</span><span class='mi'>11</span><span class='p'>)</span>
+   
+    
+    <span class='k'>for</span> <span class='n'>line</span> <span class='ow'>in</span> <span class='nb'>file</span><span class='p'>:</span>
+        <span class='c'># Split the line into its field values</span>
+        <span class='n'>field</span> <span class='o'>=</span> <span class='n'>line</span><span class='o'>.</span><span class='n'>split</span><span class='p'>(</span><span class='s'>&quot;,&quot;</span><span class='p'>,</span> <span class='mi'>8</span><span class='p'>)</span>
+        
+        <span class='c'># The comment needs some extra treatment</span>
+        <span class='c'># because it can contain commas inside the text:</span>
+        <span class='c'># Extract comment from last field in line dump</span>
+        <span class='n'>last_field</span> <span class='o'>=</span> <span class='n'>field</span><span class='o'>.</span><span class='n'>pop</span><span class='p'>()</span><span class='o'>.</span><span class='n'>split</span><span class='p'>(</span><span class='s'>&quot;&#39;,&quot;</span><span class='p'>,</span> <span class='mi'>1</span><span class='p'>)</span>
+        <span class='n'>comment</span> <span class='o'>=</span> <span class='n'>last_field</span><span class='o'>.</span><span class='n'>pop</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>)</span>
+        <span class='c'># Filter spam comments</span>
+        <span class='k'>if</span> <span class='s'>&quot;spam&quot;</span> <span class='ow'>in</span> <span class='s'>&#39;&#39;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>last_field</span><span class='p'>):</span>
+            <span class='k'>continue</span> 
+        <span class='c'># Put the valid comment into our field list</span>
+        <span class='n'>field</span><span class='o'>.</span><span class='n'>append</span><span class='p'>(</span><span class='n'>comment</span><span class='p'>)</span>
+        
+        <span class='c'># Remove whitespace and unwanted characters</span>
+        <span class='n'>field</span> <span class='o'>=</span> <span class='p'>[</span><span class='n'>value</span><span class='o'>.</span><span class='n'>strip</span><span class='p'>(</span><span class='s'>&quot; &#39;&quot;</span><span class='p'>)</span> <span class='k'>for</span> <span class='n'>value</span> <span class='ow'>in</span> <span class='n'>field</span><span class='p'>]</span>
+        
+        <span class='k'>try</span><span class='p'>:</span>
+            <span class='c'># Check if line is entry of wp_comments table</span>
+            <span class='k'>if</span> <span class='s'>&quot;wp_comments&quot;</span> <span class='ow'>in</span> <span class='n'>field</span><span class='p'>[</span><span class='n'>marker</span><span class='p'>]:</span>
+                <span class='c'># Check if comment is for the right blog post</span>
+                <span class='n'>current_id</span> <span class='o'>=</span> <span class='nb'>int</span><span class='p'>(</span><span class='n'>field</span><span class='p'>[</span><span class='n'>post_id</span><span class='p'>])</span>
+                <span class='k'>if</span>  <span class='n'>current_id</span> <span class='o'>==</span> <span class='nb'>id</span><span class='p'>:</span>
+                    <span class='c'># Return the useful field values</span>
+                    <span class='c'># as a dictionary</span>
+                    <span class='k'>yield</span> <span class='p'>{</span>
+                        <span class='s'>&quot;author&quot;</span><span class='p'>:</span>   <span class='n'>field</span><span class='p'>[</span><span class='n'>author</span><span class='p'>],</span>
+                        <span class='s'>&quot;email&quot;</span><span class='p'>:</span>    <span class='n'>field</span><span class='p'>[</span><span class='n'>email</span><span class='p'>],</span>
+                        <span class='s'>&quot;url&quot;</span><span class='p'>:</span>      <span class='n'>field</span><span class='p'>[</span><span class='n'>url</span><span class='p'>],</span>
+                        <span class='s'>&quot;content&quot;</span><span class='p'>:</span>  <span class='n'>field</span><span class='p'>[</span><span class='n'>content</span><span class='p'>]</span>
+                    <span class='p'>}</span>
+        <span class='k'>except</span> <span class='ne'>IndexError</span><span class='p'>:</span>
+            <span class='k'>pass</span> <span class='c'># Just ignore invalid comments</span>
+
+<span class='k'>if</span> <span class='n'>__name__</span> <span class='o'>==</span> <span class='s'>&quot;__main__&quot;</span><span class='p'>:</span>
+    <span class='n'>main</span><span class='p'>()</span>
+</pre></div>
+</td></tr></table>
+<p>That did the trick.</p>
+ 	 
+ 	 
+ 	 	<a href="/2010/Digg-a-case-study-for-the-social-web" class="greybg">Digg &ndash; a case study for the social web &#x25BA;</a>
+ 	  
+ 	 	
+  </div>
+  
+  
+  <small class="meta">Feel free to <span class="grey">copy</span>, <span class="grey">share</span> and <span class="grey">comment</span>.<br /><br /></small>
+  
+ <div id="fb-root"></div>
+ <div id="twitter-root">Tweet</div>
+ 
+
+ 
+ 
+ 
+ 
+ <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$("#twitter-root").tweetIt();
+ 	})
+ </script>
+ <script language="javascript"  type="text/javascript" src="/js/facebook.js"></script>
+<script type="text/javascript" src="http://reddit.com/buttonlite.js?i=5&styled=off"></script>
+ <script type="text/javascript">
+	 var idcomments_acct = 'a82f3fba842da37042bd1be376926290';
+	 var idcomments_post_id;
+	 var idcomments_post_url;
+ </script>
+ <span id="IDCommentsPostTitle" style="display:none"></span>
+ <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</div>
+    </div>
+	<div id="sidebar">
+	<ul>
+		
+		<li>
+			<h4>About</h4>
+			<ul>
+				<li class="mini sweet-justice">
+				Welcome! I’m Matthias Endler. I love <strong>coding</strong>, <strong>writing</strong> and <strong>designing</strong>. On this page you find a list of my current projects and howtos. I live in Bavaria, Germany. <a href="/about">[more...]</a></li>
+			</ul>
+		</li>
+		
+		<li>
+			<h4>Featured posts</h4>
+			<ul id="featured" class="linklist_mini">
+				
+					
+						<li><a href="/2010/Digg-a-case-study-for-the-social-web">Digg &ndash; a case study for the social web</a></li>
+					
+				
+					
+				
+					
+						<li><a href="/2010/why-i-love-text-files">Why I love text files</a></li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<li><a href="/archive">[more...]</a></li>
+			</ul>
+		</li>
+		<li>
+			<h4>On this page</h4>
+			<div class="anchors"></div>
+		</li>
+		<li>
+			<h4>Elsewhere</h4>
+			<ul id="elsewhere">
+				<li class="github hoverpad">
+					<a href="http://www.github.com/mre">Github</a>
+				</li>
+				<li class="twitter hoverpad">
+					<a href="http://www.twitter.com/matthiasendler">Twitter</a>
+				</li>
+				<li class="stackoverflow hoverpad">
+					<a href="http://stackoverflow.com/users/270334/mre">Stack Overflow</a>
+				</li>
+				<li class="kdelook hoverpad">
+					<a href="http://kde-look.org/usermanager/search.php?username=debian1993">KDE Look</a>
+				</li>
+				<li class="rss hoverpad">
+					<a href="/feed.xml">RSS Feed</a>
+				</li>
+				<li class="atom hoverpad">
+					<a href="/atom.xml">Atom Feed</a>
+				</li>
+				<li class="archive hoverpad">
+					<a href="/archive">Post archive</a>
+				</li>
+			</ul>
+		</li>
+		<li class="linklist_mini">
+			<h4>Twitter</h4>
+			<div class="mini tweet"></div>
+		</li>
+	</ul>
+</div> <!-- end: #sidebar -->
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$("#content").anchorfy({ animate: true});
+	
+	$(".tweet").tweet({
+	    username: "matthiasendler",
+	    join_text: "auto",
+	    avatar_size: null,
+	    count: 2,
+	    auto_join_text_default: "",
+	    auto_join_text_ed: "",
+	    auto_join_text_ing: "",
+	    auto_join_text_reply: "",
+	    auto_join_text_url: "",
+	    loading_text: ""
+	});
+});
+</script>
+
+    <div class="clear"></div>
+  </div>
+  <!-- end: main content area -->
+  
+  </div><!-- end: page margins -->
+  <!-- begin: footer -->
+  <div id="footer">
+  	<div class="page_margins">
+	    <div class="hlist">
+	      <ul>
+			<li class="bottom_greybg">
+				<a href="#top">&uarr; Go to top</a>
+			</li>
+			
+				
+					<li class="bottom_greybg">
+					<a href="/about">About</a>
+					</li>
+				
+			
+				
+					<li class="bottom_greybg">
+					<a href="/movies">Movies</a>
+					</li>
+				
+			
+				
+					<li class="bottom_greybg">
+					<a href="/projects">Projects</a>
+					</li>
+				
+			
+				
+					<li class="active_mini bottom_greybg">Blog</li>
+				
+			
+					<li class="bottom_greybg">
+					<a href="/archive">Archive</a>
+					</li>
+					<li class="bottom_greybg">
+					<a href="/snippets">Links</a>
+					</li>
+	      </ul>
+	    </div>
+	    <p class="legal">
+	    &copy; Matthias Endler. This is a personal weblog. All statements and opinions expressed on this website are those of the author. If you see a typo, a spelling mistake, an error, or any other issue, please <a href="/about">tell me about it</a>. All written content is released under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons BY-NC-SA 2.0</a> as long as not otherwise stated.  Other product and company names shown may be trademarks of their respective owners.
+	    <br /><a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>. Last update: 2011-02-01
+	    </p>
+    </div><!-- end: page margins -->
+  </div><!-- end: footer -->
+  
+<!-- ORIGINAL JAVASCRIPT FILES. MINIFIED VERSION BELOW -->
+<!--
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.transform-0.6.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fortune.js"></script>
+<script type="text/javascript" src="/js/jquery.timeago.js"></script>
+<script type="text/javascript" src="/js/jquery.gmsis.js"></script>
+<script type="text/javascript" src="/js/sweet-justice.min.js"></script>
+<script type="text/javascript" src="/js/google_analytics.js"></script>
+<script type="text/javascript" src="/js/jquery.ratingbar.js"></script>
+<script type="text/javascript" src="/js/jquery.anchorfy.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+-->
+
+<script type="text/javascript" src="/js/min.js"></script>
+
+
+</body>
+</html>
+

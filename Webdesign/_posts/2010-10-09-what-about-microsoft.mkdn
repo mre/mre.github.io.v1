@@ -1,0 +1,70 @@
+---
+layout: post
+title: "What about Microsoft?"
+subtitle: "How the company struggles to find its identity on the web"
+---
+
+Roughly ten years ago, on October 29, 2001, [Bill Gates shared a precise picture of the future of computing][1]:
+>   In the Digital Decade, you'll no longer think of the PC as a tool you use only to carry out specific tasks it will become something you come to rely on all the time. The power of the PC will be as ubiquitous and reliable as electricity, and vastly more useful than any single device we use today.
+
+While previously [underestimating the web as a hype][3], Gates predicted *magic* things like the *iPod*, the *iPhone* and the *Blackberry* to soon be part of our lives. These are all mobile devices you carry around without ever noticing the embedded computer. You use them just like any other everyday object. Their very nature hides most of the underlying technical details (the operating system) from the user and has a strong focus on apps and content. They just work.
+
+### Monopoly on the desktop
+
+In the early 2000s, smart-phones and mass appeal of the web were the logical next steps and Microsoft had every reason to be excited about that. They had [record breaking revenues][2] and absolute market domination in both operating systems and office products. 
+While the quality of their products has always been a reason for debates they were brilliant when it came down to business: Create decent software, integrate it with other company products and sign persistent contracts with the distributors. 
+That's also how they won the [Browser Wars][5] against Netscape making *Internet Explorer* the de facto gate to web content. For the last 15 years the company grew from a tiny software startup to a billion dollar global player &mdash; and they wanted to be darn sure it stayed that way.
+
+### Harsh beginnings
+
+ When the net really started to gain momentum Microsoft was a bit late to the party like a cumbersome tech guy who's watching all the hipsters gettin' the phone numbers. To tackle the new rivals Microsoft started to mimic the behavior of the already successful guys. 
+ 
+ As a reaction on Netscapes JavaScript, the Internet Explorer promoted ActiveX, a proprietary browser plugin that allowed Microsoft to run their own languages JScript and VBScript on every website to offer loyal Windows-Developers a simple development platform for interactive websites. Because of some major security flaws and the fact that it was a Windows-only product, ActiveX soon had a bad reputation amongst developers. Furthermore Microsoft extended the HTML and CSS standards with vendor specific extensions like <code>filters</code> and the <code>marquee</code> element.
+ While other vendors like Mozilla or Opera did the same, the [extensions from Microsoft][6] were not HTML and CSS 2.1 compliant, provoking [syntax validation errors and much anger][7].
+ 
+### The platform
+ 
+ The central concept has always been to build an exclusive *platform*. An area of total control (much like Apple recently). Microsoft was never ashamed to borrow a good idea from its rivals and sell a (locked down) version of its own. They have a track record in creating new document types and protocols (often times inferior to open standards) in order to strengthen the platform. While it seems unethical and has been the bone of contention for quite a few antitrust cases, it's totally understandable from a companies' point of view. By bundling Internet Explorer with every copy of Windows, they made it very hard for Netscape to compete, eventually pushing them out of the market.
+ 
+### Playing catch-up
+ 
+ In parallel they worked on a web portal called MSN (Microsoft Network) &mdash; just like AOL. They later built their own search engine &mdash; to rival Yahoo and created a proprietary chat application named Microsoft Messenger that is much like the successful ICQ. The list goes on and on. Whatever got their attention, they wanted a piece of the cake.
+ 
+ But as hard as Microsoft tried, the new startups had the fresher ideas, the smarter apps, the bigger user-base. Microsoft suddenly was in the role of the underdog. They tried to fight on many fronts at once while constantly failing to use their own creativity to outsmart the antagonists.  One piece in the puzzle was always missing: *innovation*. While the technology was quite mature, some solutions still looked like dull, inferior, blatant copies of successful websites and web-apps that missed the final polish. This mentality lead to many setbacks and dead ends: Their social network [Wallop][4] was a stillbirth, just like MSN Music. More recently the company located in Redmond [shutdown Soapbox and launched MSN Movies to compete with YouTube][10] and other streaming sites but at the moment the site struggles to gain traction.  
+
+### A new development approach
+
+Obviously the web has a lot of characteristics that make Microsoft nervous: Open standards, rapid distribution of software and content, free alternatives to established desktop programs. Part of their initial resentment might come from the fear that the Windows platform &ndash; the operating system including all third-party vendors &ndash; might <em>rapidly</em> become irrelevant. They would have to start anew. So their strategy was (and still seems to be) to make the web more like an extension to their platform, just another part of the Microsoft universe. But their competitive advantage on the desktop is negligible on the internet. Some might even say *Microsoft never really grokked the web*. 
+
+A solution might be to look outside the box and support open standards (like OAuth) and show more commitment to free software. Much like Google which contributes to many important open source projects (Linux and Python) or Facebook which built a free PHP compiler called HipHop, Microsoft could be an active part of the community instead of constantly infiltrating it. 
+
+But what are the advantages for Microsoft to rapidly change the development process and give up their precious proprietary platform to create an open environment for the web and mobile devices?  This can increase the development speed of large systems and lower the costs, as demonstrated by Google with the open Android platform or Apples WebKit which is used on many browsers (not just their own Safari).
+
+As a site note it's interesting to see how Apple gained popularity within the last ten years by gradually moving all their services to the cloud and offering a seamless interface on all their mobile devices. By recruiting droves of loyal developers for iOS development they now have the platform that Microsoft urgently needs. They have made the jump into the web by increasingly blurring the line between local apps and the web.
+
+Keep in mind that success is never guaranteed. Google stopped Wave and Apple had a false start with Ping. But because of the *agile* development process and the wide variety of innovative products, these roadblocks aren't fatal but often times vital. Microsoft needed 14 years to bring Internet Explorer to version 6, Google needed just two for Chrome (and it's already faster than IE8...). Currently Google Instant makes Bing! look like a rusty piece of metal. Sure all that doesn't mean Microsoft will disappear any time soon but without innovation any company is doomed to drift into insignificance.
+
+### An open future
+
+But maybe Microsoft is already working on a more open policy: With their new Internet Explorer 9, [Microsoft still has a strong focus on proprietary web technologies like Direct2D][8] and [Silverlight][9] but they also pass the Acid3 test for standard compliance and support the new HTML5 <code>canvas</code> and <code>video</code> elements. They have the money and the manpower to shape the next big thing but it will be a hard piece of work and it takes a step back to see that the web is all about open standards and collaboration.
+
+### Links
+
+* [Michael Fern is writing on the same topic][11]
+* [Comments on Hackernews][12]
+{: .blocklist}
+
+
+[1]: http://www.microsoft.com/presspass/ofnote/10-29digitaldecade.mspx
+[2]: http://www.microsoft.com/presspass/press/2001/Jan01/01-18Q01-2er.mspx
+[3]: http://www.scribd.com/doc/881657/The-Internet-Tidal-Wave
+[4]: http://www.msnbc.msn.com/id/15011765
+[5]: http://en.wikipedia.org/wiki/Browser_wars
+[6]: http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx
+[7]: http://msdn.microsoft.com/en-us/library/ms537634(VS.85).aspx
+[8]: http://edition.cnn.com/2009/TECH/11/19/cnet.internet.explorer.nine/
+[9]: http://en.wikipedia.org/wiki/Silverlight
+[10]: http://news.cnet.com/8301-10805_3-10292031-75.html
+
+[11]: http://www.fernstrategy.com/2010/10/18/is-microsoft-in-trouble/
+[12]: http://news.ycombinator.com/item?id=1805621
