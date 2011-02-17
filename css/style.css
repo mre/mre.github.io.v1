@@ -116,17 +116,16 @@ em {
 /* -------------- PAGE HEADER -------------- */
 
 /* Tux image link */
-#homebutton {
+.homelink {
   display:block;
 	position:absolute;
 	left:0;
 	top:0;
 	z-index:9999;
-	background-color:#ff0000;
-	width:350px;
-	height:250px;
-	min-height: 350px;
-	min-height: 250px;;
+	width:370px;
+	height:220px;
+	min-height: 370px;
+	min-height: 220px;;
 }
 
 #header {
@@ -450,7 +449,7 @@ hr {
 .page_margins {
     text-align: left;
     margin: 0 auto;
-    min-width: 700px;
+    min-width: 800px;
     max-width: 1000px;
 }
 
@@ -487,7 +486,7 @@ blockquote p {
 
 /* Topic on homepage */
 .snippet {
-	margin-bottom: 300px;
+	margin-bottom: 100px;
 }
 
 .snippet_text {
