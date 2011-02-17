@@ -170,6 +170,10 @@ em {
 	color: white;
 }
 
+#search {
+  padding-right: 10px;
+}
+
 /* Standard behaviour */
 .box {
 	display: block;

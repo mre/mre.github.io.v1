@@ -9,14 +9,13 @@
 	cursor: pointer;
 	text-indent: -9999px;
 	border: none;
-	background: url("../img/search_off.png") no-repeat right center;
 	width: 30px;
 	height: 30px;
 	margin-right: 10px;
 }
 
-.gsc-clear-button {
-	display: none;
+td .gsc-search-button {
+	background: url("../img/search_off.png") no-repeat right center;
 }
 
 .gsc-branding {
