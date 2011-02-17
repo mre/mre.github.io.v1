@@ -70,7 +70,7 @@ h4 {
 	font-weight:bold;
 	padding: 3px 10px 10px 40px;
 	margin-top: 30px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -0px;
 	background-repeat: no-repeat;
 	text-shadow: 0 1px 0 #FFFFFF;
@@ -115,12 +115,26 @@ em {
 
 /* -------------- PAGE HEADER -------------- */
 
+/* Tux image link */
+#homebutton {
+  display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9999;
+	background-color:#ff0000;
+	width:350px;
+	height:250px;
+	min-height: 350px;
+	min-height: 250px;;
+}
+
 #header {
 	text-align: right;
 	height: 145px;
 	padding: 75px 0px 0px 0px;
 	background-position: 0px 32px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -22px;
 	background-repeat: no-repeat;
 }
@@ -258,32 +272,32 @@ em {
 }
 
 #elsewhere .github:hover {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -242px;
 }
 
 #elsewhere .twitter:hover {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -255px;
 }
 
 #elsewhere .stackoverflow:hover {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -268px;
 }
 
 #elsewhere .kdelook:hover {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -281px;
 }
 
 #elsewhere .rss:hover, #elsewhere .atom:hover {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -294px;
 }
 
 #elsewhere .archive:hover{
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -307px;
 }
 
@@ -294,14 +308,14 @@ em {
 	background-color: #fcffe1;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -320px;
 	background-repeat: no-repeat;
 }
 
 .intro:hover {	
 	background-position: -20px -30px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -436px;
 	background-color: #e5e5e5;
 	cursor: pointer;
@@ -312,7 +326,7 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -536px;
 	background-repeat: no-repeat;
 }
@@ -381,7 +395,7 @@ em {
 	padding: 3px 4px 3px 20px;
 	background-color: #ECEEF5;
 	background-position: 4px 3px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -606px;
 	background-repeat: no-repeat;
 	border: 1px solid #CAD4E7;
@@ -484,7 +498,7 @@ blockquote p {
 
 /* Topic on homepage */
 .snippet {
-	margin-bottom: 30px;
+	margin-bottom: 300px;
 }
 
 .snippet_text {
@@ -518,7 +532,7 @@ acronym, abbr {
 #footer {
 	margin-top: 140px;
 	padding-top: 80px;
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -624px;
 	background-repeat: repeat-x;
 }
@@ -602,11 +616,11 @@ input  {
 }
 
 blockquote {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -665px;
 }
 
 body {
-  background-image: url('../img/mainsprite.png');
+  background-image: url('../_site/img/mainsprite.png');
   background-position: left -751px;
 }

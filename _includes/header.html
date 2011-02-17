@@ -30,21 +30,24 @@
 {% endfor %}
 
 <body>
-<a name="top"></a>
 <div class="page_margins">
+
+		<!-- Clickable area for logo -->
+		<div id="logo"><a class="homelink" href="/"></a></div>
   <div id="header">
+
     <h1><a href="/" title="German programmer and designer - Matthias Endler"><span id="matthias" class="grey_light">Matthias</span><span class="grey_dark">Endler</span></a></h1>
     <h6 id="cookie">Like popcorn or something?</h6>
     <!-- begin: main navigation -->
     <div id="menu">
-      <ul>
-        <li id="search"></li>
+      <ul>	
         {% for t in page.topnav %}
 	        <li>
 	        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
 	        	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
 	        </li>
         {% endfor %}
+        <li id="search"></li>
       </ul>
     </div><!-- end: menu -->
   </div><!-- end: header -->
