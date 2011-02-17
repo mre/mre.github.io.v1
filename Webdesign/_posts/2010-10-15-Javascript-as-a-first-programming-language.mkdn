@@ -1,7 +1,0 @@
----
-layout:post
-title: "Javascript as a first programming language"
-published: false
----
-
-http://jqfundamentals.com/book/book.html#N200A6
