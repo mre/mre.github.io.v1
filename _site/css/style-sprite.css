@@ -1,0 +1,633 @@
+@charset "UTF-8";
+
+/*
+ *	Theme Name: Green and clean
+ *	Theme URI:  http://www.matthias-endler.de
+ *	Author:     mre
+ *	Author URI: http://www.matthias-endler.de
+ *	Copyright:  Public Domain 
+ *
+ * 
+ *  This CSS file is using smartsprite by Stanislaw Osinski 
+ *  http://csssprites.org/
+ */
+
+
+/* -------------- PAGE LAYOUT -------------- */
+
+
+
+
+body {
+	font:Arial, Helvetica, sans-serif;
+	font-size:13pt;
+	color: #505050;
+	background-position: 0px 179px;
+	background-repeat: repeat-x;
+}
+
+/* Header colors */
+.grey 		{color: #999999;}
+.grey_light {color: #cccccc;}			
+.grey_dark 	{color: #666666;}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*text-transform: uppercase;*/
+}
+
+/* Site title */
+h1 {
+	font-size:24pt;
+	font-weight:bold;
+}
+
+/* Post and page titles */
+h2 {
+	font-size:17pt;
+	color: #009BFF;
+}
+
+h2 a:hover {
+	background-color: #efefef;
+	text-decoration: none;
+}
+
+/* Post sub-headers */
+h3 {
+	border-bottom: 2px solid #eee;
+	margin-top: 40px;
+	font-size: 14pt;
+}
+
+/* Sidebar */
+h4 {
+	color: #a2aab0;
+	font-size:11pt;
+	font-weight:bold;
+	padding: 3px 10px 10px 40px;
+	margin-top: 30px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -0px;
+	background-repeat: no-repeat;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+h4 a:hover  {
+	background-color: #efefef;
+}
+
+/* Free... */
+h5 {
+	margin: 3px 0px;
+	color:#84cfff;
+	background-color: #f8f8f8;
+}
+
+/* Quotes */		
+h6 {
+	font-size:11pt;
+	color: #cccccc;
+	text-transform: uppercase;
+}
+
+a, a:link, a:hover, a:visited, a:active { 
+	text-decoration: none;
+	color: #009BFF;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 15px 0px;
+	line-height: 1.3em;
+}
+
+em {
+	/* Grey background makes it look like links */
+	/*background-color: #f0f0f0;*/
+}
+
+/* -------------- PAGE HEADER -------------- */
+
+/* Tux image link */
+
+#logo {
+	position: absolute;
+	top: 0px;
+	height: 230px;
+	width: 299px;
+	z-index: 1000;
+}
+
+#top {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9999;
+	background-color:transparent;
+	width:350px;
+	height:250px;
+	display: block;
+}
+
+#header {
+	text-align: right;
+	height: 145px;
+	padding: 75px 0px 0px 0px;
+	background-position: 0px 32px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -22px;
+	background-repeat: no-repeat;
+}
+
+/* -------------- MENU STYLING -------------- */
+
+.hlist {
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.hlist ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.hlist ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+#menu {
+	float: right;
+}
+
+#menu li {
+	display: inline;   
+	float: right;   
+	list-style: none;   
+	list-style-type: none;
+}
+
+#menu li a {
+	color: white;
+}
+
+/* Standard behaviour */
+.box {
+	display: block;
+	margin: 12px 4px 0px 0px;
+	padding: 10px 5px 11px 5px;
+	background-color: #5dc814;
+	color: white;
+}
+
+.box:hover {
+	margin-top: 0px;
+	padding-bottom: 23px;
+	text-decoration: none;
+}
+
+/* Active menu box */
+.active {
+	background-color: #327004;
+	padding-bottom: 36px;
+	/*box-shadow: 2px 2px #000;*/
+}
+
+.active:hover {
+	padding-bottom: 47px;
+}
+
+.box .glossy {
+	/* old colorscheme: #94ff4a to 70f217 */
+	padding: 6px 5px 0px 5px;
+	background-color: #5dc814; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70f217', endColorstr='#5dc814'); /* for IE   */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#70f217', endColorstr='#5dc814')"; /* IE8 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#70f217), to(#5dc814)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #70f217,  #5dc814); 									/* for firefox 3.6+ */
+}
+
+.active .glossy {
+	background-color: #468e11; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#468e11', endColorstr='#327004'); /* for IE   */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#468e11', endColorstr='#327004')"; /* IE8 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#468e11), to(#327004)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #468e11,  #327004); 									/* for firefox 3.6+ */
+}
+
+/* -------------- PAGE CONTENT -------------- */
+
+#main {
+	font-size: 1.1em;	
+}
+
+/* main column */
+#content {
+    float: left;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.footnotes {
+	font-size: 80%;
+	color: #888;
+}
+
+/* -------------- SIDEBAR -------------- */
+
+#sidebar {
+    font-size: 0.7em;
+    float:  right;
+    width:  253px;
+    min-height: 800px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    background: #eaf6ff; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf6ff', endColorstr='#FFFFFFFF'); /* for IE6 & IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eaf6ff', endColorstr='#fff')"; /* IE8 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaf6ff), to(#fff)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #eaf6ff,  #fff); /* for firefox 3.6+ */
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+/* Indent subtopics */
+#sidebar ul ul {
+	padding: 0px 40px 0px 40px;
+}
+
+.linklist_mini li {
+	padding-bottom: 10px;
+}
+
+/* Sidebar links */
+.hoverpad:hover {
+	padding-left: 15px;
+}
+
+#elsewhere li:hover {
+	background-repeat: no-repeat;
+}
+
+#elsewhere .github:hover {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -242px;
+}
+
+#elsewhere .twitter:hover {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -255px;
+}
+
+#elsewhere .stackoverflow:hover {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -268px;
+}
+
+#elsewhere .kdelook:hover {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -281px;
+}
+
+#elsewhere .rss:hover, #elsewhere .atom:hover {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -294px;
+}
+
+#elsewhere .archive:hover{
+  background-image: url('../img/mainsprite.png');
+  background-position: left -307px;
+}
+
+/* -------------- MESSAGES BOXES -------------- */
+
+.intro {
+	font-size: 85%;
+	background-color: #fcffe1;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -320px;
+	background-repeat: no-repeat;
+}
+
+.intro:hover {	
+	background-position: -20px -30px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -436px;
+	background-color: #e5e5e5;
+	cursor: pointer;
+}
+
+.download {
+	background-color: #d0ffaf;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+	background-position: 0px -30px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -536px;
+	background-repeat: no-repeat;
+}
+
+.download:hover {
+	background-color: #b4fc81;
+}
+
+
+/* Bubbles, Syntax highlighting */
+.highlight {
+	overflow: auto;
+	overflow-y: hidden;
+	background-color: #f4f4f4;
+	padding: 4px;
+	font-size: 67%;
+}
+
+/* -------------- BUTTONS -------------- */
+
+.button {
+	cursor: pointer;
+	color: #ff5ea3;
+	background-color: #f0f0f0;
+	padding: 4px;
+}
+
+.greybg {
+	display: block;
+	margin-top: 20px;
+	background-color: #efefef;
+	padding: 4px;
+}
+
+.greybg:hover {
+	text-decoration: none;
+	background-color: #e6e6e6;
+}
+
+.bottom_greybg {
+	background-color: #efefef;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.bottom_greybg a:hover {
+	text-decoration: none;
+}
+
+.bottom_greybg:hover {
+	text-decoration: none;
+	background-color: #e6e6e6;
+}
+
+/* Social bookmarking */
+#fb-root {
+	float: left;
+}
+
+#twitter-root {
+	font-size: 10px;
+	color: #3b5998;
+	margin-right: 10px;
+	font-family: 'Lucida Grande', sans-serif;
+	float: left;
+	padding: 3px 4px 3px 20px;
+	background-color: #ECEEF5;
+	background-position: 4px 3px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -606px;
+	background-repeat: no-repeat;
+	border: 1px solid #CAD4E7;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	cursor: pointer;
+}
+
+#twitter-root:hover {
+	border-color: #9dacce;
+}
+
+.reddit_button {
+	margin-right: 10px;
+	font-family: 'Lucida Grande', sans-serif;
+	float: left;
+	font-size:  11px;
+	background-color: #ECEEF5;
+	padding: 3px 2px 2px 2px;
+	border: 1px solid #CAD4E7;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.reddit_button a {
+	font-size: 11px;
+	color: #3b5998;
+	text-decoration: none;
+	padding: 1px 2px 0px 2px;
+}
+
+.reddit_button:hover {
+	border-color: #9dacce;
+}
+
+
+/* -------------- SPECIAL CLASSES -------------- */
+
+.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+hr {
+	border:1px solid #ccc;
+}
+
+.onLeft {
+	text-align: left;
+	float: left;
+}
+
+.onRight {
+	text-align: right;
+	float: right;
+}
+
+.page_margins {
+    text-align: left;
+    margin: 0 auto;
+    min-width: 700px;
+    max-width: 1000px;
+}
+
+blockquote {
+	background-color: #eee;
+	background-position: 0px -20px;
+	background-repeat: no-repeat;
+	padding: 20px 50px 20px 100px;
+	margin: 30px 0px 30px 0px;
+}
+
+blockquote p {
+	font-style: italic;
+	font-size: 85%;
+}
+
+/* Further reading lists... */
+.blocklist {
+	list-style: none;
+	margin-top: 40px;
+}
+
+.blocklist li a {
+	display:block;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
+
+.blocklist li a:hover {
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+
+/* Topic on homepage */
+.snippet {
+	margin-bottom: 70px;
+}
+
+.snippet_text {
+	margin-top: 20px;
+}
+
+/* Meta information for posts */
+.meta {
+	padding: 5px 0px 15px 0px;
+	font-size:11pt;
+	color: #cccccc;
+	text-transform: uppercase;
+}
+
+/* Excerpt from blog entry */
+.excerpt {
+	margin-bottom: 30px;
+}
+
+/* Timeago styling */
+acronym, abbr {
+	border-bottom:none;
+	cursor: text;
+}
+
+.mini {
+	font-size: 90%;
+	color: #666;
+}
+
+#footer {
+	margin-top: 140px;
+	padding-top: 80px;
+  background-image: url('../img/mainsprite.png');
+  background-position: left -624px;
+	background-repeat: repeat-x;
+}
+
+.legal {
+	margin: 30px;
+	text-align: center;
+	font-size: 75%;
+	color: #aaa;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+input  {
+	font-size: 14pt;
+	color: #666;
+	padding: 5px 40px 5px 10px;
+	border: none;
+	background-color: #f3f3f3;
+	width: 205px;
+}
+
+.set {
+	font-size: 80%;
+	margin-left: 40px;
+}
+
+.set td {
+	padding-left: 20px;
+}
+
+/* Used for some tables */
+.medium {
+	font-size: 80%;
+}
+
+.space_bottom {
+	margin-bottom: 50px;
+}
+
+/* Software used on about page */
+.author {
+	color:  #aaa;
+}
+
+/* Snippets page */
+
+#instapaper  ul {
+	list-style: none;
+}
+
+#instapaper li {
+	margin: 20px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+#instapaper li div {
+	color: #aaa;
+	margin: 10px 0px 20px 0px;
+}
+
+.instapaper-link {
+}
+
+.instapaper-desc {
+	
+}
+
+/* Projects page */
+
+.projects {
+	list-style: none;
+}
+
+.projects li {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin: 20px 0px;
+}
+
+blockquote {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -665px;
+}
+
+body {
+  background-image: url('../img/mainsprite.png');
+  background-position: left -751px;
+}

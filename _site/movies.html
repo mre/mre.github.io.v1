@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Movies | Matthias Endler</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Matthias Endler" />
+<meta name="publisher" content="Matthias Endler"/>
+<meta name="copyright" content="Matthias Endler"/>
+<meta name="description" content="Private blog of Matthias Endler, a developer living in Bavaria, Germany. He loves coding, writing and designing. On his page you find a list of his current projects and howtos."/>
+<meta name="keywords" content="linux, hacking, howtos, tech-blog, mindfuck, hacking-projects, karban, jQuery, ratingbar"/>
+<meta name="page-topic" content="Tech blog"/>
+<meta name="page-type" content="Private Homepage"/>
+<meta name="audience" content="Experten, Fans, Fortgeschrittene"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta name="robots" content="index, follow"/>
+
+
+<link rel="icon" href="/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/master.css" />
+
+<!-- ORIGINAL CSS FILES - MINIFIED VERSION BELOW
+<link rel="stylesheet" type="text/css" href="/css/datatables.css" />
+<link rel="stylesheet" type="text/css" href="/css/google.css" />
+<link rel="stylesheet" type="text/css" href="/css/ratingbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/light.css" />
+<link rel="stylesheet" type="text/css" href="/css/style-sprite.css" />
+-->
+<link rel="stylesheet" type="text/css" href="/css/min.css" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+
+
+
+	<script src="http://www.google.com/jsapi?key=ABQIAAAA6-cUzy_0fUSotxQaRTrVKxQ5VSISQTSNMhOjjbGyoyWSf3wy5hThCpy0DF2vYTwoN-QZztWGtt9LSA" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+  
+  google.load("search", "1");
+  
+  function OnLoad() {
+  
+  	 // Create a search control
+     var searchControl = new google.search.SearchControl();
+     
+     // Add in a WebSearch
+     var webSearch = new google.search.WebSearch();
+     
+     // Restrict our search to pages from this site
+     webSearch.setSiteRestriction('matthias-endler.de');
+     
+     // Custom place for search results
+     var options = new google.search.SearcherOptions();
+     options.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
+     options.setRoot(document.getElementById("results"));
+     
+     // Add the searcher to the SearchControl
+     searchControl.addSearcher(webSearch, options);
+     
+     // tell the searcher to draw itself and tell it where to attach
+     searchControl.draw(document.getElementById("search"));
+
+  }
+  
+  google.setOnLoadCallback(OnLoad);
+  
+</script>
+<link rel="stylesheet" type="text/css" href="/css/google.css" />
+
+
+</head>
+
+
+
+	
+
+	
+
+	
+
+	
+
+
+<body>
+<div class="page_margins">
+
+		<!-- Clickable area for logo -->
+		<a class="homelink" href="/"><div id="logo"></div></a>
+  <div id="header">
+
+    <h1><a href="/" title="German programmer and designer - Matthias Endler"><span id="matthias" class="grey_light">Matthias</span><span class="grey_dark">Endler</span></a></h1>
+    <h6 id="cookie">Like popcorn or something?</h6>
+    <!-- begin: main navigation -->
+    <div id="menu">
+      <ul>	
+        
+	        <li>
+	        	<a href="/about" 
+	        	class="box"><span class="glossy" />About</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/movies" 
+	        	class="box active"><span class="glossy" />Movies</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/projects" 
+	        	class="box"><span class="glossy" />Projects</a>
+	        </li>
+        
+	        <li>
+	        	<a href="/" 
+	        	class="box"><span class="glossy" />Blog</a>
+	        </li>
+        
+        <li id="search"></li>
+      </ul>
+    </div><!-- end: menu -->
+  </div><!-- end: header -->
+
+  
+    <!-- begin: main content area -->
+  <div id="results"></div>
+  <div id="main">
+  	        <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$('.rating').ratingbar( {
+		animate:	true,
+		duration:	1000,
+		ease:		"easeOutBounce",
+		showText: 	true
+	});
+	$('#movies').dataTable( {
+		"bPaginate":false,
+		"bFilter": 	true,
+		"bInfo": 	false,
+		"bSort": 	true} );
+} );	
+</script>
+
+
+<p class="intro">I maintain a list of movies with little twists in it. Some call them mindfuck movies others use the term film noir. A lot of my favorite movies fall into that genre which explains my high ratings (I haven't seen the movies without a rating yet). If you know a movie that fits into the list <a href="/about">I would be glad to hear from you.</a></p>
+
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="movies">
+	<colgroup> 
+	 <col id="title" /> 
+	 <col id="year" /> 
+	 <col id="plot" /> 
+	 <col id="my_rating" /> 
+	</colgroup>
+	<thead>
+	<tr> 
+	 <th>Title</th> 
+	 <th>Year</th> 
+	 <th>Plot</th> 
+	 <th>Rating</th>
+	</tr> 
+	</thead>
+	<tbody>
+    <tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+11%3A14&amp;btnI=I%27m+Feeling+Lucky">11:14</a></td>
+ <td>2005</td>
+ <td>The events leading up to an 11:14 PM car crash, from five very different perspectives.</td>
+ <td class="rating">95</td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Altered+States&amp;btnI=I%27m+Feeling+Lucky">Altered States</a></td>
+ <td>1982</td>
+ <td>A Harvard scientist conducts experiments on himself with a hallucinatory drug and an isolation chamber that may be causing him to regress genetically.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Avalon&amp;btnI=I%27m+Feeling+Lucky">Avalon</a></td>
+
+ <td>2001</td>
+ <td>In a future world, young people are increasingly becoming addicted to an illegal (and potentially deadly) battle simulation game called Avalon...</td>
+ <td class="rating">78</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Being+John+Malkovich&amp;btnI=I%27m+Feeling+Lucky">Being John Malkovich</a></td>
+ <td>2000</td>
+ <td>A puppeteer discovers a portal that leads literally into the head of the movie star, John Malkovich.</td>
+
+ <td class="rating">95</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Big+Empty&amp;btnI=I%27m+Feeling+Lucky">The Big Empty</a></td>
+ <td>2009</td>
+ <td>A budding actor is faced with a stalled career and a mountain of debt.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+++Blade+Runner&amp;btnI=I%27m+Feeling+Lucky">Blade Runner</a></td>
+ <td>1982</td>
+ <td>Deckard, a blade runner, has to track down and terminate 4 replicants who hijacked a ship in space and have returned to earth seeking their maker.</td>
+ <td class="rating">85</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Braindead&amp;btnI=I%27m+Feeling+Lucky">Dead Alive</a></td>
+ <td>1993</td>
+
+ <td>A young man's mother is bitten by a Sumatran rat-monkey. She gets sick and dies, at which time she comes back to life, killing and eating dogs, nurses, friends, and neighbors.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Brazil&amp;btnI=I%27m+Feeling+Lucky">Brazil</a></td>
+ <td>1985</td>
+ <td>A bureaucrat in a retro-future world tries to correct an administrative error and himself becomes an enemy of the state.</td>
+ <td class="rating">80</td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Casshern&amp;btnI=I%27m+Feeling+Lucky">Casshern</a></td>
+ <td>2004</td>
+ <td>Live-action sci-fi movie based on a 1973 Japanese animé of the same name (Shinzo Ningen Casshân). Theme song by Utada Hikaru.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+City+of+Ghosts&amp;btnI=I%27m+Feeling+Lucky">City of Ghosts</a></td>
+
+ <td>2003</td>
+ <td>A con man (Dillon) travels to Cambodia (also on the run from law enforcement in the U.S.) to collect his share in an insurance scam, but discovers more than he bargained for...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+City+of+Lost+Children&amp;btnI=I%27m+Feeling+Lucky">The City of Lost Children</a></td>
+ <td>1995</td>
+ <td>A scientist in a surrealist society kidnaps children to steal their dreams, hoping that they slow his aging process.</td>
+
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Crying+Game&amp;btnI=I%27m+Feeling+Lucky">The Crying Game</a></td>
+ <td>1992</td>
+ <td>A British soldier is kidnaped by IRA terrorists. He befriends one of his captors, who is drawn into the soldier's world.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Cube+0&amp;btnI=I%27m+Feeling+Lucky">Cube Zero</a></td>
+ <td>2004</td>
+ <td>A young man whose job is to watch over the Cube endeavours to rescue an innocent woman trapped in one of its rooms. |</td>
+ <td class="rating">80</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Cube+1&amp;btnI=I%27m+Feeling+Lucky">Cube</a></td>
+ <td>2000</td>
+
+ <td>7 complete strangers of widely varying personality characteristics are involuntarily placed in an endless kafkaesque maze containing deadly traps.</td>
+ <td class="rating">93</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Cube+2+-+Hypercube&amp;btnI=I%27m+Feeling+Lucky">Cube 2 &mdash; Hypercube</a></td>
+ <td>2003</td>
+ <td>Eight strangers find themselves waking up in a strange cube-shaped room with no recollection of how they came to be there...</td>
+
+ <td class="rating">80</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Cypher&amp;btnI=I%27m+Feeling+Lucky">Cypher</a></td>
+ <td>2003</td>
+ <td>An unsuspecting, disenchanted man finds himself working as a spy in the dangerous, high-stakes world of corporate espionage. Quickly getting way over-his-head, he teams up with a mysterious femme fatale.</td>
+ <td class="rating">90</td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Dark+City&amp;btnI=I%27m+Feeling+Lucky">Dark City</a></td>
+ <td>1998</td>
+ <td>A man struggles with memories of his past, including a wife he cannot remember, in a nightmarish world with no sun and run by beings with telekinetic powers who seek the souls of humans.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Dark+Hours&amp;btnI=I%27m+Feeling+Lucky">The Dark Hours</a></td>
+ <td>2005</td>
+
+ <td>The thirty and something years old psychiatrist Dr. Samantha Goodman has an incurable brain tumor that has just started to grow...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb++Dead+Mans+Shoes&amp;btnI=I%27m+Feeling+Lucky">Dead Man's Shoes</a></td>
+ <td>2004</td>
+ <td>A disaffected soldier (Considine) returns to his hometown to get even with the thugs who brutalized his mentally-challenged brother (Kebbell) years ago.</td>
+
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Deepwater&amp;btnI=I%27m+Feeling+Lucky">Deep Water</a></td>
+ <td>2006</td>
+ <td>A documentary about the disastrous 1968 round-the-world yacht race. |</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Dellamorte+Dellamore&amp;btnI=I%27m+Feeling+Lucky">Cemetery Man</a></td>
+ <td>1996</td>
+ <td>A cemetery man must kill the dead a second time when they become zombies.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Donnie+Darko&amp;btnI=I%27m+Feeling+Lucky">Donnie Darko</a></td>
+ <td>2002</td>
+
+ <td>A troubled teenager is plagued by visions of a large bunny rabbit that manipulates him to commit a series of crimes, after narrowly escaping a bizarre accident.</td>
+ <td class="rating">70</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+El+Topo+%28Mole%29&amp;btnI=I%27m+Feeling+Lucky">El Topo</a></td>
+ <td>1975</td>
+ <td></td>
+ <td class="rating"></td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Eraserhead&amp;btnI=I%27m+Feeling+Lucky">Eraserhead</a></td>
+ <td>1979</td>
+ <td>Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.</td>
+ <td class="rating">40</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Eternal+Sunshine+of+Spotless+Mind&amp;btnI=I%27m+Feeling+Lucky">Eternal Sunshine of the Spotless Mind</a></td>
+
+ <td>2004</td>
+ <td>A couple undergo a procedure to erase each other from their memories when their relationship turns sour, but it is only through the process of loss that they discover what they had to begin with.</td>
+ <td class="rating">96</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+eXistenZ&amp;btnI=I%27m+Feeling+Lucky">eXistenZ</a></td>
+ <td>1999</td>
+ <td>A game designer on the run from assassins must play her latest virtual reality creation with a marketing trainee to determine if the game has been damaged.</td>
+
+ <td class="rating">87</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Faust&amp;btnI=I%27m+Feeling+Lucky">Faust</a></td>
+ <td>2001</td>
+ <td>A man sells his soul to the devil.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Fight+Club&amp;btnI=I%27m+Feeling+Lucky">Fight Club</a></td>
+ <td>1999</td>
+ <td>An office employee and a soap salesman build a global organization to help vent male aggression.</td>
+ <td class="rating">97</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Game&amp;btnI=I%27m+Feeling+Lucky">The Game</a></td>
+ <td>1997</td>
+
+ <td>Wealthy financier Nicholas Van Orton gets a strange birthday present from wayward brother Conrad: a live-action game that consumes his life.</td>
+ <td class="rating">91</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Holy+Mountain&amp;btnI=I%27m+Feeling+Lucky">The Holy Mountain</a></td>
+ <td>1974</td>
+ <td>A Christlike figure wanders through bizarre, grotesque scenarios filled with religious and sacrilegious imagery...</td>
+ <td class="rating"></td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Jacket&amp;btnI=I%27m+Feeling+Lucky">The Jacket</a></td>
+ <td>2005</td>
+ <td>A Gulf war veteran is wrongly sent to a mental institution for insane criminals, where he becomes the object of a Doctor's experiences, and his life is completely affected by them.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Jacobs+Ladder&amp;btnI=I%27m+Feeling+Lucky">Jacob's Ladder</a></td>
+
+ <td>1991</td>
+ <td>A traumatized Vietnam war veteran finds out that his post-war life isn't what he believes it to be when he's attacked by horned creatures in the subway and his dead son comes to visit him.</td>
+ <td class="rating">86</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Pier&amp;btnI=I%27m+Feeling+Lucky">The Pier</a></td>
+ <td>1962</td>
+ <td>Time travel, still images, a past, present and future and the aftermath of World War III. The tale of a man...</td>
+
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Lost+Highway&amp;btnI=I%27m+Feeling+Lucky">Lost Highway</a></td>
+ <td>1997</td>
+ <td>After a bizarre encounter at a party, a jazz saxophonist is framed for the murder of his wife and sent to prison, where he inexplicably morphs into a young mechanic and begins leading a new life.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Lulu+on+Bridge&amp;btnI=I%27m+Feeling+Lucky">Lulu on the Bridge</a></td>
+ <td>1999</td>
+ <td>This film is about a famous jazz saxophonist, Izzy who's life is forever changed after he is accidentally shot.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Machinist&amp;btnI=I%27m+Feeling+Lucky">The Machinist</a></td>
+ <td>2004</td>
+
+ <td>An industrial worker who hasn't slept in a year begins to doubt his own sanity</td>
+ <td class="rating">80</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Map+of+human+heart&amp;btnI=I%27m+Feeling+Lucky">Map of the Human Heart</a></td>
+ <td>1993</td>
+ <td>Fantastic improbabilities, happenstance and the undying bridge of love are part of this romantic fantasy about an Inuit who crosses years...</td>
+ <td class="rating"></td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Matrix&amp;btnI=I%27m+Feeling+Lucky">The Matrix</a></td>
+ <td>1999</td>
+ <td>A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against the controllers of it.</td>
+ <td class="rating">97</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Memento&amp;btnI=I%27m+Feeling+Lucky">Memento</a></td>
+
+ <td>2001</td>
+ <td>A man, suffering from short-term memory loss, uses notes and tattoos to hunt for the man he thinks killed his wife.</td>
+ <td class="rating">90</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Mirror+Mask&amp;btnI=I%27m+Feeling+Lucky">MirrorMask</a></td>
+ <td>2005</td>
+ <td>In a fantasy world of opposing kingdoms, a 15-year old girl must find the fabled MirrorMask in order to save the kingdom and get home.</td>
+
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Mulholland+Drive&amp;btnI=I%27m+Feeling+Lucky">Mulholland Dr.</a></td>
+ <td>2002</td>
+ <td>After a car wreck on the winding Mulholland Drive renders a woman amnesic, she and a perky Hollywood-hopeful search for clues and answers across Los Angeles in a twisting venture beyond dreams and reality.</td>
+ <td class="rating">80</td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Naked+Lunch&amp;btnI=I%27m+Feeling+Lucky">Naked Lunch</a></td>
+ <td>1992</td>
+ <td>After developing an addiction to the substance he uses to kill bugs, an exterminator accidentally murders his wife and becomes involved in a secret government plot being orchestrated by giant bugs in an Islamic port town in Africa.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Neco+z+Alenky&amp;btnI=I%27m+Feeling+Lucky">Alice</a></td>
+ <td>1989</td>
+
+ <td>A memorably bizarre screen version of Lewis Carroll's novel 'Alice's Adventures in Wonderland', mixing...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+November&amp;btnI=I%27m+Feeling+Lucky">November</a></td>
+ <td>2005</td>
+ <td>Sophie Jacobs is going through the most difficult time of her life. Now, she just has to find out if it's real.</td>
+ <td class="rating"></td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+One+Point+O&amp;btnI=I%27m+Feeling+Lucky">One Point O</a></td>
+ <td>2005</td>
+ <td>After receiving mysterious empty packages inside his apartment, a young computer-programmer begins a personal investigation into their origins.</td>
+ <td class="rating">70</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Others&amp;btnI=I%27m+Feeling+Lucky">The Others</a></td>
+
+ <td>2002</td>
+ <td>A woman who lives in a darkened old house with her two photosensitive children becomes convinced that her family home is haunted.</td>
+ <td class="rating">35</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Primer&amp;btnI=I%27m+Feeling+Lucky">Primer</a></td>
+ <td>2005</td>
+ <td>Four friends/fledgling entrepreneurs, knowing that there's something bigger and more innovative than the different error-checking devices they've built, wrestle over their new invention.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Quiet+Earth&amp;btnI=I%27m+Feeling+Lucky">The Quiet Earth</a></td>
+
+ <td>1986</td>
+ <td>A mans awakens to find himself alone in the world.</td>
+ <td class="rating">84</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Saragossa+Manuskript&amp;btnI=I%27m+Feeling+Lucky">The Saragossa Manuscript</a></td>
+ <td>1965</td>
+ <td>In the Napoleonic wars, an officer finds an old book that relates his grandfather's story, Alfons van Worden...</td>
+
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Santa+sangre&amp;btnI=I%27m+Feeling+Lucky">Santa sangre</a></td>
+ <td>1991</td>
+ <td>A young man is confined in a mental hospital. Through a flashback we see that he was traumatized as a child...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Sixth+Sense&amp;btnI=I%27m+Feeling+Lucky">The Sixth Sense</a></td>
+ <td>1999</td>
+ <td>A boy who communicates with spirits that don't know they're dead seeks the help of a disheartened child psychologist.</td>
+ <td class="rating">78</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Solyaris&amp;btnI=I%27m+Feeling+Lucky">Solaris</a></td>
+ <td>2010</td>
+
+ <td>The Solaris mission has established a base on a planet that appears to host some kind of intelligence...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Stay&amp;btnI=I%27m+Feeling+Lucky">Stay</a></td>
+ <td>2006</td>
+ <td>This movie focuses on the attempts of a psychiatrist to prevent one of his patients from committing suicide while trying to maintain his own grip on reality.</td>
+ <td class="rating">93</td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+They+live&amp;btnI=I%27m+Feeling+Lucky">They Live</a></td>
+ <td>1989</td>
+ <td>A drifter discovers a pair of sunglasses that allow him to wake up to the fact that aliens have taken over the Earth.</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Thirteenth+Floor&amp;btnI=I%27m+Feeling+Lucky">The Thirteenth Floor</a></td>
+
+ <td>1999</td>
+ <td>Computer scientist Hannon Fuller has discovered something extremely important. He's about to tell the discovery to his colleague...</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Total+Recall&amp;btnI=I%27m+Feeling+Lucky">Total Recall</a></td>
+ <td>1990</td>
+ <td>When a man goes for virtual vacation memories of the planet Mars, an unexpected and harrowing series of events forces him to go to the planet for real, or does he?</td>
+
+ <td class="rating">88</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Twelve+Monkeys&amp;btnI=I%27m+Feeling+Lucky">Twelve Monkeys</a></td>
+ <td>1996</td>
+ <td>In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet.</td>
+ <td class="rating">97</td>
+</tr>
+<tr>
+
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Twilight+Zone&amp;btnI=I%27m+Feeling+Lucky">Twilight Zone</a></td>
+ <td>1961</td>
+ <td>Rod Serling's seminal anthology series focused on ordinary folks who suddenly found themselves in extraordinary, usually supernatural, situations. The stories would typically end with an ironic twist that would see the guilty punished.
+</td>
+ <td class="rating"></td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Vanilla+Sky&amp;btnI=I%27m+Feeling+Lucky">Vanilla Sky</a></td>
+ <td>2002</td>
+
+ <td>A successful publisher finds his life taking a turn for the surreal after a car accident with a jaded lover.</td>
+ <td class="rating">95</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Videodrome&amp;btnI=I%27m+Feeling+Lucky">Videodrome</a></td>
+ <td>1983</td>
+ <td>A sleazy cable-TV programmer begins to see his life and the future of media spin out of control in a very unusual fashion when he acquires a new kind of programming for his station.</td>
+ <td class="rating">81</td>
+
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Waking+Life&amp;btnI=I%27m+Feeling+Lucky">Waking Life</a></td>
+ <td>2002</td>
+ <td>A man shuffles through a dream meeting various people and discussing the meanings and purposes of the universe.</td>
+ <td class="rating">77</td>
+</tr>
+<tr>
+ <td><a href="http://www.google.com/search?hl=en&amp;q=imdb+Welt+am+Draht&amp;btnI=I%27m+Feeling+Lucky">Welt am Draht  (TV)</a></td>
+
+ <td>1973</td>
+ <td>Somewhere in the future there is a computer project called Simulacron one of which is able to simulate a full featured reality...</td>
+ <td class="rating"></td>
+</tr>
+</tbody></table>
+
+    <div class="clear"></div>
+  </div>
+  <!-- end: main content area -->
+
+  
+  </div><!-- end: page margins -->
+  <!-- begin: footer -->
+  <div id="footer">
+  	<div class="page_margins">
+	    <div class="hlist">
+	      <ul>
+			<li class="bottom_greybg">
+				<a href="#top">&uarr; Go to top</a>
+			</li>
+			
+				
+					<li class="bottom_greybg">
+					<a href="/about">About</a>
+					</li>
+				
+			
+				
+					<li class="active_mini bottom_greybg">Movies</li>
+				
+			
+				
+					<li class="bottom_greybg">
+					<a href="/projects">Projects</a>
+					</li>
+				
+			
+				
+					<li class="bottom_greybg">
+					<a href="/">Blog</a>
+					</li>
+				
+			
+					<li class="bottom_greybg">
+					<a href="/archive">Archive</a>
+					</li>
+					<li class="bottom_greybg">
+					<a href="/snippets">Links</a>
+					</li>
+	      </ul>
+	    </div>
+	    <p class="legal">
+	    &copy; Matthias Endler. This is a personal weblog. All statements and opinions expressed on this website are those of the author. If you see a typo, a spelling mistake, an error, or any other issue, please <a href="/about">tell me about it</a>. All written content is released under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons BY-NC-SA 2.0</a> as long as not otherwise stated.  Other product and company names shown may be trademarks of their respective owners.
+	    <br /><a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>. Last update: 2011-02-01
+	    </p>
+    </div><!-- end: page margins -->
+  </div><!-- end: footer -->
+  
+<!-- ORIGINAL JAVASCRIPT FILES. MINIFIED VERSION BELOW -->
+<!--
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.transform-0.6.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fortune.js"></script>
+<script type="text/javascript" src="/js/jquery.timeago.js"></script>
+<script type="text/javascript" src="/js/jquery.gmsis.js"></script>
+<script type="text/javascript" src="/js/sweet-justice.min.js"></script>
+<script type="text/javascript" src="/js/google_analytics.js"></script>
+<script type="text/javascript" src="/js/jquery.ratingbar.js"></script>
+<script type="text/javascript" src="/js/jquery.anchorfy.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+-->
+
+<script type="text/javascript" src="/js/min.js"></script>
+
+
+</body>
+</html>
+
