@@ -375,6 +375,21 @@ em {
 }
 
 /* Social bookmarking */
+
+.bookmarking {
+  filter:alpha(opacity=50);
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
+}
+
+.bookmarking:hover {
+  filter:alpha(opacity=100);
+  opacity: 1.0;
+  -moz-opacity: 1.0;
+  -webkit-opacity: 1.0;
+}
+
 #fb-root {
 	float: left;
 }

@@ -19,10 +19,16 @@ On the web you have instant access to a virtually endless amount of information 
 Whenever you like a text on the web just link to it and create a wonderful chain of ideas. Want to read it later or recommend it to a friend? Just share the text or print it on paper. The fact that we all take such things for granted is a testament for the power of text files and their importance for the [information age][2].
 
 
+### Links
+
+* [Unix Text Processing (PDF)][6]
+{: .blocklist}
+
 [1]: http://matt.might.net/articles/console-hacks-exploiting-frequency/
 [2]: http://en.wikipedia.org/wiki/Information_Age
 [3]: http://www.json.org/
 [4]: http://daringfireball.net/projects/markdown/
 [5]: http://www.w3.org/Graphics/SVG/
+[6]: http://oreilly.com/openbook/utp/
 
 [^1]: \[EDIT\] I admit that this paragraph is a bit misleading. I would be happy if my todo file was so important that it has to be readable in a thousand years from now but that's not the case. I just like to be sure that *I* can access it without any special (proprietary) software whenever I want. My `TODO.txt` is just a personal, transient, disposable storage system (`cat TODO.txt | wc -l` prints 174 at the moment...).

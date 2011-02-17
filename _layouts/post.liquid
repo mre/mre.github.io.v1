@@ -38,27 +38,28 @@ sidebar: true
   
   <small class="meta">Feel free to <span class="grey">copy</span>, <span class="grey">share</span> and <span class="grey">comment</span>.<br /><br /></small>
   
- <div id="fb-root"></div>
- <div id="twitter-root">Tweet</div>
- 
+  <div class="bookmarking">
+   <div id="fb-root"></div>
+   <div id="twitter-root">Tweet</div>
+   
 
- 
- 
- 
- 
- <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
- <script type="text/javascript">
- 	$(document).ready(function(){
- 		$("#twitter-root").tweetIt();
- 	})
- </script>
- <script language="javascript"  type="text/javascript" src="/js/facebook.js"></script>
-<script type="text/javascript" src="http://reddit.com/buttonlite.js?i=5&styled=off"></script>
- <script type="text/javascript">
-	 var idcomments_acct = 'a82f3fba842da37042bd1be376926290';
-	 var idcomments_post_id;
-	 var idcomments_post_url;
- </script>
- <span id="IDCommentsPostTitle" style="display:none"></span>
- <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-</div>
+   <!-- Post specific Javascript -->
+   <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $("#twitter-root").tweetIt();
+    })
+   </script>
+   <script language="javascript"  type="text/javascript" src="/js/facebook.js"></script>
+  <script type="text/javascript" src="http://reddit.com/buttonlite.js?i=5&styled=off"></script>
+   <script type="text/javascript">
+     var idcomments_acct = 'a82f3fba842da37042bd1be376926290';
+     var idcomments_post_id;
+     var idcomments_post_url;
+   </script>
+  </div>
+   <span id="IDCommentsPostTitle" style="display:none"></span>
+   <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+   <script type="text/javascript" src="http://tweet-it.s3.amazonaws.com/tweet-it.js"></script>
+   <!-- End post specific Javascript -->
+</div><!-- End content -->
