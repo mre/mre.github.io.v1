@@ -1,6 +1,6 @@
 // Returns a random integer between +-RANGE without values in +-GAP
 function randRotation() {
-	var RANGE = 10; // Number of values
+	var RANGE = 20; // Number of values
 	var GAP   = 6;  // Minimal rotation
 	
 	// Clean solution (but 66% slower in average)
@@ -23,27 +23,21 @@ $(document).ready(function() {
 		$(this).animate({rotate: randRotation()},{ duration:1000, easing: 'easeOutElastic'});
 	});
 	
-    // Padding at bottom for menu buttons
-    var inactive_in  = "23px"
-    var inactive_out = "11px"
-    var active_in    = "47px"
-    var active_out   = "36px"
-
 	 //Animate menu items
     $(".box").mouseover(function(){
-        $(this).stop().animate({ marginTop: "0px", paddingBottom: inactive_in 
+        $(this).stop().animate({ marginTop: "0px", paddingBottom: "23px"
         },{queue:false, duration:300, easing: 'easeOutElastic'})
     });
     $(".box").mouseout(function(){
-        $(this).stop().animate({marginTop: "12px", paddingBottom: inactive_out },{queue:false, duration:300, easing: 'easeOutElastic'})
+        $(this).stop().animate({marginTop: "12px", paddingBottom: "11px"},{queue:false, duration:300, easing: 'easeOutElastic'})
     });
     
     $(".active").mouseover(function(){
-        $(this).stop().animate({ marginTop: "0px", paddingBottom: active_in
+        $(this).stop().animate({ marginTop: "0px", paddingBottom: "47px"
         },{queue:false, duration:300, easing: 'easeOutElastic'})
     });
     $(".active").mouseout(function(){
-        $(this).stop().animate({marginTop: "12px", paddingBottom: active_out },{queue:false, duration:300, easing: 'easeOutElastic'})
+        $(this).stop().animate({marginTop: "12px", paddingBottom: "36px"},{queue:false, duration:300, easing: 'easeOutElastic'})
     });
 	
 	// Show a nice fortune cookie

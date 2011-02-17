@@ -5,49 +5,49 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://www.matthias-endler.de/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>1.0</priority>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/about/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/movies/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/projects/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/page2/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.1</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/page3/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.1</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/page4/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.1</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.matthias-endler.de/page5/</loc>
-  <lastmod>2011-02-01</lastmod>
+  <lastmod>2011-02-17</lastmod>
   <priority>0.1</priority>
   <changefreq>weekly</changefreq>
 </url>

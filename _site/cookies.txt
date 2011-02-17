@@ -38,7 +38,7 @@ scratching my itch.
 %
 d'oh!
 %
-Deliciously geeky awesomeness.
+Delicious geeky awesomeness.
 %
 Alright, screw it.
 %
@@ -51,8 +51,6 @@ Knowledge is peace.
 gettin' dumber every day &reg;
 %
 now with lots of ajax
-%
-Always a bit rough about the edges.
 %
 The Fratellis – Ole Black 'n' Blue Eyes
 %
@@ -148,19 +146,9 @@ don't mess with my pointers!
 %
 linux in the post-punk era
 %
-Kissing your Lisp
-%
-be smart: don't be smart
-%
-be prepared to leave every day
-%
 batteries included
 %
 Would you give a man a foot massage?
-%
-My personal time capsule
-%
-I really don't mind
 %
 You're... Jimmie, right? This is your house?
 %
@@ -171,8 +159,6 @@ This is your life, and it's ending one minute at a time.
 ...whfg xvqqa
 %
 Anybody said green?
-%
-Nerdery. Encapsulated.
 %
 that's what she said.
 %

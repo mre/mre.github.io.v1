@@ -115,19 +115,6 @@ em {
 
 /* -------------- PAGE HEADER -------------- */
 
-/* Tux image link */
-#homebutton {
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:9999;
-	background-color:#ff0000;
-	width:350px;
-	height:250px;
-	min-height: 350px;
-	min-height: 250px;;
-}
-
 #header {
 	text-align: right;
 	height: 145px;
@@ -486,7 +473,7 @@ blockquote p {
 
 /* Topic on homepage */
 .snippet {
-	margin-bottom: 300px;
+	margin-bottom: 30px;
 }
 
 .snippet_text {

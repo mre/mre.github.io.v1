@@ -15,13 +15,4 @@ Images may not be used without permisson.
 
 Thanks for dropping by!
 
-
-
-### Todo
-
-- Fix rotated navigation buttons
-- Show estimated reading time for posts (like http://www.falloutsoftware.com/tutorials/gl/gl3.htm)
-
-
-
 [1]: http://www.github.com/mojombo/jekyll

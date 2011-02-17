@@ -4,7 +4,7 @@
  <title>Matthias Endler</title>
  <link href="http://www.matthias-endler.de/atom.xml" rel="self"/>
  <link href="http://www.matthias-endler.de/"/>
- <updated>2011-02-01T17:57:21+01:00</updated>
+ <updated>2011-02-17T10:38:38+01:00</updated>
  <id>http://www.matthais-endler.de/</id>
  <author>
    <name>Matthias Endler</name>
@@ -301,12 +301,6 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;Whenever you like a text on the web just link to it and create a wonderful chain of ideas. Want to read it later or recommend it to a friend? Just share the text or print it on paper. The fact that we all take such things for granted is a testament for the power of text files and their importance for the &lt;a href='http://en.wikipedia.org/wiki/Information_Age'&gt;information age&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id='links'&gt;Links&lt;/h3&gt;
-
-&lt;ul class='blocklist'&gt;
-&lt;li&gt;&lt;a href='http://oreilly.com/openbook/utp/'&gt;Unix Text Processing (PDF)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;[EDIT] I admit that this paragraph is a bit misleading. I would be happy if my todo file was so important that it has to be readable in a thousand years from now but that&amp;#8217;s not the case. I just like to be sure that &lt;em&gt;I&lt;/em&gt; can access it without any special (proprietary) software whenever I want. My &lt;code&gt;TODO.txt&lt;/code&gt; is just a personal, transient, disposable storage system (&lt;code&gt;cat TODO.txt | wc -l&lt;/code&gt; prints 174 at the moment&amp;#8230;).&lt;/p&gt;
 &lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
