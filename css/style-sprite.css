@@ -355,6 +355,9 @@ em {
 	color: #ff5ea3;
 	background-color: #f0f0f0;
 	padding: 4px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .greybg {
