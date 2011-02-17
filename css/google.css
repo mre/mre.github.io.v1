@@ -18,6 +18,10 @@ td .gsc-search-button {
 	background: url("../img/search_off.png") no-repeat right center;
 }
 
+.gsc-clear-button {
+  display:none;
+}
+
 .gsc-branding {
 	display: none;
 }
