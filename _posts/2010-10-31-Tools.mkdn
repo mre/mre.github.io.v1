@@ -28,6 +28,8 @@ Zed A. Shaw puts it quite nicely in the afterword to "Learn Python the hard way"
 
 > I have been programming for a very long time. So long that it is incredibly boring to me. At the time that I wrote this book I knew about 20 programming languages and could learn new ones in about a day to a week depending on how weird they were. Eventually though this just became boring and couldnÕt hold my interest.What I discovered after this journey of learning was that the languages didnÕt matter, it was what you did with them. Actually, I always knew that, but I'd get distracted by the languages and forget it periodically. Now I never forget it, and neither should you.The programming language you learn and use does not matter. Do not get sucked into the religion surrounding programming languages as that will only blind you to their true purpose of being your tool for doing interesting things.
 
+Concerning PHP, [nir][2] wrote on Hackernews:
+> Any idiot can write a snarky comment about PHP. Very few get to write code that has anywhere near the impact it had.
 
 My MacBook serves me as a good tool. If something "better" comes around I would switch right away. I've ditched Firefox after five years just because Chrome is faster and I will throw out Chrome with a happy smile when something even faster comes around.
 Vim is *quite good* in my opinion but if there's a faster way to do things I'm happy to dump it. But I'm not sure this will happen any time soon. It's reasonably stable and convenient. 
@@ -37,3 +39,4 @@ Don't get emotional for any tool you use. An iPhone - I'm sorry to disappoint yo
 While I get, that arguments about technical topics can be healthy, flamewars are not. I'm sick of it.
  
 [1]: http://lkml.org/lkml/2000/8/25/132
+[2]: http://news.ycombinator.com/item?id=2282523

@@ -245,8 +245,8 @@ em {
     min-height: 800px;
     text-shadow: 0 1px 0 #FFFFFF;
     background: #eaf6ff; /* for non-css3 browsers */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf6ff', endColorstr='#FFFFFFFF'); /* for IE6 & IE7*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eaf6ff', endColorstr='#fff')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf6ff', endColorstr='#000000'); /* for IE6 & IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eaf6ff', endColorstr='#000')"; /* IE8 */
     background: -webkit-gradient(linear, left top, left bottom, from(#eaf6ff), to(#fff)); /* for webkit browsers */
     background: -moz-linear-gradient(top,  #eaf6ff,  #fff); /* for firefox 3.6+ */
 }
@@ -301,7 +301,7 @@ em {
 
 .intro {
 	font-size: 85%;
-	background-color: #fcffe1;
+	background-color: #FEFFC7;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-image: url("../img/star.png"); /** sprite-ref: mainsprite; sprite-margin-bottom:30px */ 
@@ -505,7 +505,7 @@ blockquote p {
 
 /* Topic on homepage */
 .snippet {
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 .snippet_text {

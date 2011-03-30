@@ -1,5 +1,7 @@
 fine tutorials for you and me
 %
+The dream is collapsing.
+%
 Sweet jesus!
 %
 fine web products
@@ -16,11 +18,15 @@ Thanks for dropping by.
 %
 mind your step
 %
+Welcome flash crowd!
+%
 panta rhei
 %
 Like ma used to make them.
 %
 Gozilla ate my pants
+%
+Too cool to dance.
 %
 Shizzle the dizzle
 %
@@ -212,7 +218,13 @@ Geeks. That's what we are
 %
 Debugging the rubberduck way
 %
+Read Euler. He's the master of everything
+%
+Now I will have less distractions
+%
 Wow this looks kinda professional.
+%
+Unix web wrapper
 %
 Thanks to membadran for this plugin!
 %

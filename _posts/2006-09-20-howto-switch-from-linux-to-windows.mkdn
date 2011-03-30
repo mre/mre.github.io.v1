@@ -23,8 +23,9 @@ After the system crashed when I wanted to burn a CD with the <a href="http://www
 
 * [French translation by Jacques Bon][2]
 * [Spanish translation by Tux Azteca and Alberto March][1]
+* [Dutch translation by Catharina Bethlehem][3]
 {: .blocklist}
 
 [1]: http://inquietamente.wordpress.com/2008/12/06/como-pasarse-de-gnulinux-a-windows-humor/
 [2]: http://cafcom.free.fr/spip.php?article18
-
+[3]: http://www.kletskous.com/2006/10/11/overstappen-van-linux-naar-windows-een-gebruikerservaring/
