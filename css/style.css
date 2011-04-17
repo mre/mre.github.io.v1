@@ -452,7 +452,8 @@ em {
 }
 
 hr {
-	border:1px solid #ccc;
+	/*border:1px solid #ccc;*/
+  border-style: inset;
 }
 
 .onLeft {
@@ -616,7 +617,7 @@ input  {
 }
 
 .projects li {
-	border-bottom: 2px solid #eee;
+	/*border-bottom: 2px solid #eee;*/
 	padding-bottom: 20px;
 	margin: 20px 0px;
 }
