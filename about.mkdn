@@ -25,34 +25,33 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 
 <table class="set">
 	<tr>
-		<td class="descriptions">HTML</td>
-		<td class="skills">5/5</td>		
-	</tr>
-	<tr>
 		<td class="descriptions">CSS</td>
 		<td class="skills">5/5</td>		
 	</tr>
 	<tr>
-		<td class="descriptions">jQuery</td>
-		<td class="skills">4/5</td>		
+		<td class="descriptions">HTML</td>
+		<td class="skills">5/5</td>		
 	</tr>
 	<tr>
-		<td class="descriptions">PHP</td>
+		<td class="descriptions">Javascript</td>
 		<td class="skills">4/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">MySQL</td>
 		<td class="skills">3/5</td>		
 	</tr>
+	<tr>
+		<td class="descriptions">PHP</td>
+		<td class="skills">4/5</td>		
+	</tr>
 </table>
 
-
-#### Desktop and server ####
+#### Application development ####
 
 <table class="set">
 	<tr>
 		<td class="descriptions">C</td>
-		<td class="skills">4/5</td>		
+		<td class="skills">3/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">C++</td>
@@ -64,7 +63,11 @@ I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page yo
 	</tr>
 	<tr>
 		<td class="descriptions">Python</td>
-		<td class="skills">1/5</td>		
+		<td class="skills">4/5</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">Scala</td>
+		<td class="skills">2/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">Shell</td>
