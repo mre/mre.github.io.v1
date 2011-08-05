@@ -112,8 +112,8 @@ td .gsc-search-button {
 }
 
 input.gsc-input {
-	border: none;
-	width: 78%;
+  border-color: #ccc;
+  width: 78%;
 }
 
 td.gsc-search-button  {
