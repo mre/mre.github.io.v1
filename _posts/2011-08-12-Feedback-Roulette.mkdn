@@ -1,0 +1,59 @@
+---
+layout: post
+title: "My experiences with Feedback Roulette"
+published: true
+---
+
+[Feedback Roulette][FeedbackRoulette] is awesome. The page reviews are honest and detailed.
+Here are a few comments I received so far:
+
+> The site is slow, not sure if it's my connection, but response time is high.
+This tip helped me dig a little deeper into SEO (despite I passionately hate the term).
+I've minified the CSS and Javascript files, used spriting and am now
+using a CDN, namely [Cloudflare][Cloudflare]. 
+
+> Was expecting the penguin to click and lead me to the home page.
+
+This was a quick and easy fix that can be done in a couple of minutes.
+I didn't realize that and was happy when somebody pointed it out.
+
+> On your movies page you could link to Amazon with an affiliate code,
+> that way if people buy the movie on amazon you get some money.
+
+I see where this is coming from but on my private homepage I'm not out
+for the quick buck. I was thinking about creating a wiki for the genre,
+though.
+
+> "Projects" areas are always tough when you when you only
+> have a few active projects. May be add a github activity feed.
+
+Since then I've added some more projects but the activity stream is
+definitely something to think about.
+
+> The site doesn't load quite right in Opera. It's hard to explain,
+> but above the link for "Blog" it says "Blog" again in another box.
+> This box stays across all the other pages (but it's always "Blog").
+
+This behaviour is quite weird. Until now I couldn't find out what causes
+it. It may well be an Opera bug but since I'm not an Opera user and this
+is a tiny private homepage I didn't bother too much.
+
+> The links appear on the right-hand side and then the search box appears, pushing them to the left.
+
+The "pushing" is caused by an ajax call to Google search: As soon as the search script got
+loaded, the search box gets added to the DOM. Naturally the solution was
+pretty simple. I swapped the search box and the links.
+
+> I think the text in the articles should be a bit smaller, I just find it slightly too large for a lot of reading.
+
+I like big text. Nevertheless I had to admit that it was just a little
+too big.
+
+All these comments came from real users and it would have been hard to
+find such responses by asking my friends. So the bottom line is this: If
+you have a little webdesign project and want some quick user reviews
+without all the hassle of A/B testing, Feedback Roulette may be what you are looking for.
+
+[FeedbackRoulette]: http://www.feedbackroulette.com
+[Cloudflare]: https://www.cloudflare.com/login.html
+
