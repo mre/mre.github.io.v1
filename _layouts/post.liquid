@@ -16,13 +16,6 @@ sidebar: true
   </small>
   <hr /><br />
   
-  {% capture dcurr %}{{ 'now' | date: "%Y%m%d" }}{% endcapture %}
-  {% capture dpost %}{{ page.date | date: "%Y%m%d" }}{% endcapture %}
-  {% capture ddiff %}{{ dcurr | minus:dpost | minus:18600 }}{% endcapture %}
-  {% if ddiff contains '-' %}{% else %}
-	<p class="intro">This is a very old post. The technical details may have changed by now. Please keep that in mind while reading.</p>
-  {% endif %}
-  
   <div class="sweet-justice space_bottom">
  	 {{ content }}
  	 
