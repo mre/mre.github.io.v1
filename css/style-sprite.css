@@ -331,6 +331,10 @@ em {
   background-image: url('../img/mainsprite.png');
   background-position: left -536px;
 	background-repeat: no-repeat;
+  /* Light 3d-effect */
+  border: 1px solid #BBB;
+  border-top: 1px solid #EEE;
+  border-left: 1px solid #EEE;
 }
 
 .download:hover {

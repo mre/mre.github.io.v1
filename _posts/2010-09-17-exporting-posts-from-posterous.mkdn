@@ -42,45 +42,52 @@ ten of my latest blog posts:
 {% highlight php linenos=table %}
 
 <?php
-// Posterous PHP export. Requires PHP 5.1.0 or newer
-// Documentation on http://posterous.com/api/reading
 
-// Query options
-$site_id = "";     // Either use id of the site...
-$hostname = "matthiasendler"; // ...or a subdomain
-$num_posts = 10;        // Number of posts to read
-$page = 1;                    // Get specific page
-$tag = "";           // Grab posts with these tags
+  // Posterous PHP export. Requires PHP 5.1.0 or newer
+  // Documentation on http://posterous.com/api/reading
 
-// Create query string
-if ($site_id)   $query = $site_id;
-else            $query = $hostname;
+  // Set timezone for posterous blog
+  date_default_timezone_set('America/Los_Angeles');
 
-$query .= "&" . $num_posts . "&" . $page;
-if ($tag) $query .= "&" . $tag;
+  // Query options
+  $site_id = "";                // Either use id of the site...
+  $hostname = "matthiasendler"; // ...or a posterous subdomain.
+  $num_posts = 10;                  // Number of posts to read.
+  $page = 1;                              // Get specific page.
+  $tag = "";                     // Grab posts with these tags.
 
-// Start request
-$url = "http://posterous.com/api/readposts" . $query;
-$xml = simplexml_load_file($url);
-$post_count = count($xml->post);
+  // Create query string
+  if ($site_id) $query = "site_id="  . $site_id;
+  else          $query = "hostname=" . $hostname;
 
-// Cumbersome way to walk post entries. 
-// See php.net/manual/de/function.simplexml-load-file.php#86471
-for($i = 0; $i < $post_count; $i++) { 
-  $post = $xml->post[$i]; 
-  // Now you can use $post->title, $post->date, $post->body...
-}
+  if ($num_posts) $query .= "&num_posts=" . $num_posts;
+  if ($page)      $query .= "&page="      . $page;
+  if ($tag)       $query .= "&tag="       . $tag;
+
+  // Request
+  $url = "http://posterous.com/api/readposts?" . $query;
+  $xml = simplexml_load_file($url);
+  $post_count = count($xml->post);
+
+  // Cumbersome way to walk post entries. 
+  // See php.net/manual/de/function.simplexml-load-file.php#86471
+  for($i = 0; $i < $post_count; $i++) { 
+    $post = $xml->post[$i]; 
+    // Now we can use $post->title, $post->date, $post->body...
+    write_markdown($post, "post");
+  }
+
 ?>
 
 {% endhighlight %}
 
 ### Put it into jekyll
-I wanted to import the posts into jekyll so I used a function to do so. Shove
-a call to it below <code>line 28</code>:
+I wanted to import the posts into jekyll so I used the function `write_markdown()` to do so.
 
 {% highlight php linenos=table %}
 
 <?php
+
 /**
  * Formats a posterous post as markdown to use it with jekyll
  * array  $post   The post that gets processed
@@ -120,6 +127,7 @@ a call to it below <code>line 28</code>:
 		fclose($jekyll_post);
 	}
  }
+
 ?>
 {% endhighlight %}
 
@@ -128,7 +136,19 @@ the post body. There is a nice one for PHP called [Markdownify][1]
 and a python script named [html2text][2].
 
 
+### Download
+
+You can download the whole script here. Simply execute it by typing `php grab.php`.
+
+<a href="https://raw.github.com/mre/mre.github.com/master/downloads/grab.php">
+<div class="download">Download the package.</div></a>
+
+### Errata
+
+Thanks to [Algert Sula][4] for pointing out an error in the above
+script.
+
 [1]: http://sourceforge.net/projects/markdownify/
 [2]: http://www.aaronsw.com/2002/html2text/
 [3]: http://matthiasendler.posterous.com
-
+[4]: http://www.algertsula.com

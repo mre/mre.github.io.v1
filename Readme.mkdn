@@ -3,7 +3,7 @@ This README mostly exists because I was scared by the yellow warning message tha
 This is my homepage. A labour of love.
 Created with [jekyll][1] by some awesome crazy unicorns dressed in jogging-suits (thanks!).
 
-### Licencse
+### License
 
 The source code is Dual licensed under the MIT and GPL licenses:
 *	http://www.opensource.org/licenses/mit-license.php

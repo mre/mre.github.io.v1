@@ -321,6 +321,10 @@ em {
 	background-position: 0px -30px;
 	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; sprite-margin-bottom: 10px; */ 
 	background-repeat: no-repeat;
+  /* Light 3d-effect */
+  border: 1px solid #BBB;
+  border-top: 1px solid #EEE;
+  border-left: 1px solid #EEE;
 }
 
 .download:hover {
