@@ -21,7 +21,7 @@
 body {
 	font:Arial, Helvetica, sans-serif;
 	font-size:13pt;
-	color: #505050;
+	color: #353535;
 	background-position: 0px 179px;
 	background-repeat: repeat-x;
 }
@@ -229,6 +229,11 @@ em {
     float: left;
     width: 60%;
     margin-top: 50px;
+    font-size: 95%;
+}
+
+#content img {
+  border: solid 10px #CCC;
 }
 
 .footnotes {
@@ -497,7 +502,6 @@ blockquote {
 
 blockquote p {
 	font-style: italic;
-	font-size: 85%;
 }
 
 /* Further reading lists... */
