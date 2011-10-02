@@ -5,8 +5,8 @@ published: true
 ---
 
 Since I work on a computer for most of the day I like to have the darn best thing I can afford to get my stuff done.
-For the last five years I have exclusively used a MacBook and a MacBook Pro and I have no doubt I paid a premium price for a premium product.
-Yeah, I'm also paying a premium price for every RAM extension, Mini Display Port - DVI adapter and keyboard, too...and I'm totally fine with it.
+For the last five years I have exclusively used a MacBook and afterwards a MacBook Pro and I have no doubt I paid a premium price for a premium product.
+Yeah, I'm also paying a premium price for every RAM extension, Mini Display Port - DVI adapter and keyboard made by Apple, too...and I'm totally fine with it.
 
 Most of the time MacBooks are great machines, fun to work with and well worth the higher price tag. 
 Some parts of it just stink, though.
@@ -25,7 +25,22 @@ But I think that's the way the cable is *supposed* to be rolled up according to 
 
 ![Damaged power supply](/media/pictures/power_supply2.jpg)
 
-Come on Apple. Hardware defects are normal. This shit can happen. But when it's clearly your fault don't blame your users. I've invested a lot of money into your products during the last few years (both for private and corporate use) and I don't hope you want to loose me as a customer.
+Let me clarify: My current machine is a MacBook Pro bought in April 2010, so
+I'm out of warranty. Apple is not obliged to compensate. A replacement would be a gesture of good will.
+On the other hand I consider this a manufacturing error and a security
+risk.
+
+Oh and while we're at it, the new L-shaped magsafe plug is also badly designed.
+The whole purpose of that thing is to prevent damages when somebody
+stumbles over the cord. But unfortunately the protection mechanism won't
+work if the person is coming from the wrong side. Here's a picture that
+explains what happens:
+
+![Stumbling over the cable from left to right pulls the laptop off the table](/media/pictures/Macbook-Magsafe.jpg)
+
+
+Come on Apple. Hardware defects and design issues are normal. This shit can happen. But when it's clearly your fault don't blame your clients. I've invested a lot of money into your products during the last few years (both for private and corporate use) and I don't hope you want to loose me as a customer.
 
 Seems like I need to buy a new one. The fourth power supply for only two laptops.
 But nevertheless I'm sending my power supply back to you. Do with it what you want.
+Rant over.
