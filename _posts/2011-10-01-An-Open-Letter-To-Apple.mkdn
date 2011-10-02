@@ -1,0 +1,31 @@
+---
+layout: post
+title: "An open letter to Apple"
+published: true
+---
+
+Since I work on a computer for most of the day I like to have the darn best thing I can afford to get my stuff done.
+For the last five years I have exclusively used a MacBook and a MacBook Pro and I have no doubt I paid a premium price for a premium product.
+Yeah, I'm also paying a premium price for every RAM extension, Mini Display Port - DVI adapter and keyboard, too...and I'm totally fine with it.
+
+Most of the time MacBooks are great machines, fun to work with and well worth the higher price tag. 
+Some parts of it just stink, though.
+
+Today I had a nice conversation with an Apple advisor (as they call them) because my power supply is broken. Again.
+
+So here is a picture of the power supply:
+
+![Damaged power supply](/media/pictures/power_supply1.jpg)
+
+You can clearly see where the cable is broken. It's right at the spot where the protective sheath is ending.
+
+I know this is the place where the cable is bent when it gets rolled up.
+The advisor basically told me that I have to pay the price for being too stupid to roll up a cable.
+But I think that's the way the cable is *supposed* to be rolled up according to all their advertisement images.
+
+![Damaged power supply](/media/pictures/power_supply2.jpg)
+
+Come on Apple. Hardware defects are normal. This shit can happen. But when it's clearly your fault don't blame your users. I've invested a lot of money into your products during the last few years (both for private and corporate use) and I don't hope you want to loose me as a customer.
+
+Seems like I need to buy a new one. The fourth power supply for only two laptops.
+But nevertheless I'm sending my power supply back to you. Do with it what you want.
