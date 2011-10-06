@@ -25,6 +25,7 @@ $(document).ready(function() {
 	});
 	
     // Padding at bottom for menu buttons
+    // Remember to also change CSS for graceful degradation.
     var inactive_in  = "23px";
     var inactive_out = "11px";
     var active_in    = "47px";
