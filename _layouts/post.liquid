@@ -19,11 +19,16 @@ sidebar: true
   <div class="sweet-justice space_bottom">
  	 {{ content }}
  	 
+   {% comment %}
  	 {% if page.next %}
- 	 	<a href="{{ page.next.url }}" class="greybg">{{ page.next.title }} &#x25BA;</a>
- 	 {% elsif page.previous %}
- 	 	<a href="{{ page.previous.url }}" class="greybg">{{ page.previous.title }} &#x25BA;</a>
+     <a href="{{ page.next.url }}" class="greybg">Next post: {{ page.next.title }} &#x25BA;</a>
  	 {% endif %} 
+ 	 {% if page.previous %}
+ 	 	<a href="{{ page.previous.url }}" class="greybg">Previous post: {{ page.previous.title }} &#x25BA;</a>
+ 	 {% endif %} 
+   {% endcomment %}
+
+ 	 	<a href="/archive" class="greybg">More? Here's a list of all posts.</a>
  	 	
   </div>
   
