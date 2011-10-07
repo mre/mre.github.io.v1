@@ -105,7 +105,7 @@ a:hover {
 }
 
 p {
-	margin: 15px 0px;
+	/*margin: 15px 0px;*/
 	line-height: 1.3em;
 }
 
@@ -482,16 +482,19 @@ hr {
 }
 
 blockquote {
-	background-color: #eee;
-	background-position: 0px -20px;
-	background-repeat: no-repeat;
-	padding: 20px 50px 20px 100px;
+	background-color: #f2f2f2;
+	/*background-position: 0px -20px;
+	background-repeat: no-repeat;*/
+	padding: 20px 50px 20px 30px;
 	margin: 30px 0px 30px 0px;
+  border-left: 15px solid #00c1ff;
 }
 
+/*
 blockquote p {
 	font-style: italic;
 }
+*/
 
 /* Further reading lists... */
 .blocklist {
@@ -627,10 +630,6 @@ input  {
 	/*border-bottom: 2px solid #eee;*/
 	padding-bottom: 20px;
 	margin: 20px 0px;
-}
-
-blockquote {
-	background-image: url("../img/quote.png"); /** sprite-ref: mainsprite; */ 
 }
 
 body {
