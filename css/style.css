@@ -293,6 +293,10 @@ em {
 	background-image: url("../img/sidebar_kdelook.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
 }
 
+#elsewhere .googleplus:hover {
+	background-image: url("../img/sidebar_google_plus.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+}
+
 #elsewhere .rss:hover, #elsewhere .atom:hover {
 	background-image: url("../img/sidebar_rss.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
 }

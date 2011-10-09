@@ -298,14 +298,19 @@ em {
   background-position: left -281px;
 }
 
-#elsewhere .rss:hover, #elsewhere .atom:hover {
+#elsewhere .googleplus:hover {
   background-image: url('../img/mainsprite.png');
   background-position: left -294px;
 }
 
-#elsewhere .archive:hover{
+#elsewhere .rss:hover, #elsewhere .atom:hover {
   background-image: url('../img/mainsprite.png');
   background-position: left -307px;
+}
+
+#elsewhere .archive:hover{
+  background-image: url('../img/mainsprite.png');
+  background-position: left -320px;
 }
 
 /* -------------- MESSAGES BOXES -------------- */
@@ -316,14 +321,14 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -320px;
+  background-position: left -333px;
 	background-repeat: no-repeat;
 }
 
 .intro:hover {	
 	background-position: -20px -30px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -436px;
+  background-position: left -449px;
 	background-color: #e5e5e5;
 	cursor: pointer;
 }
@@ -334,7 +339,7 @@ em {
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -536px;
+  background-position: left -549px;
 	background-repeat: no-repeat;
   /* Light 3d-effect */
   border: 1px solid #BBB;
@@ -422,7 +427,7 @@ em {
 	background-color: #ECEEF5;
 	background-position: 4px 3px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -606px;
+  background-position: left -619px;
 	background-repeat: no-repeat;
 	border: 1px solid #CAD4E7;
 	border-radius:3px;
@@ -562,7 +567,7 @@ acronym, abbr {
 	margin-top: 140px;
 	padding-top: 80px;
   background-image: url('../img/mainsprite.png');
-  background-position: left -624px;
+  background-position: left -637px;
 	background-repeat: repeat-x;
 }
 
@@ -646,5 +651,5 @@ input  {
 
 body {
   background-image: url('../img/mainsprite.png');
-  background-position: left -665px;
+  background-position: left -678px;
 }
