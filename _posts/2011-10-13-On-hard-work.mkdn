@@ -51,6 +51,9 @@ will.
 
 ![Laptop on a pillow next to a book](/media/pictures/work.jpg)
 
+Photo by [Zitona][flickr] (CC BY 2.0) 
+{.caption}
+
 Nevertheless, learning is still a tedious task,
 requiring patience and determination [^1].
 As the amount of information has increased, so have the kinds of distraction.
@@ -91,4 +94,4 @@ definition of *hard work*.
 
 [wave]: http://rethrick.com/#mmm
 [q3d]: http://www.bluesnews.com/abrash/chap70.shtml
-
+[flickr]: http://www.flickr.com/photos/zitona/5021203226/

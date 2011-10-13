@@ -240,6 +240,12 @@ em {
   padding: 8px 0px 8px 0px;
 }
 
+.caption {
+  text-align: right;
+  font-size: 85%;
+  margin-bottom: 30px;
+}
+
 .sweet-justice img {
   border: solid 10px #CCC;
 }
