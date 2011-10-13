@@ -232,6 +232,15 @@ em {
     font-size: 95%;
 }
 
+#content ul {
+  margin-left: 30px;
+  list-style: square;
+}
+
+#content ul li {
+  padding: 8px 0px 8px 0px;
+}
+
 .sweet-justice img {
   border: solid 10px #CCC;
 }

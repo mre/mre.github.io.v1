@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Digg &ndash; a case study for the social web"
-featured: true
 ---
 
 We are only at the beginning of a personal web. Presently social communities are humble experiments with lots of room for improvement. Twitter, Facebook, MySpace they all made failures along the way. They test different approaches to filter, personalize and rate the endless stream of information and it's just natural that they don't get it right the first time. 
