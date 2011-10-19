@@ -131,7 +131,7 @@ I wanted to import the posts into jekyll so I used the function `write_markdown(
 ?>
 {% endhighlight %}
 
-It's generally a good idea to use a HTML to Markdown converter for
+It's generally a good idea to use an HTML to Markdown converter for
 the post body. There is a nice one for PHP called [Markdownify][1]
 and a python script named [html2text][2].
 
