@@ -100,7 +100,7 @@ public class fileIO {
 {% endhighlight %}
 
 I hear you say: "Dude, file I/O is pretty complex. It's just the way it is".
-That's true..._internally_. But the user should get an easy interface. *Python*
+That's true... _internally_ . But the user should get an easy interface. *Python*
 shows how it's done:
 
 {% highlight python linenos=table %}

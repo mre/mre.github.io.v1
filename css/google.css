@@ -92,12 +92,26 @@ td .gsc-search-button {
 	padding: 20px;
 }
 
+.gsc-cursor-box {
+  margin-bottom: 0px;
+}
+
+.gsc-cursor {
+  font-size: 80%;
+  color: gray;
+  margin-left: 80px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  color: gray;
+}
+
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-	display: none;
+	/*display: none;*/
 }
 .gs-snippet {
 	color:  #888;
-	font: 60%;
+	font-size: 70%;
 }
 
 .gs-result a.gs-visibleUrl, .gs-result .gs-visibleUrl {
