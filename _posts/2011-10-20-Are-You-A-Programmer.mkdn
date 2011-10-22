@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Are you a programmer?"
+title: "Are You A Programmer?"
 published: true
 featured: true
 ---

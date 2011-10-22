@@ -5,7 +5,7 @@ sidebar: true
 ---
 
 <div class="content">
-  <h2>{{page.title}}</h2>
+  <h2>{{page.title | capitalize }}</h2>
 {% if page.subtitle %}
 	<h5>{{ page.subtitle }}</h5>
 {% endif %}
