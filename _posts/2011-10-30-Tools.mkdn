@@ -19,7 +19,7 @@ Professionals find themselves in a similar situation. Well, maybe we invest a bi
 I don't care what *you* are using to get things done. Find an environment that suits *your* needs and be happy with it. Maybe you use Emacs on a Lemote Yeelong netbook (hello Richard Stallman) or Vim on your workstation. It's basically the same thing: A text editor running on a piece of metal. 
 You're not a worse programmer for using Nano, ed or TextMate. Notepad works just fine, too. It loads files, saves files and lets you edit them in between. That's a hell lot more functionality than Bill Gates and Paul Allen had when they wrote a BASIC interpreter for the Altair. If you find something you're happy with, just stick with it but don't start arguing. It really isn't worth your time.
 
-Don't feed the trolls. When it comes to software, don't fall into the old FreeBSD vs. Linux vs. Windows vs. mum cliché. Instead talk about your code. Let's look at your problem solving skills. Let's be pragmatic here.
+Don't feed the trolls. When it comes to software, don't fall into the old FreeBSD vs. Linux vs. Windows vs. mum cliche. Instead talk about your code. Let's look at your problem solving skills. Let's be pragmatic here.
 
 > "Talk is cheap. Show me the code." - [Linus Torvalds][1]
 

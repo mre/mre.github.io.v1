@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 ### About me ###
 
-I'm Matthias Endler. I love *coding*, *writing* and *designing*. On this page you find a list of my current *projects* and *howtos*. I live in Bavaria, Germany. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
+I'm Matthias Endler. I love *coding*, *writing* and *designing*. In short, I build things. On this page you find a list of my current *projects* and *howtos*. I live in Bavaria, Germany. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
 {: .sweet-justice}
 
 ### My skillset ###

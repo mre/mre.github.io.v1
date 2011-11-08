@@ -5,12 +5,12 @@ published: true
 featured: true
 ---
 
-My geography teacher once told the story of her first lecture at
-university. As an introduction, her professor asked the class to draw 
+My geography teacher once told the story of her first university lecture. 
+As an introduction, her professor asked the class to draw 
 a map of Germany without any help and as accurate as possible. To her surprise she was not
 able to fill the map with much detail. Even the shape of the country was a bit vague.
 
-She had seen pictures of Germany (her mother country) thousands of times but she
+She had seen thousands of images of Germany (her mother country) but
 wasn't able to reproduce it from her blurry memory. She would have to look it up.
 
 Doesn't this sound familiar? We rely on machines to manage large potions
@@ -36,7 +36,7 @@ Every few years/months I have completely relearn the syntax for a different lang
 
 But that is a myth. If you know only
 one programming language **really** well - even if it is something
-outdated like Fortran or Cobol - you could easily earn a fortune with
+outdated like Fortran or COBOL - you could easily earn a fortune with
 that knowledge. Suppose you started with C in 1975. You could still
 use the same syntax today - almost four decades later.
 Same for text editors. Emacs and Vim are both decades
@@ -46,7 +46,7 @@ them really well.[^1]
 
 If you don't know how to use your tools without a manual, you are a bad craftsman.
 If you need a dictionary to write a simple letter, you will have a hard
-time being an author because it would already be challenging for you to form elegant, fluent
+time being a writer because it would already be challenging for you to form elegant, fluent
 sentences -- let alone engaging and original stories.
 I don't want to read these books.
 
@@ -75,7 +75,7 @@ That's enough for day one.
 
 I realize that most of these essentials won't be taught during lectures.
 You have to learn a huge portion on your own.
-But let's face it: If you don't know this stuff, you are *not* a programmer. You're a freshman.
+But let's face it: If you don't know this stuff, you are *not* a programmer, you're a freshman.
 
 [On hard work]: http://www.matthias-endler.de/2011/On-hard-work/
 
