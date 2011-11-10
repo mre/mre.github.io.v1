@@ -1,5 +1,7 @@
 fine tutorials for you and me
 %
+OMG! Drop all tables.
+%
 Sinatra has ended his set (crowd applauds)
 %
 A thing of beauty
