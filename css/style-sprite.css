@@ -281,7 +281,6 @@ em {
 }
 
 .linklist_mini li {
-	padding-bottom: 10px;
 }
 
 /* Sidebar links */
@@ -492,7 +491,7 @@ em {
 
 hr {
 	/*border:1px solid #ccc;*/
-  border-style: inset;
+  border-style: ridge;
 }
 
 .onLeft {
