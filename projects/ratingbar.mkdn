@@ -94,7 +94,7 @@ For more examples take a look at my <a href="/movies">movies</a> and <a href="/a
 
 * Put the included <code>js</code> and <code>css</code> folder into your websites root directory.
 
-* Include the following code somewhere between <head> and </head> of your website:
+* Include the following code somewhere between `<head>` and `</head>` of your website:
 
 {% highlight html linenos=table %}
 <link rel="stylesheet" type="text/css" href="css/ratingbar.css" /> 

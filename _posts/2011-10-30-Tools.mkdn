@@ -4,7 +4,7 @@ title: "Tools"
 featured: true
 ---
 
-As long as I can think, Computer science has been infected by religious flamewars.
+As long as I can think, Computer Science has been infected by religious flamewars.
 Having arguments about technical topics can be healthy but flamewars are not. I'm sick of it.
 I'm fed up by people telling me that their work environment is oh-so better,
 faster and so on. That's fine but it doesn't matter. Your equipment only plays a supporting role. You don't even need
@@ -38,7 +38,7 @@ In fact, when you write a piece of software, what you should strive for is to pr
 
 Zed A. Shaw puts it quite nicely in the afterword to [Learn Python the hard way][3]:
 
-> I have been programming for a very long time. So long that it is incredibly boring to me. At the time that I wrote this book I knew about 20 programming languages and could learn new ones in about a day to a week depending on how weird they were. Eventually though this just became boring and couldn't hold my interest.What I discovered after this journey of learning was that the languages didn't matter, it was what you did with them. Actually, I always knew that, but I'd get distracted by the languages and forget it periodically. Now I never forget it, and neither should you.The programming language you learn and use does not matter. Do not get sucked into the religion surrounding programming languages as that will only blind you to their true purpose of being your tool for doing interesting things.
+> I have been programming for a very long time. So long that it is incredibly boring to me. At the time that I wrote this book I knew about 20 programming languages and could learn new ones in about a day to a week depending on how weird they were. Eventually though this just became boring and couldn't hold my interest. What I discovered after this journey of learning was that the languages didn't matter, it was what you did with them. Actually, I always knew that, but I'd get distracted by the languages and forget it periodically. Now I never forget it, and neither should you.The programming language you learn and use does not matter. Do not get sucked into the religion surrounding programming languages as that will only blind you to their true purpose of being your tool for doing interesting things.
 
 Don't get emotional for any tool you use. An iPhone - I'm sorry to disappoint you -  is just a phone. No magic. No "think different". "But it's evil!", the ether says, "it's not open source". Well, Android just exists because Google needed to rapidly develop a mobile platform. It's simply part of their business. There is no moral behind that. Google is a yet another company just like Microsoft or Apple.
 
