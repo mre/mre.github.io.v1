@@ -1,0 +1,107 @@
+---
+layout: post
+title: What is Wikipedia
+published: false
+---
+
+What is Wikipedia
+  The Wikipedia foundation -> Provides infrastructure
+  The Wikipedia Community -> Rulesets, administration, maintainers
+  Wikipedia - The Encyclopedia -> The pure content, plaintext
+
+When people complain about Wikipedia, it's often hard to say, which part
+the complain about. If they are talking about infrastructure and wether
+advertisements should be used instead of donations, then they talk about
+the "Foundation".
+Most of the time, problems arise, with the administrators.
+
+Wikipedia Adminstrators are conservative by any account.
+One article I've created got deleted.
+And it was not about about me. FreeNX
+
+And this was OK. The Tool is really not notable on its own.
+I had enough time to intervene, which I did.
+You see, nobody wants to hear his work was worthless. That all these
+hours you've put in were wasted. You've trusted the administrators for
+making the right decision. And that is what it is all about: trust.
+
+We can't properly tell which articles are relevant. We are blind for what we are passionate about...
+and we are horrified by the idea, that our work was worthless.
+Wikipedia is no promotion platform. But it would be without strict rules.
+Look at Deletionpedia. There's a list of Warhammer Weapons with a length of about 100.000 characters that would be right on Wikipedia if it wasn't for strict rules
+It sports 35 references. Not bad for a bogus article.
+http://deletionpedia.dbatley.com/w/index.php?title=Weapons_of_the_Imperium_%28Warhammer_40%2C000%29_%28deleted_09_Jul_2008_at_22:21%29
+
+Fork Wikipedia?
+
+No. It's fine. It is exactly what I expect from an encyclopedia.
+The definition of relevance in the context of Wikipedia is one of the
+best I have ever read. It's well written and sound.
+
+
+The problem is not the administrators. They are doing a great job.
+The problem is  with the infrastructure: An old wiki software where Manual edits are common (sort all artists that were born in 1944 by hand.)
+The lack of metadata lead to the creation of bots, which crawl all the
+pages and make changes instead of having metadata in the first place.
+Metadata which is readily available remains unused
+No proper api
+People are angry that they can't contribute. There voice is not heard.
+  Internal wikipedia pages are a mess
+    > It's absolutely retarded that discussion pages are just wikipages where you have to handle comment threading and nesting yourself with indentation syntax.
+  Akronyms (AfD) are usedful should be hidden from the masses
+  Horrible Markup language
+  Search function useless (ok autosuggest but no fuzzy search, use Google instead)
+
+> I don't want to need to spend a bunch at Wikipedia reading countless rules trying to figure that out. The process needs to be simplified.
+[http://news.ycombinator.com/item?id=3272926]
+
+But how simple should it be to contribute? How high should the threshold
+be to keep all unwanted changes out? How do we keep out the spam?
+Two branches
+  Wikipedia stable
+    Excellent articles, citizations
+  Wikipedia unstable
+    Missing citizations
+    Can contain spam
+      Administrators merge the good commits into stable
+
+When I think about it, Wikipedia should be more like a big repository.
+More structured like GitHub.
+We have different branches for Math and English literature.
+One could easily fork an article, make changes to it and commit them.
+There would be one official repository.
+No human energy gets wasted.
+Metadata would get used.
+Simple Markdown format.
+
+
+No work gets lost
+  Everybody can have its on forks
+  Wikipedia.org would just be yet another view
+  You get a solid API for free.
+Build trust
+  Be more social
+    Wikipedia was founded in 2001.
+      It was one of the first crowdsourcing projects
+      Since then a lot has changed
+    "The administrators" sounds like voodoo
+      There really is no conspiracy
+    Show accomplishments in the style of GitHub
+      A picture for every author
+        Found out, that it works for donation banner
+      "Commits"
+    Badges like on StackOverflow
+    Twitter
+      Verified experts
+    Threaded discussions
+      Following discussions soon gets confusing
+        A lot of parties and opinions and no threads.
+      Show a streamlined version of the Wikipedia rules
+      Assign tasks to contributors
+      Show which changes are made in realtime and have a page where you
+      can see, what the admins are doing.
+    Upvotes and downvotes for decisions instead of "keep"-Posts
+
+
+Fork Wikipedia? Yes sure!
+Oh! And while you're at it: Fix the search.

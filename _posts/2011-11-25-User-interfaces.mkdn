@@ -1,0 +1,165 @@
+---
+layout: post
+title: On happiness
+published: false
+---
+Only happy when productive
+Don't like the touch paradigm
+  It's for passive activities: Reading, browsing, watching
+To create something I need a different environment
+  Keyboard
+  Window manager
+
+There's two things that determine our performance
+  The user interface
+  The input device
+
+Both should be the best you know
+
+Mouse
+  Few buttons
+  Few functions
+  Simple to use
+  Easy to master
+Keyboard
+  Many buttons
+  Many functions (combinations)
+  Simple to use
+  Hard to master
+
+I have 6 buttons and a mousewheel
+I have 119 keys on my keyboard
+
+But like everybody who first saw such a keyboard I was thinking this
+
+[Picture of Jumbo Jet Cockpit]
+
+Most of us have learned touch typing
+  This is a powerful tool
+  Yet we shy away from using it efficently and use a mouse as input
+
+Issuing a command requires
+  Knowing the command exists
+  Knowing the shortcut / Moving the mouse
+  Using the shortcut / Clicking the button
+
+As a programmer I'm using the following programms almost exclusively:
+  A browser
+  A mail programm
+  A text editor
+
+User interfaces
+  Eclipse
+  Vim
+  Chrome
+  Mail
+
+My setup
+  Natural keyboard
+  Logitech performance mouse mx
+  Mac
+  Vim
+
+Many people think, that user interface design is cast in stone. A normal computer user seldomly attempts to modify his virtual working environment. That's not how it is inteded to work, right? This makes me kind of sad because the best thing about software is, that it's so flexible.
+They generally say: "This program sucks." And leave it at that.
+But tools can indeed be programmed so that they fulfill your personal needs if you take the time to configure them - and you should.
+
+And why should you even invest the time to learn programs like VIM or LaTeX or Mutt? It takes years to master these tools.
+If you only occasionally edit a bit of text, then, by the love of little baby Jesus, spend your time wiser. These tools will not make you more productive.
+Instead, you will be frustrated. But if you work with text on a daily basis, even if you are not a programmer, take a few minutes each day to learn a great editor and a nice typesetting program. This will pay off in the long run.
+
+You can write macros fairly easily.
+But that's the very essence of it: The interface get's customizable, modifyable. It's like clay in some way.
+
+It takes years to learn and after all that hard training, you are only competent enough to use one single tool efficently.
+But what if all you have learned is worthless by the time you feel like a power-user?
+TeX and Vim are battle-proofed tools that won't go anywhere in the future. People will port them to new platforms and keep using all their beloved plugins.
+
+I'm learning shortcuts not primarily because I like to be faster (that's just a nice bonus), I'm learning them because I hate hunting for obscure menu options.
+When they see me typing on a black screen all day they
+
+How could I possibly achieve anything with a bare text editor?
+
+There's another way to look at this: I got rid of all the crud. Typing in a sophisticated text editor is pure Zen. It's a dialog between me and my ideas.
+
+But if VIM and Emacs are so great, why aren't they used by more programmers?
+For one, these tools have a steep learning curve. You will accomplish _less_ during the first weeks. There will be many moments of weakness where you long for your simple integrated development environment. It just takes time to rewire your brain to a new way of thinking.
+And it takes time to internalize the keybindings. It is a lot like playing an instrument : It's only fun to use if you don't need to think about it.
+
+
+After a while, clicking gets annoying. It bugs me every time to reach for the mouse and execute a sequence of menu options. Repetitive tasks are an incarnation of the the devil. I'm happy for any work I can automate.
+Every mouse click is a little context switch
+
+<OK, I need a little helper function now. Let's create it above the current function. Hm...the cursor needs to be here. I need to move away from the homerow and use the arrow keys. Or I'll just reach for the mouse and click right...here. OK, where was I?>
+
+All this happens unconciously but in a big coding session it gets so exausting.
+
+About IDEs
+
+Tools like Eclipse and IntelliJ are made *by* professionals *for* professionals. They provide extensive functionality and powerful wizards. The problem is, that every nice gizmo needs a button or a menu entry. All this distracts from the problem at hand, getting stuff done.
+Coming back to our instrument analogon: You want to play music, not fumble with the user interface while on stage.
+
+Most of what we do all day as programmers happens inside a box. We type code and type and...type some more.
+So it sounds reasonable to have a great typing tool, a good text editor.
+
+The Eclipse editor looks like this:
+
+[Eclipse Interface]
+
+See how much screen space all the menus, toolbars and modal windows are taking away?
+
+Let's compare this with a sophisticated text editor.
+I'm using VIM as an example, because that's what I know best.
+
+If you don't know the commands in VIM, you're lost. There's not much to help you, when you start the tool.
+All knowledge needs to be internalized. The functionality is right there behind that scary black screen.
+
+[Vim interface]
+
+Furthermore you can't provide all the functionality you might need with a gui. You can't combine commands to form new commands. You can't write macros easily. (Ever tried to create Eclipse plugins?). In a powerful text-editor, you can combine actions:
+
+*Delete a word*
+*Delete* the next *five words*
+*Delete* everything *until* the next *slash*
+*Delete inside* these *brackets*
+
+Do you see the pattern?
+
+The corresponding commands in VIM are:
+
+daw
+d5w
+dt/
+di(
+
+Once you've learned the meanings of these shortcuts, they are quite intuitive.
+It might look as if one rarely finds a use for all these shortcuts, but think about it: Most of the time to you want to operate with text objects (words, lines, paragraphs) instead of single characters.
+VIM makes this easy as pie.
+Sure, you could just remove a few characters with backspace or delete a word by holding ALT and typing backspace, but more complex word operations become tricky.
+This leads us to the question: What is simple? What is intuitive?
+
+Furthermore the wizards only get you so far. You will likely outgrow them or you might need to slightly modify them but you can't.
+It's like a motorbike with training wheels.
+
+From my point of view, if a function doesn't have a keyboard shortcut, it doesn't exist.
+OK, I'm somehow of an outlier on this one.
+Don't get me wrong. I'm not enthusiastic about having to learn a thousand shortcuts by heart but the alternative would be to reach for the mouse all five seconds or so.
+
+In the end it's all about movements. Think of movies like Minority report or Matrix Revalations.
+Yes, these interfaces look great, but imagine how tiresome it would be to execute complex tasks on a computer this way.
+Nobody would write text with that.
+Have you ever noticed how the best guitar players barely move their arm while playing?
+It looks effortless, because it is. They've learned to avoid all unnecessary movements.
+The best way would be a direct interface to our mind, but we are a bit away from that idea.
+
+A mouse is great for realtime multimedia systems where fuzzy input is enough (think: World of Warcraft).
+But text input is discrete.
+
+But notice a cut in between: Either you go full GUI or you go full commandline. There's not much in between and the steep learning curve is hindering people to move on to more advanced uis.
+Todays user interfaces don't make it easier to learn:
+"Oh you are using spotlight very often. Did you know you can press cmd-space to open the search bar?"
+
+
+
+All the functionality is there, it just doesn't jump in your face.
+On the other hand, people might argue: All the functionality is hidden, so one has to memorize stupid patterns.

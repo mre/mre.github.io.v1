@@ -6,13 +6,18 @@ published: false
 
 Sometimes when I've lost motivation I pull out *Pirates of Silicon Valley*, one of my favorite movies about hacking.
 It feels great to watch Steve Wozniak soldering on a circuit board that should become the Apple I -- just for the fun of it.
-Whenever I'm going to see a film about Computers I hope that the filmmakers capture that certain feeling of creating something out of thin air. In other words I hope they just *get it*. The feeling of control over the thing you build. That moment your program is actually doing something useful that you taught it to do. The certainity that your very own ruleset works and you gained insight on a fundamental concept for the first time. That moment when you *drift into the zone* that feels like a rush. Maybe even some healthy nerd humor. 
+Whenever I'm going to see a film about Computers I hope that the filmmakers capture that certain feeling of creating something out of thin air, that certain feeling of being in the zone that you can only get while hacking. In other words I hope they just *get it*. The feeling of control over the thing you build. That moment your program is actually doing something useful that you taught it to do. The certainity that your very own ruleset works and you gained insight on a fundamental concept for the first time. That moment when you *drift into the zone* that feels like a rush. Or - dare I say it - even some healthy nerd humor.
 
-Pirates of Silicon Valley has all of that. It is perhaps my favorite hacking movie next to Wargames.
+Pirates of Silicon Valley has it all. It is perhaps my favorite hacking movie of all time right next to Wargames.
 
 So many movies rely on special effects
 
+But not..
 - The social network
+	Surprisingly accurate tech
+	(kde, wget, php)
+	Even the progress of tech is correct
+		Kde versions increase during film
 
 
 Great
@@ -27,7 +32,7 @@ ToDo
 23
 Sneakers
 Ghost in the Shell
-Antitrust
+Antitrust (German title: Startup)
 The Perfect Score
 The Italian Job
 The Conversation
@@ -35,7 +40,7 @@ Mastermind
 Operation Takedown
 Freedom Downtime
 
-Nice Mention
+Honorable Mention
 Goldeneye
 Waynes World 2
 Matrix
@@ -47,4 +52,4 @@ Revolution OS
 Codename Linux
 
 http://en.wikipedia.org/wiki/Category:Computers_in_films
-	
+

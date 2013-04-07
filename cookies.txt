@@ -1,5 +1,7 @@
 fine tutorials for you and me
 %
+Code wins arguments.
+%
 OMG! Drop all tables.
 %
 If you hate thinking, get a tie.
@@ -252,7 +254,9 @@ your personal code monkey
 %
 fear the internet
 %
-Look ma! No tables!	
+Look ma! No tables!
+%
+Knight of the pipe and the lambda.
 %
 Geeks. That's what we are
 %

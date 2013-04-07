@@ -7,8 +7,8 @@
  *	Author URI: http://www.matthias-endler.de
  *	Copyright:  Public Domain 
  *
- * 
- *  This CSS file is using smartsprite by Stanislaw Osinski 
+ *
+ *  This CSS file is using smartsprite by Stanislaw Osinski
  *  http://csssprites.org/
  */
 
@@ -29,7 +29,7 @@ body {
 
 /* Header colors */
 .grey 		{color: #999999;}
-.grey_light {color: #cccccc;}			
+.grey_light {color: #cccccc;}
 .grey_dark 	{color: #666666;}
 
 h1 a:hover {
@@ -71,7 +71,7 @@ h4 {
 	font-weight:bold;
 	padding: 3px 10px 10px 40px;
 	margin-top: 30px;
-	background-image: url("../img/arrow.gif"); /** sprite-ref: mainsprite; */ 
+	background-image: url("../img/arrow.gif"); /** sprite-ref: mainsprite; */
 	background-repeat: no-repeat;
 	text-shadow: 0 1px 0 #FFFFFF;
 }
@@ -94,7 +94,7 @@ h6 {
 	text-transform: uppercase;
 }
 
-a, a:link, a:hover, a:visited, a:active { 
+a, a:link, a:hover, a:visited, a:active {
 	text-decoration: none;
 	color: #009BFF;
   cursor: pointer;
@@ -106,7 +106,7 @@ a:hover {
 
 p {
 	margin: 15px 0px;
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 em {
@@ -132,7 +132,7 @@ em {
 	height: 145px;
 	padding: 75px 0px 0px 0px;
 	background-position: 0px 32px;
-	background-image: url("../img/tux.jpg"); /** sprite-ref: mainsprite; sprite-margin-top: 32px; */ 
+	background-image: url("../img/tux.jpg"); /** sprite-ref: mainsprite; sprite-margin-top: 32px; */
 	background-repeat: no-repeat;
 }
 
@@ -159,9 +159,9 @@ em {
 }
 
 #menu li {
-	display: inline;   
-	float: right;   
-	list-style: none;   
+	display: inline;
+	float: right;
+	list-style: none;
 	list-style-type: none;
 }
 
@@ -220,7 +220,7 @@ em {
 /* -------------- PAGE CONTENT -------------- */
 
 #main {
-	font-size: 1.1em;	
+	font-size: 1.1em;
 }
 
 /* main column */
@@ -292,31 +292,31 @@ em {
 }
 
 #elsewhere .github:hover {
-	background-image: url("../img/sidebar_github.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_github.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .twitter:hover {
-	background-image: url("../img/sidebar_twitter.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_twitter.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .stackoverflow:hover {
-	background-image: url("../img/sidebar_stackoverflow.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_stackoverflow.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .kdelook:hover {
-	background-image: url("../img/sidebar_kdelook.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_kdelook.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .googleplus:hover {
-	background-image: url("../img/sidebar_google_plus.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_google_plus.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .rss:hover, #elsewhere .atom:hover {
-	background-image: url("../img/sidebar_rss.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_rss.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 #elsewhere .archive:hover{
-	background-image: url("../img/sidebar_archive.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */ 
+	background-image: url("../img/sidebar_archive.gif"); /** sprite-ref: mainsprite; sprite-margin-top: 3px; */
 }
 
 /* -------------- MESSAGES BOXES -------------- */
@@ -326,13 +326,13 @@ em {
 	background-color: #FEFFC7;
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
-	background-image: url("../img/star.png"); /** sprite-ref: mainsprite; sprite-margin-bottom:30px */ 
+	background-image: url("../img/star.png"); /** sprite-ref: mainsprite; sprite-margin-bottom:30px */
 	background-repeat: no-repeat;
 }
 
-.intro:hover {	
+.intro:hover {
 	background-position: -20px -30px;
-	background-image: url("../img/cross.png"); /** sprite-ref: mainsprite; */ 
+	background-image: url("../img/cross.png"); /** sprite-ref: mainsprite; */
 	background-color: #e5e5e5;
 	cursor: pointer;
 }
@@ -342,7 +342,7 @@ em {
 	padding: 20px 50px 20px 100px;
 	margin: 30px 0px 30px 0px;
 	background-position: 0px -30px;
-	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; sprite-margin-bottom: 10px; */ 
+	background-image: url("../img/download.png"); /** sprite-ref: mainsprite; sprite-margin-bottom: 10px; */
 	background-repeat: no-repeat;
   /* Light 3d-effect */
   border: 1px solid #BBB;
@@ -429,7 +429,7 @@ em {
 	padding: 3px 4px 3px 20px;
 	background-color: #ECEEF5;
 	background-position: 4px 3px;
-	background-image: url("../img/twitter.gif"); /** sprite-ref: mainsprite; */ 
+	background-image: url("../img/twitter.gif"); /** sprite-ref: mainsprite; */
 	background-repeat: no-repeat;
 	border: 1px solid #CAD4E7;
 	border-radius:3px;
@@ -568,7 +568,7 @@ acronym, abbr {
 #footer {
 	margin-top: 140px;
 	padding-top: 80px;
-	background-image: url("../img/lines.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; */ 
+	background-image: url("../img/lines.gif"); /** sprite-ref: mainsprite; sprite-alignment: repeat; */
 	background-repeat: repeat-x;
 }
 
@@ -635,7 +635,7 @@ input  {
 }
 
 .instapaper-desc {
-	
+
 }
 
 /* Projects page */

@@ -1,0 +1,80 @@
+---
+layout: post
+title: "Legacy code"
+featured: true
+published: false
+---
+
+Most programming languages fade into obscurity; only a few are here to stay.
+We still use Fortran for science, C for systems programming, Cobol for
+business applications and...Ruby will be a web legacy language.
+
+How does it become a legacy language? Well, certainly it initially
+needs a high level of adoption. There's a strong culture around the
+language and peope built an infrastructure which they are highly
+interested in keeping up. Old code has become a company asset.
+
+Programming languages fall from grace, when they try to incorporate / emulate ideas
+from more modern languages.
+Try to keep up with other (fancier) languages (Java has blabla now,
+  PHP supports namespaces)
+
+In fact there is no pure, elegant programming language in existence.
+They all suck in one way or another. Take Ruby as an example. In a few
+years time it will look dated.
+
+// Ruby functional syntax
+
+A Ruby developer might be looked down
+upon. "He has to maintain that ugly legacy code" they will say. "Urrgh,
+that syntax makes my eyes bleed. How could one possibly get any work
+done without <Insert_fancy_feature_here>?"
+
+For all but the most demanding applications, we can rely on the garbage
+collector to do a great job. We can take advantage of dynamic typing for rapid
+prototyping.
+
+It requires a high level of expertise to create hand-written assembler
+code which outplays auto-generated code by an off-the-shelf compiler.
+And most of the time it's not worth your time. You will find that the bottleneck is
+somewhere else (I/O, network latency...).
+
+The popular Motorola 68000 Assembly had some 90 keywords.
+Compare this to the Intel Core i7 instruction set reference, which sports 1721 pages.
+
+As we continuosly step up the abstraction ladder, we avoid modifying
+the lower layers.
+Just as nobody needs to remember numeric codes and calculate jump
+addresses anymore, we won't mess around with Assembly anymore.
+Everything below C simply becomes a reliable extension of hardware.
+And modern languages often compile to C or Bytecode, which is just
+another layer of abstraction most of us won't ever touch.
+
+JavaScript will be considered systems programming - its execution
+speed is now almost in the same league as C.
+
+I like to think that Computer Science is at a point where Mathematics
+was in ancient greece. We've already had some Heureka-Moments and
+derived a few elegant algorithms but we are far away from the CS-equivalent
+to integration calculus.
+
+Maybe we don't have to care about the lower layers anymore
+We can use Lisp
+
+Paul Graham: Next programming language 1000 years
+
+
+What is elegance? What is simplicity?
+
+Lisp is a good example. It has very few datastructures, one to be
+precise: the list.
+
+Elegant code is
+  modular
+  precise
+    DSL, in the problem domain
+  well-commented
+  correct
+  all other characteristics are optional
+    syntax
+    speed
