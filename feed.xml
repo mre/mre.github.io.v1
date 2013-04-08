@@ -1,18 +1,26 @@
 ---
-layout: feed
-title: Matthias Endler
+layout: nil
 ---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-	{% for post in site.posts %}
-	<item>
+	<title type="text" xml:lang="en">{{ site.root_desc }}</title>
+	<link type="application/atom+xml" href="http://matthias-endler.de/feed/" rel="self"/>
+ 	<link type="text" href="http://matthias-endler.de" rel="alternate"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://matthias-endler.de</id>
+	<author>
+		<name>Matthias Endler</name>
+	</author>
+	<rights>Copyright (c) Matthias Endler; all rights reserved.</rights>
+
+	{% for post in site.posts limit:20 %}
+	<entry>
 		<title>{{ post.title }}</title>
-		<link>{{ page.name }}{{ post.url }}</link>
-		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-		<dc:creator>Matthias Endler</dc:creator>
-		<guid isPermaLink="false">{{ post.id }}</guid>
-		<description><![CDATA[ {{ post.content | truncatewords 50 }} [...]]]>
-		</description>
-			<content:encoded><![CDATA[{{ post.content }}
-]]></content:encoded>
-		</item>
+		<link href="http://matthias-endler.de{{ post.url }}"/>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://matthias-endler.de/{{ post.id }}</id>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>
 	{% endfor %}
+</feed>
