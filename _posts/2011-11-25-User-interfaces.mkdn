@@ -45,8 +45,9 @@ Issuing a command requires
 
 As a programmer I'm using the following programms almost exclusively:
   A browser
-  A mail programm
+  A terminal
   A text editor
+  A mail programm
 
 User interfaces
   Eclipse
@@ -60,9 +61,11 @@ My setup
   Mac
   Vim
 
-Many people think, that user interface design is cast in stone. A normal computer user seldomly attempts to modify his virtual working environment. That's not how it is inteded to work, right? This makes me kind of sad because the best thing about software is, that it's so flexible.
+A normal computer user seldomly attempts to modify his virtual working environment. 
 They generally say: "This program sucks." And leave it at that.
-But tools can indeed be programmed so that they fulfill your personal needs if you take the time to configure them - and you should.
+
+That's not how it is inteded to work, right? This makes me kind of sad because the best thing about software is, that it's so flexible.
+Tools can indeed be programmed so that they fulfill your personal needs if you take the time to configure them - and you should.
 
 And why should you even invest the time to learn programs like VIM or LaTeX or Mutt? It takes years to master these tools.
 If you only occasionally edit a bit of text, then, by the love of little baby Jesus, spend your time wiser. These tools will not make you more productive.
@@ -80,7 +83,7 @@ When they see me typing on a black screen all day they
 
 How could I possibly achieve anything with a bare text editor?
 
-There's another way to look at this: I got rid of all the crud. Typing in a sophisticated text editor is pure Zen. It's a dialog between me and my ideas.
+There's another way to look at this: I got rid of all the crud. Typing in a sophisticated text editor is pure Zen. It's a dialog between me and the machine about my ideas.
 
 But if VIM and Emacs are so great, why aren't they used by more programmers?
 For one, these tools have a steep learning curve. You will accomplish _less_ during the first weeks. There will be many moments of weakness where you long for your simple integrated development environment. It just takes time to rewire your brain to a new way of thinking.
@@ -88,16 +91,12 @@ And it takes time to internalize the keybindings. It is a lot like playing an in
 
 
 After a while, clicking gets annoying. It bugs me every time to reach for the mouse and execute a sequence of menu options. Repetitive tasks are an incarnation of the the devil. I'm happy for any work I can automate.
-Every mouse click is a little context switch
-
-<OK, I need a little helper function now. Let's create it above the current function. Hm...the cursor needs to be here. I need to move away from the homerow and use the arrow keys. Or I'll just reach for the mouse and click right...here. OK, where was I?>
-
-All this happens unconciously but in a big coding session it gets so exausting.
+Every mouse click is a little context switch.
 
 About IDEs
 
-Tools like Eclipse and IntelliJ are made *by* professionals *for* professionals. They provide extensive functionality and powerful wizards. The problem is, that every nice gizmo needs a button or a menu entry. All this distracts from the problem at hand, getting stuff done.
-Coming back to our instrument analogon: You want to play music, not fumble with the user interface while on stage.
+Tools like Eclipse and IntelliJ are made *by* professionals *for* professionals. They provide extensive functionality and powerful wizards. The problem is, that every nice gizmo needs a button or a menu entry. All of this distracts from the problem at hand, getting stuff done.
+Coming back to our instrument analogon: You want to play music, not fumble with the guitar cable while on stage.
 
 Most of what we do all day as programmers happens inside a box. We type code and type and...type some more.
 So it sounds reasonable to have a great typing tool, a good text editor.
@@ -133,8 +132,8 @@ dt/
 di(
 
 Once you've learned the meanings of these shortcuts, they are quite intuitive.
-It might look as if one rarely finds a use for all these shortcuts, but think about it: Most of the time to you want to operate with text objects (words, lines, paragraphs) instead of single characters.
-VIM makes this easy as pie.
+It might look as if one rarely finds a use for all these shortcuts, but think about it: Most of the time you want to operate with text objects (words, lines, paragraphs) instead of single characters.
+VIM makes this a lot easier.
 Sure, you could just remove a few characters with backspace or delete a word by holding ALT and typing backspace, but more complex word operations become tricky.
 This leads us to the question: What is simple? What is intuitive?
 

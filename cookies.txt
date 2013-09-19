@@ -4,6 +4,8 @@ Code wins arguments.
 %
 OMG! Drop all tables.
 %
+Moron Labs
+%
 If you hate thinking, get a tie.
 %
 Giving up is not an option.
@@ -27,8 +29,6 @@ bewareOfBearsharktopus
 We are cocktails.
 %
 Errors make you unique.
-%
-Right now where it hurts.
 %
 Stream of awesomeness.
 %
@@ -134,7 +134,7 @@ Don't make wishes out of bombs.
 %
 What a ride
 %
-If you don't do it...they will.
+If you don't do it, somebody else will.
 %
 Nearly exponential growth.
 %
@@ -264,8 +264,6 @@ Debugging the rubberduck way
 %
 Read Euler. He's the master of everything
 %
-Now I will have less distractions
-%
 Wow this looks kinda professional.
 %
 Unix web wrapper
@@ -273,3 +271,7 @@ Unix web wrapper
 Thanks to membadran for this plugin!
 %
 It's a trap!
+%
+That dreaded blinking cursor
+%
+\usepackage{comicsans}
