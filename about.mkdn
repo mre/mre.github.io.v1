@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 ### About Matthias###
 
-I hack things for fun and profit. I'm proud to be a programmer and love sharing ideas and knowledge. On this page you find my essays, designs and my code. I live in Bavaria, Germany. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
+I hack things for fun and profit. I'm proud to be a programmer and love the open web and sharing knowledge. On this page you find my thoughts and projects. I live in Bavaria, Germany. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
 {: .sweet-justice}
 
 ### My skillset ###
@@ -64,6 +64,10 @@ I hack things for fun and profit. I'm proud to be a programmer and love sharing 
 	<tr>
 		<td class="descriptions">Python</td>
 		<td class="skills">4/5</td>		
+	</tr>
+	<tr>
+		<td class="descriptions">Haskell</td>
+		<td class="skills">1/5</td>		
 	</tr>
 	<tr>
 		<td class="descriptions">Scala</td>

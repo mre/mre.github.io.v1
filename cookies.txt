@@ -275,3 +275,7 @@ It's a trap!
 That dreaded blinking cursor
 %
 \usepackage{comicsans}
+%
+Embrace change
+%
+Think for yourself
