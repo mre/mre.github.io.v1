@@ -16,7 +16,20 @@ $(document).ready(function() {
 
 ### About Matthias###
 
-I'm a problem solver and love to hack on things for fun and profit. I'm proud of my profession and enjoy sharing knowledge. On this page you find my thoughts and projects. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
+As long as I can think, I wanted to be a programmer.
+OK, that's not entirely true. Before that I wanted to be an archeologist in the vein of Indiana Jones.
+During an excavation at my grandma's garden I actually found a skull of a yet undiscovered dinosaur species.
+When my parents found out that I was occupying our living room to analyze the bones of a hog, they could not be happier.
+
+After I found out that archeologists get dirty, I replaced the the shovel with a keyboard and learned to program computers instead.
+Creating games on a computer was cooler anyway.
+
+That said, programming is still a hard skill to learn.
+If I had to name a single, obligatory trait to become proficient, I would say it's patience.
+I'm persistent, focused and determined.
+
+
+Welcome to my site. I'm a problem solver and love to hack on things for fun and profit. I'm proud of my profession and enjoy sharing knowledge. On this page you find my thoughts and projects. <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#45;&#101;&#110;&#100;&#108;&#101;&#114;&#64;&#103;&#109;&#120;&#46;&#110;&#101;&#116;'>&#68;&#114;&#111;&#112;&#32;&#109;&#101;&#32;&#97;&#32;&#108;&#105;&#110;&#101;&#32;&#105;&#102;&#32;&#121;&#111;&#117;&#32;&#119;&#97;&#110;&#116;</a>
 {: .sweet-justice}
 
 ### My skillset ###
