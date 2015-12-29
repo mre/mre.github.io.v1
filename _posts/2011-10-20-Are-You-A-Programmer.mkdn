@@ -41,7 +41,7 @@ that knowledge. Suppose you started with C in 1975. You could still
 use the same syntax today - almost four decades later.
 Same for text editors. Emacs and Vim are both decades
 old. They are battle-hardened. I don't care which one you prefer but you
-will spend most of your life with these tools so invest the time to use
+will spend a large part of your life with your tools so invest the time to use
 them really well.[^1]
 
 If you don't know how to use your tools without a manual, you are a bad craftsman.
