@@ -30,7 +30,7 @@ engineers who [can't pull this off][Atwood Programmers].
 
 Some might argue that knowledge about details of programming language
 syntax is unimportant: "Why learn all the little nitpicks when you know
-how to use a search engine? Why start from a blank sheet when you can easily
+how to use a search engine? Why start from a clean slate when you can easily
 copy, paste and modify an example from a tutorial?
 Every few years/months I have completely relearn the syntax for a different language anyway."
 
@@ -46,7 +46,7 @@ them really well.[^1]
 
 If you don't know how to use your tools without a manual, you are a bad craftsman.
 If you need a dictionary to write a simple letter, you will have a hard
-time being a writer because it would already be challenging for you to form elegant, fluent
+time becoming a writer because it would already be challenging for you to form elegant, fluent
 sentences -- let alone engaging and original stories.
 I don't want to read these books.
 
